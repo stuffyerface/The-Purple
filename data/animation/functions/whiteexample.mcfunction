@@ -1,0 +1,1 @@
+execute as @s run function animation:splat {"color":"white"}
