@@ -1,1 +1,0 @@
-$give @s minecraft:$(color)_wool 16
