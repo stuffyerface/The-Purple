@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "purple hits player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hit:gothit"
+  }
+}
