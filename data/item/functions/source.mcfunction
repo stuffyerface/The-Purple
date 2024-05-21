@@ -1,0 +1,1 @@
+give @s popped_chorus_fruit[custom_name='{"color":"#800080","italic":false,"text":"The Purple"}',lore=['{"color":"red","text":"Testing!"}'],custom_data={source:1b}] 1
