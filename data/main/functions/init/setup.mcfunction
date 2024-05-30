@@ -5,14 +5,16 @@
 ## make sure the setup cant be run multiple times
 #execute if data storage the_purple:main ran_setup run return run tellraw @a [{"text":"[Console] "},{"text":"Setup already completed!","color":"red"}]
 data merge storage the_purple:main {ran_setup:1b}
-tellraw @a [{"text":"[Console] "},{"text":"Setup complete.","color":"green"}]
+tellraw @a[tag=debug] [{"text":"[Console] "},{"text":"Setup complete.","color":"green"}]
 
 # scoreboards
 scoreboard objectives add timer dummy
 scoreboard objectives add settings dummy
 
-scoreboard players set .max_round_duration settings 60
-scoreboard players set .round_duration_modifer settings 1
+scoreboard players set .round_length settings 60
+scoreboard players set .starting_immunity settings 3
+scoreboard players set .round_timer settings 1
+scoreboard players set .tagback settings -1
 
 # gamerules
 gamerule doDaylightCycle false

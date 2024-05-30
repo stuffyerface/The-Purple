@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "hit_with_source": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Inventory:[{components: {\"minecraft:custom_data\": {source: 1b} } }]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:game/triggers/give_source"
+  }
+}

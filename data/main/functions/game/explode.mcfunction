@@ -1,5 +1,5 @@
 # error check
-execute unless entity @a[tag=source] run tellraw @a [{"text":"[Console] "},{"text":"Source not found!","color":"red"}]
+execute unless entity @a[tag=source] run tellraw @a[tag=debug] [{"text":"[Console] "},{"text":"Source not found!","color":"red"}]
 
 # effects
 execute as @a[tag=source] at @s run function animation:splat {"color":"purple"}
