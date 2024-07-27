@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "tag_logout": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"source\"]}"
+        },
+        "entity": {
+          "type": "minecraft:zombie",
+          "nbt": "{Tags:[\"disconnect.zombie\",\"alive\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:game/tag/triggers/tag_logout"
+  }
+}

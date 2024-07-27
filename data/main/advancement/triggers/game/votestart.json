@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "start_now": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{start_now:1b}"
+          }
+        }
+      }
+    },
+    "cancel_start": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{cancel_start:1b}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "start_now",
+      "cancel_start"
+    ]
+  ],
+  "rewards": {
+    "function": "main:game/tag/triggers/votestart"
+  }
+}

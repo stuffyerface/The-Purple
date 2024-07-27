@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:void_air",
+    "minecraft:cave_air",
+    "minecraft:light",
+    "minecraft:barrier",
+    "minecraft:structure_void"
+  ]
+}
