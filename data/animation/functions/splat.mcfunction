@@ -1,1 +1,0 @@
-$particle minecraft:block{block_state:"minecraft:$(color)_wool"} ~ ~ ~ ~ ~ ~ 0.1 10000

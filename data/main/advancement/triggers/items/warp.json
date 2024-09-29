@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "warp_spawn": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:WARP_SPAWN}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "warp_spawn"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/item/function/warp"
+  }
+}

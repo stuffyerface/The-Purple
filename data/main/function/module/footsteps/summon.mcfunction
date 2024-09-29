@@ -1,0 +1,2 @@
+$execute if score .foot footsteps matches 0 run summon text_display ~ ~.01 ~ {Rotation:[0F,-90F],text:'{"text":"    ■","color":"#$(color)"}',Tags:["footstep","freshfootstep"],background:0,text_opacity:90}
+$execute if score .foot footsteps matches 1 run summon text_display ~ ~.01 ~ {Rotation:[0F,-90F],text:'{"text":"■    ","color":"#$(color)"}',Tags:["footstep","freshfootstep"],background:0,text_opacity:90}

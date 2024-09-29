@@ -1,0 +1,9 @@
+item replace entity @s hotbar.0 with lime_dye[max_stack_size=1,item_name='{"bold":true,"color":"green","text":"Vote to Start Now!"}',custom_data={start_now:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.1 with lime_dye[max_stack_size=1,item_name='{"bold":true,"color":"green","text":"Vote to Start Now!"}',custom_data={start_now:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.2 with lime_dye[max_stack_size=1,item_name='{"bold":true,"color":"green","text":"Vote to Start Now!"}',custom_data={start_now:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.3 with lime_dye[max_stack_size=1,item_name='{"bold":true,"color":"green","text":"Vote to Start Now!"}',custom_data={start_now:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+
+item replace entity @s hotbar.5 with gray_dye[max_stack_size=1,item_name='{"bold":true,"color":"red","text":"Vote to Cancel!"}',custom_data={cancel_start:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.6 with gray_dye[max_stack_size=1,item_name='{"bold":true,"color":"red","text":"Vote to Cancel!"}',custom_data={cancel_start:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.7 with gray_dye[max_stack_size=1,item_name='{"bold":true,"color":"red","text":"Vote to Cancel!"}',custom_data={cancel_start:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
+item replace entity @s hotbar.8 with gray_dye[max_stack_size=1,item_name='{"bold":true,"color":"red","text":"Vote to Cancel!"}',custom_data={cancel_start:1b},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1

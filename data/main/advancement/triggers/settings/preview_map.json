@@ -1,0 +1,107 @@
+{
+  "criteria": {
+    "map_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.1.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.2.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_3_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.3.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.1.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.2.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_3_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.3.preview\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "map_1_lc",
+      "map_2_lc",
+      "map_3_lc",
+      "map_1_rc",
+      "map_2_rc",
+      "map_3_rc"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/settings/preview/trigger"
+  }
+}
