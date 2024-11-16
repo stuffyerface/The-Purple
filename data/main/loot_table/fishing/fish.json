@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": "[{\"fallback\":\"Glowing Minnow\",\"translate\":\"item.purple.fish.glowing_minnow\"},\" \",{\"color\":\"dark_aqua\",\"fallback\":\"🐟\",\"translate\":\"icon.purple.fish\"}]",
+                "minecraft:lore": [
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"I'm not sure I would eat\",\"italic\":false,\"translate\":\"item.purple.fish.glowing_minnow.1\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"this. I can't tell if its\",\"italic\":false,\"translate\":\"item.purple.fish.glowing_minnow.2\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"color is natural or not.\",\"italic\":false,\"translate\":\"item.purple.fish.glowing_minnow.3\"}]"
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:GLOWING_MINNOW}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": "[{\"fallback\":\"Squishscale\",\"translate\":\"item.purple.fish.squishscale\"},\" \",{\"color\":\"dark_aqua\",\"fallback\":\"🐟\",\"translate\":\"icon.purple.fish\"}]",
+                "minecraft:lore": [
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"It's squishy and dark,\",\"italic\":false,\"translate\":\"item.purple.fish.squishscale.1\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"but definitely alive... at\",\"italic\":false,\"translate\":\"item.purple.fish.squishscale.2\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"least it once was.\",\"italic\":false,\"translate\":\"item.purple.fish.squishscale.3\"}]"
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:SQUISHSCALE}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": "[{\"fallback\":\"Crimson Drifter\",\"translate\":\"item.purple.fish.crimson_drifter\"},\" \",{\"color\":\"dark_aqua\",\"fallback\":\"🐟\",\"translate\":\"icon.purple.fish\"}]",
+                "minecraft:lore": [
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"It most closely\",\"italic\":false,\"translate\":\"item.purple.fish.crimson_drifter.1\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"resembles a jellyfish...\",\"italic\":false,\"translate\":\"item.purple.fish.crimson_drifter.2\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"if they could swim in lava.\",\"italic\":false,\"translate\":\"item.purple.fish.crimson_drifter.3\"}]"
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:CRIMSON_DRIFTER}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": "[{\"fallback\":\"Purple Shellfish\",\"translate\":\"item.purple.fish.purple_shellfish\"},\" \",{\"color\":\"dark_aqua\",\"fallback\":\"🐟\",\"translate\":\"icon.purple.fish\"}]",
+                "minecraft:lore": [
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"Very sturdy shell.\",\"italic\":false,\"translate\":\"item.purple.fish.purple_shellfish.1\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"I wonder what it could\",\"italic\":false,\"translate\":\"item.purple.fish.purple_shellfish.2\"}]",
+                  "[\" \",{\"color\":\"gray\",\"fallback\":\"be protecting against?\",\"italic\":false,\"translate\":\"item.purple.fish.purple_shellfish.3\"}]"
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:PURPLE_SHELLFISH}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/fish"
+}

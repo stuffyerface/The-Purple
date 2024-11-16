@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "source": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:\"THE_PURPLE\"}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "source"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/source/trigger"
+  }
+}

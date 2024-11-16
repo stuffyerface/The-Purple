@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:trident",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.challenge.long_distance.title",
+      "fallback": "Long Distance"
+    },
+    "description": {
+      "translate": "advancements.challenge.long_distance.description",
+      "fallback": "Transfer %s to someone over 30 blocks away",
+      "with": [[{"text":"","bold":false},{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]]
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "main:advancement/2_challenge/root",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

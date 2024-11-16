@@ -1,0 +1,655 @@
+{
+  "criteria": {
+    "rc_SMALL_MUSHROOM": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SMALL_MUSHROOM\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_SMALL_MUSHROOM": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SMALL_MUSHROOM\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_CHORUS_FRUIT": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.CHORUS_FRUIT\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_CHORUS_FRUIT": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.CHORUS_FRUIT\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_ENDER_PEARL": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.ENDER_PEARL\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_ENDER_PEARL": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.ENDER_PEARL\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_GLOW_HORN": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.GLOW_HORN\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_GLOW_HORN": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.GLOW_HORN\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_TOTEM_OF_UNDYING": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.TOTEM_OF_UNDYING\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_TOTEM_OF_UNDYING": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.TOTEM_OF_UNDYING\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_TRIDENT": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.TRIDENT\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_TRIDENT": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.TRIDENT\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_SAFETY_VEST": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SAFETY_VEST\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_SAFETY_VEST": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SAFETY_VEST\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_PRISON_KEY": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.PRISON_KEY\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_PRISON_KEY": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.PRISON_KEY\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_COMPASS": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.COMPASS\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_COMPASS": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.COMPASS\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_FREEZE_TIME": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.FREEZE_TIME\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_FREEZE_TIME": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.FREEZE_TIME\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_SMOKE_BOMB": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SMOKE_BOMB\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_SMOKE_BOMB": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.SMOKE_BOMB\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_ANTIDOTE": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.ANTIDOTE\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_ANTIDOTE": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.ANTIDOTE\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_WIND_CHARGE": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.WIND_CHARGE\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_WIND_CHARGE": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.WIND_CHARGE\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_REVIVAL_POTION": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.REVIVAL_POTION\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_REVIVAL_POTION": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.REVIVAL_POTION\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "rc_SMALL_MUSHROOM",
+      "lc_SMALL_MUSHROOM",
+      "rc_CHORUS_FRUIT",
+      "lc_CHORUS_FRUIT",
+      "rc_ENDER_PEARL",
+      "lc_ENDER_PEARL",
+      "rc_GLOW_HORN",
+      "lc_GLOW_HORN",
+      "rc_TOTEM_OF_UNDYING",
+      "lc_TOTEM_OF_UNDYING",
+      "rc_TRIDENT",
+      "lc_TRIDENT",
+      "rc_SAFETY_VEST",
+      "lc_SAFETY_VEST",
+      "rc_PRISON_KEY",
+      "lc_PRISON_KEY",
+      "rc_COMPASS",
+      "lc_COMPASS",
+      "rc_FREEZE_TIME",
+      "lc_FREEZE_TIME",
+      "rc_SMOKE_BOMB",
+      "lc_SMOKE_BOMB",
+      "rc_ANTIDOTE",
+      "lc_ANTIDOTE",
+      "rc_WIND_CHARGE",
+      "lc_WIND_CHARGE",
+      "rc_REVIVAL_POTION",
+      "lc_REVIVAL_POTION"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/settings/game/item/root"
+  }
+}

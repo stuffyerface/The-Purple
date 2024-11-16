@@ -21,7 +21,7 @@ scoreboard players operation .click quicksand %= .calc quicksand
 scoreboard players reset .calc quicksand
 
 # titles
-title @s times 0 1200 0
+title @s times 0 100 0
 execute if score .click quicksand matches 0 run title @s subtitle {"keybind":"key.use","color":"yellow"}
 execute if score .click quicksand matches 1 run title @s subtitle {"keybind":"key.attack","color":"yellow"}
 
@@ -36,8 +36,8 @@ execute if score .rope_clicks settings matches 8 run function main:module/quicks
 execute if score .rope_clicks settings matches 9 run function main:module/quicksand/title/9
 execute if score .rope_clicks settings matches 10.. run function main:module/quicksand/title/10
 
-execute if score @s quicksand >= .rope_clicks settings run title @s subtitle {"text":"Success!","color":"green"}
-execute if score @s quicksand >= .rope_clicks settings on vehicle at @e[limit=1,sort=nearest,tag=trap.quicksand.rope.1] run tp @s ~0.5 ~-1 ~0.5
+execute if score @s quicksand >= .rope_clicks settings run title @s subtitle {"translate":"message.purple.map.quicksand.success","fallback":"Success!","color":"green"}
+execute if score @s quicksand >= .rope_clicks settings on vehicle at @n[tag=trap.quicksand.rope.1] run tp @s ~0.5 ~-0.5 ~0.5
 execute if score @s quicksand >= .rope_clicks settings on vehicle run data merge entity @s {Motion:[-0.5d,0.3d,0.0d],NoGravity:0b}
 execute if score @s quicksand >= .rope_clicks settings at @s run function main:module/quicksand/animation/whip
 

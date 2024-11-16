@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hit_by_source": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{id:\"PRISON_KEY\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/prison_key"
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "criteria": {
+    "lc_test": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.test\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_test": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.test\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_frying_pan": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.frying_pan\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_frying_pan": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.frying_pan\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_microscope": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.microscope\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_microscope": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.microscope\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_ugly_fish": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.ugly_fish\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_ugly_fish": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.ugly_fish\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_potted_plant": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.potted_plant\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_potted_plant": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.potted_plant\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_rope": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.rope\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_rope": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.rope\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_drill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.drill\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_drill": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.drill\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_gears": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.gears\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_gears": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.gears\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_meteorite": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.meteorite\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_meteorite": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.meteorite\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_lantern": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.lantern\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_lantern": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"furniture.lost_artifact.lantern\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lc_test",
+      "rc_test",
+      "lc_frying_pan",
+      "rc_frying_pan",
+      "lc_microscope",
+      "rc_microscope",
+      "lc_ugly_fish",
+      "rc_ugly_fish",
+      "lc_potted_plant",
+      "rc_potted_plant",
+      "lc_rope",
+      "rc_rope",
+      "lc_drill",
+      "rc_drill",
+      "lc_gears",
+      "rc_gears",
+      "lc_meteorite",
+      "rc_meteorite",
+      "lc_lantern",
+      "rc_lantern"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/furniture/lost_artifact/trigger"
+  }
+}

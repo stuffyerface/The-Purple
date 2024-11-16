@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:popped_chorus_fruit",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.first_mission.title",
+      "fallback": "First Mission"
+    },
+    "description": {
+      "translate": "advancements.gameplay.first_mission.description",
+      "fallback": "Play a game"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/im_ready",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

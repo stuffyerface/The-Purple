@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"CHORUS_FRUIT",slot:"weapon.mainhand"}

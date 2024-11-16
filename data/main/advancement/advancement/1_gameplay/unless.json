@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.unless.title",
+      "fallback": "Unless?!"
+    },
+    "description": {
+      "translate": "advancements.gameplay.unless.description",
+      "fallback": "Win the game after being revived"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/mission_failed",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

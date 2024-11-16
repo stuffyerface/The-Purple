@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "warp_spawn": {
+    "using_item": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
@@ -11,11 +11,6 @@
       }
     }
   },
-  "requirements": [
-    [
-      "warp_spawn"
-    ]
-  ],
   "rewards": {
     "function": "main:module/item/function/warp"
   }

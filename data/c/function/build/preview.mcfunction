@@ -1,0 +1,1 @@
+summon text_display ~ ~1 ~ {Tags:["preview"],alignment:"center",billboard:"center",brightness:{sky:15,block:10},view_range:0.0f,background:16711680,see_through:1b,text:'{"color":"light_purple","bold":true,"translate":"message.purple.preview.hologram","fallback":"Return to Lobby"}',transformation:[3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f]}

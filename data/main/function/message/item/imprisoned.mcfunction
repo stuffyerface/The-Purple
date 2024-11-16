@@ -1,0 +1,1 @@
+execute on attacker run tellraw @a[tag=player] [{"color":"gray","translate":"message.purple.item.imprisoned","fallback":"%1$s was locked up by %2$s!","with":[{"selector":"@p[dx=0]"},{"selector":"@s"}]}]

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:apple",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.challenge.clean_bill_of_health.title",
+      "fallback": "Clean Bill of Health"
+    },
+    "description": {
+      "translate": "advancements.challenge.clean_bill_of_health.description",
+      "fallback": "Win without being infected by another player or the environment"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "main:advancement/2_challenge/root",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

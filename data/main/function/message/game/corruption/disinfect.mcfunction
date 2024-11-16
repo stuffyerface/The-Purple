@@ -1,0 +1,2 @@
+scoreboard players set @s actionbar 40
+title @s actionbar [{"color":"green","translate":"","fallback":"%2$s hopped to %s!","with":[{"selector":"@p[tag=next_source]"},[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]]}]

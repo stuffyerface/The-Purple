@@ -1,0 +1,1 @@
+function main:lobby/settings/board/element/rectangle_setting {setting:'setting.game.winners',translate:"setting.purple.button.winners.name",fallback:"Winning Players: %s",with:'["",{"score":{"objective":"settings","name":".winners"},"color":"green"}]',texture:'"minecraft:player_head"',background:'"minecraft:gray_concrete"'}

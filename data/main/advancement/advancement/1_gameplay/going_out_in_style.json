@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:tnt",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.going_out_in_style.title",
+      "fallback": "Going out in Style"
+    },
+    "description": {
+      "translate": "advancements.gameplay.going_out_in_style.description",
+      "fallback": "Die with every Death Effect"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/choices_choices",
+  "criteria": {
+    "death_effect_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "death_effect_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "death_effect_3": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "death_effect_1"
+    ],
+    [
+      "death_effect_2"
+    ],
+    [
+      "death_effect_3"
+    ]
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:map",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.expert_explorer.title",
+      "fallback": "Expert Explorer"
+    },
+    "description": {
+      "translate": "advancements.gameplay.expert_explorer.description",
+      "fallback": "Play on every map"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/first_mission",
+  "criteria": {
+    "map_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "map_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "map_3": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "map_1"
+    ],
+    [
+      "map_2"
+    ],
+    [
+      "map_3"
+    ]
+  ]
+}

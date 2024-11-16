@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"GLOW_HORN",slot:"weapon.mainhand"}

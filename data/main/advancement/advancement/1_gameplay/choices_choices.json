@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_horse_armor",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.choices_choices.title",
+      "fallback": "Choices, choices."
+    },
+    "description": {
+      "translate": "advancements.gameplay.choices_choices.description",
+      "fallback": "Select a favorite color, death effect, and victory dance"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/root",
+  "criteria": {
+    "color": {
+      "trigger": "minecraft:impossible"
+    },
+    "victory_dance": {
+      "trigger": "minecraft:impossible"
+    },
+    "death_effect": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "color"
+    ],
+    [
+      "victory_dance"
+    ],
+    [
+      "death_effect"
+    ]
+  ]
+}

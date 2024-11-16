@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"FREEZE_TIME",slot:"weapon.mainhand"}

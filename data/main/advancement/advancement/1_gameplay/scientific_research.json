@@ -1,0 +1,223 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.scientific_research.title",
+      "fallback": "Scientific Research"
+    },
+    "description": {
+      "translate": "advancements.gameplay.scientific_research.description",
+      "fallback": "Study all 9 artifacts"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/expert_explorer",
+  "criteria": {
+    "artifact_frying_pan": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.frying_pan\"]}"
+        }
+      }
+    },
+    "artifact_frying_pan_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.frying_pan\"]}"
+        }
+      }
+    },
+    "artifact_microscope": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.microscope\"]}"
+        }
+      }
+    },
+    "artifact_microscope_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.microscope\"]}"
+        }
+      }
+    },
+    "artifact_ugly_fish": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.ugly_fish\"]}"
+        }
+      }
+    },
+    "artifact_ugly_fish_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.ugly_fish\"]}"
+        }
+      }
+    },
+    "artifact_potted_plant": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.potted_plant\"]}"
+        }
+      }
+    },
+    "artifact_potted_plant_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.potted_plant\"]}"
+        }
+      }
+    },
+    "artifact_rope": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.rope\"]}"
+        }
+      }
+    },
+    "artifact_rope_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.rope\"]}"
+        }
+      }
+    },
+    "artifact_drill": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.drill\"]}"
+        }
+      }
+    },
+    "artifact_drill_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.drill\"]}"
+        }
+      }
+    },
+    "artifact_gears": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.gears\"]}"
+        }
+      }
+    },
+    "artifact_gears_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.gears\"]}"
+        }
+      }
+    },
+    "artifact_meteorite": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.meteorite\"]}"
+        }
+      }
+    },
+    "artifact_meteorite_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.meteorite\"]}"
+        }
+      }
+    },
+    "artifact_lantern": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"artifact.lantern\"]}"
+        }
+      }
+    },
+    "artifact_lantern_lost": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"furniture.lost_artifact.lantern\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "artifact_frying_pan",
+      "artifact_frying_pan_lost"
+    ],
+    [
+      "artifact_microscope",
+      "artifact_microscope_lost"
+    ],
+    [
+      "artifact_ugly_fish",
+      "artifact_ugly_fish_lost"
+    ],
+    [
+      "artifact_potted_plant",
+      "artifact_potted_plant_lost"
+    ],
+    [
+      "artifact_rope",
+      "artifact_rope_lost"
+    ],
+    [
+      "artifact_drill",
+      "artifact_drill_lost"
+    ],
+    [
+      "artifact_gears",
+      "artifact_gears_lost"
+    ],
+    [
+      "artifact_meteorite",
+      "artifact_meteorite_lost"
+    ],
+    [
+      "artifact_lantern",
+      "artifact_lantern_lost"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+# common setup stuff
+execute as @n[type=text_display,tag=lobby.artifact_display,tag=empty,distance=..2] run data merge entity @s {Tags:["lobby.artifact_display","full"],view_range:0f}
+tellraw @a {"translate":"message.purple.lobby.lost_artifact.place","fallback":"%s placed the %s artifact!","with":[{"selector":"@p[tag=artifact.drill]"},{"translate":"item.purple.artifact.drill.name","fallback":"Jackhammer","color":"yellow"}],"color":"#76776F"}
+tag @s remove empty
+tag @s add full
+tag @s add artifact.drill
+clear @p[tag=artifact.drill] *[custom_data={id:"ARTIFACT_DRILL"}]
+tag @p[tag=artifact.drill] remove artifact.drill
+
+# furniture model
+summon minecraft:item_display ~0.2 ~0.18 ~ {Tags:["furniture.artifact","furniture.artifact.drill"],Passengers: [{id: "minecraft:item_display", Tags:["furniture.artifact","furniture.artifact.drill"], item: {Count: 1b, id: "minecraft:black_candle"}, transformation: {left_rotation: [-0.69165474f, 0.14701582f, 0.14701582f, 0.69165474f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.46874964f, 0.6249986f, 1.5234327f], translation: [0.30553204f, 0.03906256f, 0.20604223f]}}, {id: "minecraft:item_display", Tags:["furniture.artifact","furniture.artifact.drill"], item: {Count: 1b, id: "minecraft:black_candle"}, transformation: {left_rotation: [0.6916548f, 0.14701581f, -0.14701581f, 0.6916548f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.46874893f, 0.6249982f, 1.5234319f], translation: [0.051321685f, 0.03906256f, -0.3649237f]}}, {id: "minecraft:item_display", Tags:["furniture.artifact","furniture.artifact.drill"], item: {Count: 1b, id: "minecraft:yellow_concrete"}, transformation: {left_rotation: [0.0f, -0.18223572f, 0.0f, 0.98325485f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.31249982f, 0.19531225f, 0.31249982f], translation: [-0.3745441f, 0.0f, 0.16675779f]}}, {id: "minecraft:item_display", Tags:["furniture.artifact","furniture.artifact.drill"], item: {Count: 1b, id: "minecraft:light_gray_concrete"}, transformation: {left_rotation: [0.0f, 0.2079117f, 0.0f, 0.9781476f], right_rotation: [0.0f, 0.38268346f, 0.0f, 0.9238795f], scale: [0.3125f, 0.11506729f, 0.23437496f], translation: [-1.0348758f, 0.0f, 0.46075636f]}}, {id: "minecraft:item_display", Tags:["furniture.artifact","furniture.artifact.drill"], item: {Count: 1b, id: "minecraft:light_gray_concrete"}, transformation: {left_rotation: [0.0f, 0.20791167f, 0.0f, 0.9781476f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.546875f, 0.11718749f, 0.117187485f], translation: [-0.74939275f, 0.0f, 0.33365116f]}}], item: {Count: 1b, id: "minecraft:yellow_shulker_box"}, transformation: {left_rotation: [-0.14701581f, 0.14701581f, -0.6916548f, 0.6916548f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.3515621f, 0.82031214f, 0.6249995f], translation: [0.0f, 0.0f, 0.0f]}}
+
+# stat tracking
+scoreboard players add .total_artifacts data 1

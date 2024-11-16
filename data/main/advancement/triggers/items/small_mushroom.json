@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "small_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{id:SMALL_MUSHROOM_ABILITY}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/small_mushroom"
+  }
+}

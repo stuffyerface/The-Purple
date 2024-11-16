@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"CONSOLE_BOOK",slot:"weapon.mainhand"}

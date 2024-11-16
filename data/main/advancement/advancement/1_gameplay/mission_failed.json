@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.mission_failed.title",
+      "fallback": "Mission Failed"
+    },
+    "description": {
+      "translate": "advancements.gameplay.mission_failed.description",
+      "fallback": "Succumb to the infection"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/infectious_disease",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

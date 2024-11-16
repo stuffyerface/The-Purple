@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "ready": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:\"READY\"}"
+          }
+        }
+      }
+    },
+    "cancel": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:\"NOT_READY\"}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ready",
+      "cancel"
+    ]
+  ],
+  "rewards": {
+    "function": "main:game/tag/triggers/ready"
+  }
+}

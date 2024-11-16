@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lime_dye",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.im_ready.title",
+      "fallback": "I'm Ready!"
+    },
+    "description": {
+      "translate": "advancements.gameplay.im_ready.description",
+      "fallback": "Ready-up by right-clicking the item in your hotbar"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/root",
+  "criteria": {
+    "im_ready": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:\"READY\"}"
+          }
+        }
+      }
+    }
+  }
+}

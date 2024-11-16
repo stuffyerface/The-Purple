@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"SMALL_MUSHROOM",slot:"weapon.mainhand"}

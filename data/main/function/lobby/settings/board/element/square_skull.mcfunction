@@ -1,0 +1,3 @@
+$summon item_display ~0.0075 ~0.0075 ~0.001 {Tags:[$(setting),"settings"],item_display:"fixed",billboard:"fixed",item:{id:$(texture),count:1},transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0100f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
+$summon interaction ~ ~-0.38 ~-0.3 {Tags:[$(setting),"settings","square_button"],width:0.83f,height:0.78f,response:1b} 
+$summon block_display ~-0.4 ~-0.375 ~-0.001 {Tags:[$(setting),"settings","setting.background"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[1.22f,0.0f,0.0f,0.0f,0.0f,1.15f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}

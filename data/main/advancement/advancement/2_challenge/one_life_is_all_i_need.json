@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:milk_bucket",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.challenge.one_life_is_all_i_need.title",
+      "fallback": "One Life is All I Need"
+    },
+    "description": {
+      "translate": "advancements.challenge.one_life_is_all_i_need.description",
+      "fallback": "Win without using any healing items"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "main:advancement/2_challenge/root",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,2 +1,2 @@
-$summon item_display ~ ~ ~ {Tags:["setting.personal.$(color)_team","setting.personal.change_team","settings"],billboard:"fixed",item:{id:"minecraft:$(color)_wool",count:1},transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.1000f,0.0000f,0.0000f,0.0000f,0.0000f,1.5000f]}
-$summon interaction ~ ~-0.38 ~-0.3 {Tags:["setting.personal.$(color)_team","setting.personal.change_team","settings","square_button"],width:0.83f,height:0.78f,response:1b} 
+$summon item_display ~ ~ ~ {Tags:["setting.color.$(color)_team","setting.color.change_team","settings"],billboard:"fixed",item:{id:"minecraft:$(color)_concrete",count:1},transformation:[1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,0.01f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon interaction ~ ~-0.38 ~-0.3 {Tags:["setting.color.$(color)_team","setting.color.change_team","settings","square_button"],width:0.83f,height:0.78f,response:1b} 

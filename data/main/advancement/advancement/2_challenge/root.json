@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.challenge.root.title",
+      "fallback": "Ready for a Challenge?"
+    },
+    "description": {
+      "translate": "advancements.challenge.root.description",
+      "fallback": "Can you complete them all? Good luck, You'll need it!"
+    },
+    "background": "minecraft:textures/block/ancient_debris_side.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

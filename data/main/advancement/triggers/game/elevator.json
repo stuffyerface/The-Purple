@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"elevator.interaction\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"elevator.interaction\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lc",
+      "rc"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/elevator/trigger"
+  }
+}

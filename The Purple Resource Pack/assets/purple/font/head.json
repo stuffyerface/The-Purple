@@ -1,0 +1,16 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "minecraft:include/space"
+        },
+        {
+            "type": "bitmap",
+            "file": "purple:font/head.png",
+            "ascent": 7,
+            "chars": [
+                "sn\u0000"
+            ]
+        }
+    ]
+}

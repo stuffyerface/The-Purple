@@ -1,0 +1,1 @@
+function main:lobby/settings/board/element/rectangle_setting {setting:'setting.game.reach',translate:"setting.purple.button.reach.name",fallback:"Reach: %s",with:'["",{"score":{"objective":"settings","name":".reach"},"color":"green"}," ",{"translate":"setting.purple.button.blocks","fallback":"Blocks"}]',texture:'"minecraft:lead"',background:'"minecraft:gray_concrete"'}

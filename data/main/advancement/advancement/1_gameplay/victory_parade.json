@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:firework_rocket",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.victory_parade.title",
+      "fallback": "Victory Parade"
+    },
+    "description": {
+      "translate": "advancements.gameplay.victory_parade.description",
+      "fallback": "Win with every Victory Dance"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/choices_choices",
+  "criteria": {
+    "victory_dance_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "victory_dance_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "victory_dance_3": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "victory_dance_1"
+    ],
+    [
+      "victory_dance_2"
+    ],
+    [
+      "victory_dance_3"
+    ]
+  ]
+}

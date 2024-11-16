@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:popped_chorus_fruit",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.infectious_disease.title",
+      "fallback": "Infectious Disease"
+    },
+    "description": {
+      "translate": "advancements.gameplay.infectious_disease.description",
+      "fallback": "Become infected by %s",
+      "with": [[{"text":"","bold":false},{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/first_mission",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:silence_armor_trim_smithing_template",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.easteregg.sunken_remains.title",
+      "fallback": "Sunken Remains"
+    },
+    "description": {
+      "translate": "advancements.easteregg.sunken_remains.description",
+      "fallback": "Acquire the full set of Diving Armor"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "main:advancement/3_easteregg/root",
+  "criteria": {
+    "diving_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:custom_data": "{id:DIVING_MASK}"
+            }
+          }
+        ]
+      }
+    },
+    "oxygen_tank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:custom_data": "{id:OXYGEN_TANK}"
+            }
+          }
+        ]
+      }
+    },
+    "wetsuit_pants": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:custom_data": "{id:WETSUIT_PANTS}"
+            }
+          }
+        ]
+      }
+    },
+    "wetsuit_fins": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:custom_data": "{id:WETSUIT_FINS}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diving_mask"
+    ],
+    [
+      "oxygen_tank"
+    ],
+    [
+      "wetsuit_pants"
+    ],
+    [
+      "wetsuit_fins"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/miscellaneous/easteregg"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:SPECTATE}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/spectate"
+  }
+}

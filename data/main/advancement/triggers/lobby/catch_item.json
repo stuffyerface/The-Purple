@@ -1,0 +1,154 @@
+{
+  "criteria": {
+    "catch_glowing_minnow": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:GLOWING_MINNOW}"
+          }
+        }
+      }
+    },
+    "catch_squishscale": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:SQUISHSCALE}"
+          }
+        }
+      }
+    },
+    "catch_crimson_drifter": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:CRIMSON_DRIFTER}"
+          }
+        }
+      }
+    },
+    "catch_purple_shellfish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:PURPLE_SHELLFISH}"
+          }
+        }
+      }
+    },
+    "catch_broken_fishing_rod": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:BROKEN_FISHING_ROD}"
+          }
+        }
+      }
+    },
+    "catch_sunken_raft": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:SUNKEN_RAFT}"
+          }
+        }
+      }
+    },
+    "catch_discarded_fuel_rod": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:DISCARDED_FUEL_ROD}"
+          }
+        }
+      }
+    },
+    "catch_lost_soil_sample": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:LOST_SOIL_SAMPLE}"
+          }
+        }
+      }
+    },
+    "catch_old_brush": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:OLD_BRUSH}"
+          }
+        }
+      }
+    },
+    "catch_diving_mask": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:DIVING_MASK}"
+          }
+        }
+      }
+    },
+    "catch_oxygen_tank": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:OXYGEN_TANK}"
+          }
+        }
+      }
+    },
+    "catch_wetsuit_pants": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:WETSUIT_PANTS}"
+          }
+        }
+      }
+    },
+    "catch_wetsuit_fins": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:WETSUIT_FINS}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "catch_glowing_minnow",
+      "catch_squishscale",
+      "catch_crimson_drifter",
+      "catch_purple_shellfish",
+      "catch_broken_fishing_rod",
+      "catch_sunken_raft",
+      "catch_discarded_fuel_rod",
+      "catch_lost_soil_sample",
+      "catch_old_brush",
+      "catch_diving_mask",
+      "catch_oxygen_tank",
+      "catch_wetsuit_pants",
+      "catch_wetsuit_fins"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/player/fish"
+  }
+}

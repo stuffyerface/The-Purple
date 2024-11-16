@@ -1,0 +1,10 @@
+$summon text_display ~ ~ ~0.001 {Tags:[$(setting),"settings"],shadow:1b,background:0,alignment:"center",text:'[{"translate":"$(translate)","fallback":"$(fallback)"},{"strikethrough":true,"text":"\\n                              ","color":"dark_gray"}]'}
+$summon interaction ~ ~0.075 ~-1.6 {Tags:[$(setting),"settings","rectangle_button"],width:3.5f,height:0.6f,response:1b} 
+$summon block_display ~-1.75 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.1"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon block_display ~-1.165 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.2"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon block_display ~-0.58 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.3"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon block_display ~0.005 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.4"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon block_display ~0.59 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.5"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+$summon block_display ~1.175 ~0.08 ~-0.001 {Tags:[$(setting),"settings","setting.background","setting.background.6"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
+
+# block display difference: 0.585

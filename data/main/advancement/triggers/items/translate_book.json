@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:writable_book",
+            "predicates": {
+              "minecraft:writable_book_content": {
+                "pages": {
+                  "size": {
+                    "min": 1,
+                    "max": 100
+                  }
+                }
+              },
+              "minecraft:custom_data": "{id:\"TRANSLATE_BOOK\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/translate_book"
+  }
+}

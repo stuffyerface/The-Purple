@@ -1,14 +1,14 @@
 ﻿{
   "pack": {
-    "pack_format": 1,
-    "supported_formats": {"min_inclusive": 1, "max_inclusive": 100},
-    "description": "§5The Purple Testing §8-nightlibra§r"
+    "pack_format": 42,
+    "supported_formats": {"min_inclusive": 42, "max_inclusive": 100},
+    "description": "Made by stuffy & nightlibra\n§8beta-1.2§r"
   },
 
   "meta": {
-    "pack_version": "1",
-    "game_version": "1.21",
-    "description": "The Purple Testing",
+    "pack_version": "b3",
+    "game_version": "1.21.3",
+    "description": "The Purple minigame",
     "discord": "@nightlibra"
   }
 }

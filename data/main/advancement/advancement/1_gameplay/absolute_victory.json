@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:filled_map",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.gameplay.absolute_victory.title",
+      "fallback": "Absolute Victory"
+    },
+    "description": {
+      "translate": "advancements.gameplay.absolute_victory.description",
+      "fallback": "Win on every map"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "main:advancement/1_gameplay/last_one_standing",
+  "criteria": {
+    "map_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "map_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "map_3": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "map_1"
+    ],
+    [
+      "map_2"
+    ],
+    [
+      "map_3"
+    ]
+  ]
+}

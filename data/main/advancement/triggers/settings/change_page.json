@@ -30,6 +30,81 @@
         ]
       }
     },
+    "stats_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "stats_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "stats_3_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_x_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.page_x\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_0_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.page_0\"]}"
+            }
+          }
+        ]
+      }
+    },
     "map_1_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -105,6 +180,201 @@
         ]
       }
     },
+    "game_3_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_4_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_4\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_5_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_5\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_6_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_6\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "presets_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.presets.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "presets_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.presets.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "item_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "item_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_3_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "ability_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.ability.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "ability_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.ability.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
     "cover_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
@@ -130,6 +400,81 @@
             "predicate": {
               "type": "minecraft:interaction",
               "nbt": "{Tags:[\"setting.change_settings\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "stats_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "stats_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "stats_3_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.stats.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_x_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.page_x\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_0_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.page_0\"]}"
             }
           }
         ]
@@ -210,21 +555,196 @@
         ]
       }
     },
-    "advanced_settings": {
+    "game_3_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": {
-          "flags": {
-            "is_sneaking": true
-          }
-        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.game.advanced\"]}"
+              "nbt": "{Tags:[\"setting.game.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_4_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_4\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_5_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_5\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_6_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_6\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "presets_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.presets.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "presets_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.presets.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "item_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "item_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_2\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "cosmetic_3_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.cosmetic.page_3\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "ability_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.ability.page_1\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "ability_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.ability.page_2\"]}"
             }
           }
         ]
@@ -233,21 +753,56 @@
   },
   "requirements": [
     [
-      "advanced_settings",
       "cover_lc",
       "settings_lc",
+      "stats_1_lc",
+      "stats_2_lc",
+      "stats_3_lc",
+      "map_x_lc",
+      "map_0_lc",
       "map_1_lc",
       "map_2_lc",
       "map_3_lc",
       "game_1_lc",
       "game_2_lc",
+      "game_3_lc",
+      "game_4_lc",
+      "game_5_lc",
+      "game_6_lc",
+      "presets_1_lc",
+      "presets_2_lc",
+      "item_1_lc",
+      "item_2_lc",
+      "cosmetic_1_lc",
+      "cosmetic_2_lc",
+      "cosmetic_3_lc",
+      "ability_1_lc",
+      "ability_2_lc",
       "cover_rc",
       "settings_rc",
+      "stats_1_rc",
+      "stats_2_rc",
+      "stats_3_rc",
+      "map_x_rc",
+      "map_0_rc",
       "map_1_rc",
       "map_2_rc",
       "map_3_rc",
       "game_1_rc",
-      "game_2_rc"
+      "game_2_rc",
+      "game_3_rc",
+      "game_4_rc",
+      "game_5_rc",
+      "game_6_rc",
+      "presets_1_rc",
+      "presets_2_rc",
+      "item_1_rc",
+      "item_2_rc",
+      "cosmetic_1_rc",
+      "cosmetic_2_rc",
+      "cosmetic_3_rc",
+      "ability_1_rc",
+      "ability_2_rc"
     ]
   ],
   "rewards": {

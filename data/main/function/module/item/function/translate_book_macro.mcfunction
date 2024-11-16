@@ -1,0 +1,2 @@
+$execute if score @s dummy matches 0..8 run tellraw @a {"translate":"chat.type.text","fallback":"<%s> %s","with":[{"selector":"@s"},{"text":"$(raw)","font":"alt","hoverEvent":{"action":"show_text","value":["$(raw)"]}}]}
+$execute if score @s dummy matches -106 run tellraw @a {"translate":"chat.type.text","fallback":"<%s> %s","with":[{"selector":"@s"},{"text":"$(raw)","font":"illageralt","hoverEvent":{"action":"show_text","value":["$(raw)"]}}]}

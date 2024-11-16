@@ -1,1 +1,0 @@
-tellraw @s [{"text":"[Console] "},{"text":"Pregame!"}]

@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"block.beacon\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"block.beacon\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lc",
+      "rc"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/miscellaneous/beacon/color"
+  }
+}

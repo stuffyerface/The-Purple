@@ -1,7 +1,7 @@
-function main:id/check/id
-function main:module/footsteps/summon with storage main:id recent
+execute if score .foot footsteps matches 0 run function main:module/footsteps/summon_right
+execute if score .foot footsteps matches 1 run function main:module/footsteps/summon_left
 
-execute rotated ~ ~ run tp @e[type=text_display,tag=freshfootstep] ~ ~.01 ~ ~ -90
+execute rotated ~ ~ run tp @e[type=text_display,tag=freshfootstep] ~ ~ ~ ~ -90
 execute as @e[tag=freshfootstep] run tag @s remove freshfootstep
 
 scoreboard players reset @s footsteps

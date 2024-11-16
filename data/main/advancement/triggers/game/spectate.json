@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "test": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "gamemode": [
+              "spectator"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/spectator/trigger"
+  }
+}

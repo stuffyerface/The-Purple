@@ -3,7 +3,7 @@ execute as @e[tag=id.marker,tag=!id.marker.offline,tag=alive] at @s unless entit
 
 # relog detection stuff
 execute as @a[scores={relog=1..}] at @s run function main:module/disconnect/relog
-scoreboard players operation @a disconnect = .world gameData
+execute as @a unless score @s relog matches 1.. run scoreboard players operation @s disconnect = .world data
 
 
 
