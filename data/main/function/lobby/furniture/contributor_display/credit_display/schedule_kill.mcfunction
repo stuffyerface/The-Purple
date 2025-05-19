@@ -1,0 +1,1 @@
+kill @e[tag=kill_this_display]

@@ -2,7 +2,7 @@ scoreboard players enable @s ability.speed
 execute if score .game data matches 0.. if function main:message/settings/locked run return run scoreboard players set @s ability.speed -2147483648
 
 # filter
-execute if score @s ability.speed matches -1 run scoreboard players set @s ability.speed 10
+execute if score @s ability.speed matches -1 run scoreboard players set @s ability.speed 15
 execute unless score @s ability.speed matches 1..300 run function main:message/settings/invalid
 execute unless score @s ability.speed matches 1..300 run return run scoreboard players set @s ability.speed -2147483648
 

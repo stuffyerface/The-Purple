@@ -1,14 +1,14 @@
 # increase infection_time
 scoreboard players operation .modify_infection_time settings = .infection_time settings
-execute if score .modify_infection_time settings matches 125.. run scoreboard players set .infection_time settings -1
-execute if score .modify_infection_time settings matches 110..124 run scoreboard players set .infection_time settings 125
-execute if score .modify_infection_time settings matches 95..109 run scoreboard players set .infection_time settings 110
-execute if score .modify_infection_time settings matches 80..94 run scoreboard players set .infection_time settings 95
-execute if score .modify_infection_time settings matches 65..79 run scoreboard players set .infection_time settings 80
-execute if score .modify_infection_time settings matches 50..64 run scoreboard players set .infection_time settings 65
-execute if score .modify_infection_time settings matches 35..49 run scoreboard players set .infection_time settings 50
-execute if score .modify_infection_time settings matches 20..34 run scoreboard players set .infection_time settings 35
-execute if score .modify_infection_time settings matches 0..19 run scoreboard players set .infection_time settings 20
+execute if score .modify_infection_time settings matches 120.. run scoreboard players set .infection_time settings -1
+execute if score .modify_infection_time settings matches 105..119 run scoreboard players set .infection_time settings 120
+execute if score .modify_infection_time settings matches 90..104 run scoreboard players set .infection_time settings 105
+execute if score .modify_infection_time settings matches 75..89 run scoreboard players set .infection_time settings 90
+execute if score .modify_infection_time settings matches 60..74 run scoreboard players set .infection_time settings 75
+execute if score .modify_infection_time settings matches 45..59 run scoreboard players set .infection_time settings 60
+execute if score .modify_infection_time settings matches 30..44 run scoreboard players set .infection_time settings 45
+execute if score .modify_infection_time settings matches 15..29 run scoreboard players set .infection_time settings 30
+execute if score .modify_infection_time settings matches 0..14 run scoreboard players set .infection_time settings 15
 execute if score .modify_infection_time settings matches -1 run scoreboard players set .infection_time settings 0
 
 execute if score .modify_infection_time settings matches ..-1 run scoreboard players set .infection_time settings 0

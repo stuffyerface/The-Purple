@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.potted_plant] run return ru
 
 # give artifact
 tag @s add artifact.potted_plant
-give @s flower_pot[max_stack_size=1,item_name='{"fallback":"Potted Specimen","translate":"item.purple.artifact.potted_plant.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_POTTED_PLANT"}] 1
+give @s flower_pot[max_stack_size=1,item_name={"fallback":"Potted Specimen","translate":"item.purple.artifact.potted_plant.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_POTTED_PLANT"}] 1
+scoreboard players set artifact.potted_plant data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

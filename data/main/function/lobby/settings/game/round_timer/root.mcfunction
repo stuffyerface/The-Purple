@@ -12,7 +12,7 @@ scoreboard players reset .modify_round_timer settings
 
 # save last updater
 tag @s add modifiedSetting
-data merge entity @e[type=text_display,tag=setting.game.round_timer-updater,limit=1] {text:'[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\\n                         "}]'}
+data merge entity @e[type=text_display,tag=setting.game.round_timer-updater,limit=1] {text:[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\n                         "}]}
 data modify storage main:settings setting.game.round_timer.last_updater_id set from entity @s UUID
 data modify storage main:settings setting.game.round_timer.last_updater_name set from entity @e[type=text_display,tag=setting.game.round_timer-updater,limit=1] text
 data remove entity @e[type=item_display,tag=setting.game.round_timer-updater,limit=1] item.components.minecraft:profile
@@ -20,8 +20,8 @@ data modify entity @e[type=item_display,tag=setting.game.round_timer-updater,lim
 tag @s remove modifiedSetting
 
 # update settings board
-execute as @e[type=text_display,tag=setting.game.round_timer] if score .round_timer settings matches 1.. run data merge entity @s {text:'[{"translate":"setting.purple.button.round_timer.name","fallback":"Hide Round Timer? %s","with":[["",{"translate":"setting.purple.button.no","fallback":"No","color":"red"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
-execute as @e[type=text_display,tag=setting.game.round_timer] if score .round_timer settings matches ..0 run data merge entity @s {text:'[{"translate":"setting.purple.button.round_timer.name","fallback":"Hide Round Timer? %s","with":[["",{"translate":"setting.purple.button.yes","fallback":"Yes","color":"green"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
+execute as @e[type=text_display,tag=setting.game.round_timer] if score .round_timer settings matches 1.. run data merge entity @s {text:[{"translate":"setting.purple.button.round_timer.name","fallback":"Hide Round Timer? %s","with":[["",{"translate":"setting.purple.button.no","fallback":"No","color":"red"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
+execute as @e[type=text_display,tag=setting.game.round_timer] if score .round_timer settings matches ..0 run data merge entity @s {text:[{"translate":"setting.purple.button.round_timer.name","fallback":"Hide Round Timer? %s","with":[["",{"translate":"setting.purple.button.yes","fallback":"Yes","color":"green"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
 
 
 # clean up

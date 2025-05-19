@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.test] run return run functi
 
 # give artifact
 tag @s add artifact.test
-give @s armor_stand[max_stack_size=1,item_name='{"fallback":"Armor Stand","translate":"item.purple.artifact.test.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_TEST"}] 1
+give @s armor_stand[max_stack_size=1,item_name={"fallback":"Armor Stand","translate":"item.purple.artifact.test.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_TEST"}] 1
+scoreboard players set artifact.test data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

@@ -2,7 +2,7 @@ scoreboard players enable @s setting.item_spawn_percent
 execute if score .game data matches 0.. if function main:message/settings/locked run return run scoreboard players set @s setting.item_spawn_percent -2147483648
 
 # filter
-execute if score @s setting.item_spawn_percent matches -1 run scoreboard players set @s setting.item_spawn_percent 40
+execute if score @s setting.item_spawn_percent matches -1 run scoreboard players set @s setting.item_spawn_percent 75
 execute unless score @s setting.item_spawn_percent matches 0..100 run function main:message/settings/invalid
 execute unless score @s setting.item_spawn_percent matches 0..100 run return run scoreboard players set @s setting.item_spawn_percent -2147483648
 

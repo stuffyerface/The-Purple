@@ -2,7 +2,7 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"selector":"@s"},{"text":" swapped
 kill @e[tag=settings,tag=!setting.board,tag=!setting.title,distance=..5]
 
 # set title
-execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:'[{"text":"\\n","bold":true},{"translate":"setting.purple.title.item","fallback":"Item Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\\n                      ","color":"gray"}]'}
+execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:[{"text":"\n","bold":true},{"translate":"setting.purple.title.item","fallback":"Item Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\n                      ","color":"gray"}]}
 
 # elements
 execute positioned ~-2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"SMALL_MUSHROOM",texture:'"minecraft:player_head",components:{"minecraft:profile": {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY5NmI4ZDAxZjU4MzVlZDM4YWZkNDUzMDIyOGQwYjVhYmI3ZDQ1YTM1NTUxOWVhNjgwYzQwZmZjYTMyZWRmMiJ9fX0="}]}}'}
@@ -13,7 +13,7 @@ execute positioned ~-0.75 ~3.3 ~ run function main:lobby/settings/game/item/elem
 execute positioned ~-0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"TOTEM_OF_UNDYING",texture:'"minecraft:totem_of_undying"'}
 execute positioned ~-0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"TRIDENT",texture:'"minecraft:trident"'}
 
-execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"SAFETY_VEST",texture:'"minecraft:leather_chestplate",components:{"minecraft:trim": {material: "minecraft:iron", show_in_tooltip: 0b, pattern: "minecraft:host"}, "minecraft:dyed_color": {show_in_tooltip: 0b, rgb: 16742400}}'}
+execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"SAFETY_VEST",texture:'"minecraft:leather_chestplate",components:{"minecraft:trim": {material: "minecraft:iron", pattern: "minecraft:host"}, "minecraft:dyed_color": 16742400}'}
 execute positioned ~0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"PRISON_KEY",texture:'"minecraft:trial_key"'}
 execute positioned ~0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"COMPASS",texture:'"minecraft:compass"'}
 

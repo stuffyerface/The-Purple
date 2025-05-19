@@ -9,6 +9,9 @@ tag @s add player
 tag @s add alive
 tag @s add has_been_revived
 tag @s add has_used_healing_items
+stopsound @s * purple:music.dead
+execute if score .time data matches 11.. at @s run playsound purple:music.main master @s ~ ~ ~ 0.33
+execute if score .time data matches 1..10 at @s run playsound purple:music.near_end master @s ~ ~ ~ 0.33
 function main:id/team/set_color
 function main:module/disconnect/sync/marker
 function main:module/item/function/reset

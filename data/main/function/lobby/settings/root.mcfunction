@@ -17,12 +17,14 @@ execute if entity @s[scores={setting.rope_clicks=-2147483647..}] run function ma
 execute if entity @s[scores={setting.corruption_despawn_time=-2147483647..}] run function main:lobby/settings/game/corruption_despawn_time/custom
 execute if entity @s[scores={setting.reach=-2147483647..}] run function main:lobby/settings/game/reach/custom
 execute if entity @s[scores={setting.round_teleport=-2147483647..}] run function main:lobby/settings/game/round_teleport/custom
+execute if entity @s[scores={setting.meteor_spawn_chance=-2147483647..}] run function main:lobby/settings/game/meteor_spawn_chance/custom
 
 execute if entity @s[scores={ability.speed2=-2147483647..}] run function main:lobby/settings/personal/source_ability/speed/custom
 execute if entity @s[scores={ability.invisible=-2147483647..}] run function main:lobby/settings/personal/source_ability/invisible/custom
 execute if entity @s[scores={ability.darkness=-2147483647..}] run function main:lobby/settings/personal/source_ability/darkness/custom
 execute if entity @s[scores={ability.corruption=-2147483647..}] run function main:lobby/settings/personal/source_ability/corruption/custom
 execute if entity @s[scores={ability.reach=-2147483647..}] run function main:lobby/settings/personal/source_ability/reach/custom
+execute if entity @s[scores={ability.clone=-2147483647..}] run function main:lobby/settings/personal/source_ability/clone/custom
 
 execute if entity @s[scores={ability.fireworks=-2147483647..}] run function main:lobby/settings/personal/spectator_ability/fireworks/custom
 execute if entity @s[scores={ability.speed=-2147483647..}] run function main:lobby/settings/personal/spectator_ability/speed/custom

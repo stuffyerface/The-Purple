@@ -17,7 +17,8 @@ execute unless score @s source_ability matches 0.. run function main:module/sour
 execute if score @s source_ability matches 1 run function main:module/source/ability/speed
 execute if score @s source_ability matches 2 run function main:module/source/ability/invisible
 execute if score @s source_ability matches 3 run function main:module/source/ability/darkness
-execute if score @s source_ability matches 4 run function main:module/source/ability/corruption
-execute if score @s source_ability matches 5 run function main:module/source/ability/reach
+execute if score @s source_ability matches 4 run function main:module/source/ability/corruption/trigger
+execute if score @s source_ability matches 5 run function main:module/source/ability/reach/trigger
+execute if score @s source_ability matches 6 run function main:module/source/ability/clone/trigger
 
 execute unless score @s source_ability_timer matches 1.. run scoreboard players set @s source_ability_timer 20

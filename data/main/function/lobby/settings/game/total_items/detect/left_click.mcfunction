@@ -1,6 +1,6 @@
 # increase total_items by 1
-execute if score .total_items settings matches 10.. run scoreboard players set .total_items settings -1
-execute if score .total_items settings matches ..9 run scoreboard players add .total_items settings 1
+execute if score .total_items settings matches 20.. run scoreboard players set .total_items settings -1
+execute if score .total_items settings matches ..19 run scoreboard players add .total_items settings 1
 execute if score .total_items settings matches ..0 run scoreboard players set .total_items settings 0
 
 # console log

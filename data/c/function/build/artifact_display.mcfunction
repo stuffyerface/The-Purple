@@ -1,3 +1,3 @@
-execute align xyz positioned ~0.5 ~1.5 ~0.5 run summon text_display ~ ~-0.1 ~ {billboard:"vertical",brightness:{sky:15,block:10},shadow:1b,alignment:"center",Tags:["lobby.artifact_display","empty"],text:'{"color":"red","text":"?"}',background:0,transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f]}
+execute align xyz positioned ~0.5 ~1.5 ~0.5 run summon text_display ~ ~-0.1 ~ {billboard:"vertical",brightness:{sky:15,block:10},shadow:1b,alignment:"center",Tags:["lobby.artifact_display","empty"],text:{"color":"red","text":"?"},background:0,transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f]}
 execute align xyz positioned ~0.5 ~1.5 ~0.5 run summon interaction ~ ~-1.5 ~ {width:1.01f,height:2f,response:1b,Tags:["lobby.artifact_display","empty"]}
 setblock ~ ~ ~ chiseled_tuff

@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.rope] run return run functi
 
 # give artifact
 tag @s add artifact.rope
-give @s lead[max_stack_size=1,item_name='{"fallback":"Spare Rope","translate":"item.purple.artifact.rope.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_ROPE"}] 1
+give @s lead[max_stack_size=1,item_name={"fallback":"Spare Rope","translate":"item.purple.artifact.rope.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_ROPE"}] 1
+scoreboard players set artifact.rope data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

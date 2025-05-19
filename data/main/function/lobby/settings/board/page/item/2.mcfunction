@@ -2,7 +2,7 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"selector":"@s"},{"text":" swapped
 kill @e[tag=settings,tag=!setting.board,tag=!setting.title,distance=..5]
 
 # set title
-execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:'[{"text":"\\n","bold":true},{"translate":"setting.purple.title.item","fallback":"Item Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\\n                      ","color":"gray"}]'}
+execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:[{"text":"\n","bold":true},{"translate":"setting.purple.title.item","fallback":"Item Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\n                      ","color":"gray"}]}
 
 # elements
 execute positioned ~-2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"WIND_CHARGE",texture:'"minecraft:wind_charge"'}

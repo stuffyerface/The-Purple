@@ -13,11 +13,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "item_name": "[{\"fallback\":\"Diving Mask\",\"translate\":\"item.purple.treasure.diving_mask\"},\" \",{\"color\":\"gold\",\"fallback\":\"🪙\",\"translate\":\"icon.purple.treasure\"}]",
+                "minecraft:item_name": [{"fallback":"Diving Mask","translate":"item.purple.treasure.diving_mask"}," ",{"color":"gold","fallback":"🪙","translate":"icon.purple.treasure"}],
                 "minecraft:lore": [
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"A broken diving suit piece.\",\"italic\":false,\"translate\":\"item.purple.treasure.diving_mask.1\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"It seems to be cracked.\",\"italic\":false,\"translate\":\"item.purple.treasure.diving_mask.2\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"all over.\",\"italic\":false,\"translate\":\"item.purple.treasure.diving_mask.3\"}]"
+                  [" ",{"color":"gray","fallback":"A broken diving suit piece.","italic":false,"translate":"item.purple.treasure.diving_mask.1"}],
+                  [" ",{"color":"gray","fallback":"It seems to be cracked","italic":false,"translate":"item.purple.treasure.diving_mask.2"}],
+                  [" ",{"color":"gray","fallback":"all over.","italic":false,"translate":"item.purple.treasure.diving_mask.3"}]
                 ],
                 "minecraft:max_stack_size": 99,
                 "minecraft:custom_data": "{id:DIVING_MASK}",
@@ -27,18 +27,18 @@
                   "types": "#minecraft:is_fire"
                 },
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:respiration": 7
-                  },
-                  "show_in_tooltip": false
-                },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
+                  "minecraft:respiration": 7
                 },
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:item.armor.equip_netherite"
+                },
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:attribute_modifiers"
+                  ]
                 }
               }
             }
@@ -46,17 +46,18 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:silence_armor_trim_smithing_template",
+          "name": "minecraft:netherite_chestplate",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "item_name": "[{\"fallback\":\"Oxygen Tank\",\"translate\":\"item.purple.treasure.oxygen_tank\"},\" \",{\"color\":\"gold\",\"fallback\":\"🪙\",\"translate\":\"icon.purple.treasure\"}]",
+                "minecraft:item_model": "minecraft:silence_armor_trim_smithing_template",
+                "minecraft:item_name": [{"fallback":"Oxygen Tank","translate":"item.purple.treasure.oxygen_tank"}," ",{"color":"gold","fallback":"🪙","translate":"icon.purple.treasure"}],
                 "minecraft:lore": [
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"A broken diving suit piece.\",\"italic\":false,\"translate\":\"item.purple.treasure.oxygen_tank.1\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"Still full of air, however\",\"italic\":false,\"translate\":\"item.purple.treasure.oxygen_tank.2\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"its badly scratched.\",\"italic\":false,\"translate\":\"item.purple.treasure.oxygen_tank.3\"}]"
+                  [" ",{"color":"gray","fallback":"A broken diving suit piece.","italic":false,"translate":"item.purple.treasure.oxygen_tank.1"}],
+                  [" ",{"color":"gray","fallback":"Still full of air, however","italic":false,"translate":"item.purple.treasure.oxygen_tank.2"}],
+                  [" ",{"color":"gray","fallback":"it is badly scratched.","italic":false,"translate":"item.purple.treasure.oxygen_tank.3"}]
                 ],
                 "minecraft:max_stack_size": 99,
                 "minecraft:custom_data": "{id:OXYGEN_TANK}",
@@ -65,16 +66,22 @@
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"
                 },
-                "minecraft:hide_additional_tooltip": {},
                 "minecraft:equippable": {
                   "slot": "chest",
                   "equip_sound": "minecraft:item.armor.equip_netherite",
-                  "model": "netherite"
+                  "asset_id": "netherite"
                 },
                 "minecraft:trim": {
                   "material": "minecraft:diamond",
-                  "pattern": "minecraft:vex",
-                  "show_in_tooltip": false
+                  "pattern": "minecraft:vex"
+                },
+                "!minecraft:max_damage": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:trim",
+                    "minecraft:attribute_modifiers"
+                  ]
                 }
               }
             }
@@ -88,11 +95,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "item_name": "[{\"fallback\":\"Wetsuit Pants\",\"translate\":\"item.purple.treasure.wetsuit_pants\"},\" \",{\"color\":\"gold\",\"fallback\":\"🪙\",\"translate\":\"icon.purple.treasure\"}]",
+                "minecraft:item_name": [{"fallback":"Wetsuit Pants","translate":"item.purple.treasure.wetsuit_pants"}," ",{"color":"gold","fallback":"🪙","translate":"icon.purple.treasure"}],
                 "minecraft:lore": [
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"A broken diving suit piece.\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_pants.1\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"The fabric has been torn\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_pants.2\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"in several places.\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_pants.3\"}]"
+                  [" ",{"color":"gray","fallback":"A broken diving suit piece.","italic":false,"translate":"item.purple.treasure.wetsuit_pants.1"}],
+                  [" ",{"color":"gray","fallback":"The fabric has been torn","italic":false,"translate":"item.purple.treasure.wetsuit_pants.2"}],
+                  [" ",{"color":"gray","fallback":"in several places.","italic":false,"translate":"item.purple.treasure.wetsuit_pants.3"}]
                 ],
                 "minecraft:max_stack_size": 99,
                 "minecraft:custom_data": "{id:WETSUIT_PANTS}",
@@ -102,9 +109,11 @@
                   "types": "#minecraft:is_fire"
                 },
                 "!minecraft:max_damage": {},
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
                 }
               }
             }
@@ -118,11 +127,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "item_name": "[{\"fallback\":\"Wetsuit Fins\",\"translate\":\"item.purple.treasure.wetsuit_fins\"},\" \",{\"color\":\"gold\",\"fallback\":\"🪙\",\"translate\":\"icon.purple.treasure\"}]",
+                "minecraft:item_name": [{"fallback":"Wetsuit Fins","translate":"item.purple.treasure.wetsuit_fins"}," ",{"color":"gold","fallback":"🪙","translate":"icon.purple.treasure"}],
                 "minecraft:lore": [
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"A broken diving suit piece.\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_fins.1\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"It looks like a bite was\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_fins.2\"}]",
-                  "[\" \",{\"color\":\"gray\",\"fallback\":\"taken out of one of the fins.\",\"italic\":false,\"translate\":\"item.purple.treasure.wetsuit_fins.3\"}]"
+                  [" ",{"color":"gray","fallback":"A broken diving suit piece.","italic":false,"translate":"item.purple.treasure.wetsuit_fins.1"}],
+                  [" ",{"color":"gray","fallback":"It looks like a bite was","italic":false,"translate":"item.purple.treasure.wetsuit_fins.2"}],
+                  [" ",{"color":"gray","fallback":"taken out of one of the fins.","italic":false,"translate":"item.purple.treasure.wetsuit_fins.3"}]
                 ],
                 "minecraft:max_stack_size": 99,
                 "minecraft:custom_data": "{id:WETSUIT_FINS}",
@@ -131,30 +140,28 @@
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"
                 },
-                "!minecraft:max_damage": {},
-                "minecraft:dyed_color": {
-                  "rgb": 7233118,
-                  "show_in_tooltip": false
-                },
                 "minecraft:trim": {
                   "material": "minecraft:netherite",
-                  "pattern": "minecraft:wild",
-                  "show_in_tooltip": false
+                  "pattern": "minecraft:wild"
                 },
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:depth_strider": 3
-                  },
-                  "show_in_tooltip": false
-                },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
+                  "minecraft:depth_strider": 3
                 },
                 "minecraft:equippable": {
                   "slot": "feet",
                   "equip_sound": "minecraft:item.armor.equip_netherite",
-                  "model": "leather"
+                  "asset_id": "leather"
+                },
+                "minecraft:dyed_color": 7233118,
+                "!minecraft:max_damage": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color",
+                    "minecraft:trim",
+                    "minecraft:enchantments",
+                    "minecraft:attribute_modifiers"
+                  ]
                 }
               }
             }

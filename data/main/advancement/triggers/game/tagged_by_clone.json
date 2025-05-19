@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "hit_by_clone": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"clone\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:game/tag/triggers/tagged_by_clone"
+  }
+}

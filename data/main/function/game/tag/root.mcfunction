@@ -27,6 +27,8 @@ execute if score .tick data matches 0 if score .time data matches 1 unless score
 execute if score .tick data matches 0 if score .time data matches 0.. unless score .game data matches 2.. store result bossbar main:time value run scoreboard players get .time data
 execute unless score .game data matches 2.. if score .time data matches 0.. run function main:message/game/timer_bossbar
 
+execute if score .tick data matches 0 if score .time data matches 10 unless score .freeze_time data matches 1.. as @a[tag=player,tag=alive] at @s run stopsound @s * purple:music.main
+execute if score .tick data matches 0 if score .time data matches 10 unless score .freeze_time data matches 1.. as @a[tag=player,tag=alive] at @s run playsound purple:music.near_end master @s ~ ~ ~ 0.33
 execute if score .tick data matches 0 if score .time data matches 3 unless score .freeze_time data matches 1.. as @a[tag=player] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
 execute if score .tick data matches 0 if score .time data matches 2 unless score .freeze_time data matches 1.. as @a[tag=player] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1.75
 execute if score .tick data matches 0 if score .time data matches 1 unless score .freeze_time data matches 1.. as @a[tag=player] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1.5

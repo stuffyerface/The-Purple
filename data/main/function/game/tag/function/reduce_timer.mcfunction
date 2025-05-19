@@ -15,7 +15,8 @@ execute if score .time data matches ..10 run scoreboard players operation .calc_
 execute if score .time data matches ..10 run scoreboard players operation .calc_percent dummy /= .og_time dummy
 execute store result bossbar main:time max run scoreboard players get .time data
 
-tellraw @a[tag=player] [{"color":"gray","translate":"message.purple.reduce_timer","fallback":"%3$s Time was reduced by %s for round %s!","with":[[{"score":{"objective":"dummy","name":".calc_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"text":"#","color":"yellow"},{"score":{"objective":"data","name":".round"}}],{"translate":"icon.purple.hourglass","fallback":"⌛","font":"purple:icon","color":"white"}],"hoverEvent":{"action":"show_text","value":[{"color":"green","translate":"message.purple.reduce_timer.hover","fallback":"From %s to %s, thats %s!","with":[[{"score":{"objective":"dummy","name":".og_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"score":{"objective":"data","name":".time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"score":{"objective":"dummy","name":".calc_percent"},"color":"yellow"},{"text":"%"}]]}]}}]
+tellraw @a[tag=player] [{"color":"gray","translate":"message.purple.reduce_timer","fallback":"%3$s Time was reduced by %s for round %s!","with":[[{"score":{"objective":"dummy","name":".calc_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"text":"#","color":"yellow"},{"score":{"objective":"data","name":".round"}}],{"translate":"icon.purple.hourglass","fallback":"⌛","color":"white"}],"hover_event":{"action":"show_text","value":[{"color":"green","translate":"message.purple.reduce_timer.hover","fallback":"From %s to %s, thats %s!","with":[[{"score":{"objective":"dummy","name":".og_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"score":{"objective":"data","name":".time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}],[{"score":{"objective":"dummy","name":".calc_percent"},"color":"yellow"},{"text":"%"}]]}]}}]
+execute if score .time data matches ..10 run scoreboard players set .time data 11
 scoreboard players reset .100 dummy
 scoreboard players reset .og_time dummy
 scoreboard players reset .calc_time dummy
@@ -24,7 +25,7 @@ scoreboard players reset .calc_percent dummy
 # %3$s Time was reduced by %s for round %s!
 # [{"score":{"objective":"dummy","name":".calc_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}]
 # [{"text":"#","color":"yellow"},{"score":{"objective":"data","name":".round"}}]
-# {"translate":"icon.purple.hourglass","fallback":"⌛","font":"purple:icon","color":"white"}
+# {"translate":"icon.purple.hourglass","fallback":"⌛","color":"white"}
 
 # From %s to %s, thats %s!
 # [{"score":{"objective":"dummy","name":".og_time"},"color":"yellow"},{"translate":"setting.purple.button.seconds","fallback":"s"}]

@@ -219,6 +219,50 @@
           }
         ]
       }
+    },
+    "rc_clone": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.source_ability.clone\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_clone": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.source_ability.clone\"]}"
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -232,7 +276,9 @@
       "rc_corruption",
       "lc_corruption",
       "rc_reach",
-      "lc_reach"
+      "lc_reach",
+      "rc_clone",
+      "lc_clone"
     ]
   ],
   "rewards": {

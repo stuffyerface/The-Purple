@@ -1,11 +1,9 @@
-scoreboard players reset @s return
-
 clear @s
 gamemode adventure
 function c:tp/current_location
 function main:game/tag/function/player_corrupt
-function main:id/team/set_color
-function main:module/disconnect/sync/marker
+function main:module/miscellaneous/setting/reach
+scoreboard players reset @s return
 
 scoreboard players set .corrupted data 0
 execute as @a[tag=source] run scoreboard players add .corrupted data 1

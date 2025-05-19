@@ -1,7 +1,7 @@
 scoreboard players enable @s setting.infection_time
 
 # filter
-execute if score @s setting.infection_time matches -2 run scoreboard players set @s setting.infection_time 35
+execute if score @s setting.infection_time matches -2 run scoreboard players set @s setting.infection_time 30
 execute unless score @s setting.infection_time matches -1..125 run function main:message/settings/invalid
 execute unless score @s setting.infection_time matches -1..125 run return run scoreboard players set @s setting.infection_time -2147483648
 

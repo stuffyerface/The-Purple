@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.ugly_fish] run return run f
 
 # give artifact
 tag @s add artifact.ugly_fish
-give @s pufferfish[max_stack_size=1,item_name='{"fallback":"Ugly Fish","translate":"item.purple.artifact.ugly_fish.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_UGLY_FISH"}] 1
+give @s pufferfish[max_stack_size=1,item_name={"fallback":"Ugly Fish","translate":"item.purple.artifact.ugly_fish.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_UGLY_FISH"}] 1
+scoreboard players set artifact.ugly_fish data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

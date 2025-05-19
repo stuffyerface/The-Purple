@@ -1,6 +1,7 @@
 # common setup stuff
 execute as @n[type=text_display,tag=lobby.artifact_display,tag=empty,distance=..2] run data merge entity @s {Tags:["lobby.artifact_display","full"],view_range:0f}
-tellraw @a {"translate":"message.purple.lobby.artifact.place","fallback":"%s placed the %s artifact!","with":[{"selector":"@p[tag=artifact.lantern]"},{"translate":"item.purple.artifact.lantern.name","fallback":"Lantern","color":"yellow"}],"color":"#76776F"}
+execute if entity @p[tag=artifact.lantern] run tellraw @a {"translate":"message.purple.lobby.artifact.place","fallback":"%s placed the %s artifact!","with":[{"selector":"@p[tag=artifact.lantern]"},{"translate":"item.purple.artifact.lantern.name","fallback":"Lantern","color":"yellow"}],"color":"#76776F"}
+execute unless entity @p[tag=artifact.lantern] run tellraw @a {"translate":"message.purple.lobby.artifact.placed","fallback":"The %s artifact was placed!","with":[{"translate":"item.purple.artifact.lantern.name","fallback":"Lantern","color":"yellow"}],"color":"#76776F"}
 tag @s remove empty
 tag @s add full
 tag @s add artifact.lantern
@@ -12,3 +13,4 @@ summon minecraft:item_display ~ ~0.23 ~ {Tags:["furniture.artifact","furniture.a
 
 # stat tracking
 scoreboard players add .total_artifacts data 1
+scoreboard players set artifact.lantern data 2

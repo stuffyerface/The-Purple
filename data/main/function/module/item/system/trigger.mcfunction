@@ -9,6 +9,12 @@ execute as @e[type=interaction,tag=item.display] at @s on target if entity @s[ta
 execute as @e[type=interaction,tag=item.display] at @s on target if entity @s[tag=pickup_item] run tag @n[type=item_display,tag=item.display] add modify_this_entity
 tag @s remove pickup_item
 
+# disable players from picking up item displays while teleporting
+execute if score @s teleport_lock matches 0.. at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 0.8
+execute if score @s teleport_lock matches 0.. run scoreboard players set @s actionbar 30
+execute if score @s teleport_lock matches 0.. run title @s actionbar [{"translate":"message.purple.impossible_pickup","fallback":"You cannot pick up this item!","color":"red"}]
+execute if score @s teleport_lock matches 0.. run return run function main:module/item/system/trigger_reset
+
 # disable players from picking up permanent item displays during the game
 execute if score .game data matches 0.. if entity @e[tag=modify_this_entity,tag=dontkillme] if entity @s[tag=player] at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 0.8
 execute if score .game data matches 0.. if entity @e[tag=modify_this_entity,tag=dontkillme] if entity @s[tag=player] run scoreboard players set @s actionbar 30

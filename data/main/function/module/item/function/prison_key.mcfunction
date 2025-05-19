@@ -35,38 +35,38 @@ execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~3 ~1
 execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~3 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.polished_tuff_slab.bottom"]}
 
 # select iron bars
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
-execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.es"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.sw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.en"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.nw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.es"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.sw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~0.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.en"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~1.000 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.iron_bars.nw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.es"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.sw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.en"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~1 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.nw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.es"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~-1.00 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.sw"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~0.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ns"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.en"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.ew"]}
+execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~2 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.iron_bars.nw"]}
 
 # select bottom
 execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-1.00 ~0 ~-1.00 if block ~ ~ ~ #minecraft:air run summon marker ~ ~ ~ {Tags:["new_prison_block","prison_block_marker","prison_block.chiseled_tuff"]}
@@ -89,23 +89,33 @@ execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.000 ~0 ~1
 execute if entity @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~1.000 ~0 ~1.000 if block ~ ~ ~ minecraft:water run summon marker ~ ~ ~ {Tags:["new_prison_block.water","prison_block_marker.water","prison_block_marker","prison_block.chiseled_tuff"]}
 
 # fill selection
-execute as @e[tag=new_prison_block,tag=prison_block.iron_bars] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.chiseled_tuff] at @s run fill ~ ~ ~ ~ ~ ~ chiseled_tuff replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.polished_tuff_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ polished_tuff_slab[type=bottom] replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_slab[type=bottom] replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.north] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=north] replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.south] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=south] replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.east] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=east] replace #minecraft:air
-execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.west] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=west] replace #minecraft:air
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.ew] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[west=true,east=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.ns] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[north=true,south=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.es] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[east=true,south=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.sw] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[south=true,west=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.nw] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[north=true,west=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.iron_bars.en] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[east=true,north=true] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.chiseled_tuff] at @s run fill ~ ~ ~ ~ ~ ~ chiseled_tuff replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.polished_tuff_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ polished_tuff_slab[type=bottom] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_slab[type=bottom] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.north] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=north] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.south] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=south] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.east] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=east] replace #minecraft:air strict
+execute as @e[tag=new_prison_block,tag=prison_block.tuff_brick_stairs.west] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[facing=west] replace #minecraft:air strict
 tag @e[tag=new_prison_block] remove new_prison_block
 
 # fill in water
-execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.chiseled_tuff] at @s run fill ~ ~ ~ ~ ~ ~ chiseled_tuff replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.polished_tuff_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ polished_tuff_slab[waterlogged=true,type=bottom] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_slab[waterlogged=true,type=bottom] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.north] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=north] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.south] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=south] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.east] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=east] replace minecraft:water
-execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.west] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=west] replace minecraft:water
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.ew] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,west=true,east=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.ns] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,north=true,south=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.es] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,east=true,south=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.sw] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,south=true,west=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.nw] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,north=true,west=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.iron_bars.en] at @s run fill ~ ~ ~ ~ ~ ~ iron_bars[waterlogged=true,east=true,north=true] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.chiseled_tuff] at @s run fill ~ ~ ~ ~ ~ ~ chiseled_tuff replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.polished_tuff_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ polished_tuff_slab[waterlogged=true,type=bottom] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_slab.bottom] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_slab[waterlogged=true,type=bottom] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.north] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=north] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.south] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=south] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.east] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=east] replace minecraft:water strict
+execute as @e[tag=new_prison_block.water,tag=prison_block.tuff_brick_stairs.west] at @s run fill ~ ~ ~ ~ ~ ~ tuff_brick_stairs[waterlogged=true,facing=west] replace minecraft:water strict
 tag @e[tag=new_prison_block.water] remove new_prison_block.water

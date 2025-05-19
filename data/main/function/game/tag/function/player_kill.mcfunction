@@ -14,6 +14,8 @@ tag @s remove dying
 tag @s remove alive
 tag @s remove infected
 tag @s remove source
+stopsound @s * purple:music.main
+execute if score .game data matches 1 at @s run playsound purple:music.dead master @s ~ ~ ~ 0.33
 execute if score .player_corruption disable matches 1 run tag @s add spectator
 execute if score .player_corruption disable matches 1 run gamemode spectator
 execute unless score .player_corruption disable matches 1 run function main:game/tag/function/player_corrupt
@@ -21,6 +23,7 @@ function main:message/tagged/death
 function main:id/team/set_color
 function main:module/disconnect/sync/marker
 function main:module/item/function/reset
+
 
 # stats
 scoreboard players add @s stat.total_deaths 1

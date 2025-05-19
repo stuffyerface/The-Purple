@@ -21,12 +21,14 @@ scoreboard players reset @s setting.rope_clicks
 scoreboard players reset @s setting.corruption_despawn_time
 scoreboard players reset @s setting.reach
 scoreboard players reset @s setting.round_teleport
+scoreboard players reset @s setting.meteor_spawn_chance
 
 scoreboard players reset @s ability.speed2
 scoreboard players reset @s ability.invisible
 scoreboard players reset @s ability.darkness
 scoreboard players reset @s ability.corruption
 scoreboard players reset @s ability.reach
+scoreboard players reset @s ability.clone
 scoreboard players reset @s ability.fireworks
 scoreboard players reset @s ability.speed
 scoreboard players reset @s ability.teleport

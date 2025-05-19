@@ -7,10 +7,12 @@ attribute @s minecraft:scale modifier add purple:corrupted -0.25 add_value
 effect give @s minecraft:weakness infinite 255 true
 function main:id/team/set_color
 function main:module/disconnect/sync/marker
+execute unless score @s return matches -2147483647.. at @s run stopsound @s * purple:music.dead
+execute unless score @s return matches -2147483647.. at @s run playsound purple:music.dead master @s ~ ~ ~ 0.33
 
 # items
 execute if predicate main:has_item/source run clear @s *[minecraft:custom_data={id:THE_PURPLE}]
-item replace entity @s armor.head with minecraft:calibrated_sculk_sensor[hide_tooltip={},enchantments={levels:{"minecraft:binding_curse":1}},enchantment_glint_override=false,equippable={slot:"head",equip_sound:"minecraft:intentionally_empty",camera_overlay:"misc/purple_corruption"}]
+item replace entity @s armor.head with minecraft:calibrated_sculk_sensor[enchantments={"minecraft:binding_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:["minecraft:enchantments"]},equippable={slot:"head",equip_sound:"minecraft:intentionally_empty",camera_overlay:"purple:misc/purple_corruption"}]
 function main:module/cosmetic/corrupted_armor
 function main:module/item/system/macro/give {id:"LOBBY",slot:"hotbar.8"}
 function main:module/item/system/macro/give {id:"SPECTATE",slot:"hotbar.7"}

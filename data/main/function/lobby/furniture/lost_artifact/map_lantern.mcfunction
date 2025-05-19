@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.lantern] run return run fun
 
 # give artifact
 tag @s add artifact.lantern
-give @s lantern[max_stack_size=1,item_name='{"fallback":"Lantern","translate":"item.purple.artifact.lantern.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_LANTERN"}] 1
+give @s lantern[max_stack_size=1,item_name={"fallback":"Lantern","translate":"item.purple.artifact.lantern.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_LANTERN"}] 1
+scoreboard players set artifact.lantern data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

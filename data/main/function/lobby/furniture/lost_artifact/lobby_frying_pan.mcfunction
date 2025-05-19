@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.frying_pan] run return run 
 
 # give artifact
 tag @s add artifact.frying_pan
-give @s music_disc_strad[max_stack_size=1,item_name='{"fallback":"Frying Pan","translate":"item.purple.artifact.frying_pan.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_FRYING_PAN"},jukebox_playable={song:"minecraft:strad",show_in_tooltip:false}] 1
+give @s music_disc_strad[max_stack_size=1,item_name={"fallback":"Frying Pan","translate":"item.purple.artifact.frying_pan.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_FRYING_PAN"},jukebox_playable="minecraft:strad",tooltip_display={hidden_components:["minecraft:jukebox_playable"]}] 1
+scoreboard players set artifact.frying_pan data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

@@ -10,7 +10,7 @@ execute store result bossbar main:time max run scoreboard players get .round_len
 
 # check last updater
 tag @s add modifiedSetting
-data merge entity @e[type=text_display,tag=setting.game.round_length-updater,limit=1] {text:'[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\\n                         "}]'}
+data merge entity @e[type=text_display,tag=setting.game.round_length-updater,limit=1] {text:[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\n                         "}]}
 data modify storage main:settings setting.game.round_length.last_updater_id set from entity @s UUID
 data modify storage main:settings setting.game.round_length.last_updater_name set from entity @e[type=text_display,tag=setting.game.round_length-updater,limit=1] text
 data remove entity @e[type=item_display,tag=setting.game.round_length-updater,limit=1] item.components.minecraft:profile
@@ -18,7 +18,7 @@ data modify entity @e[type=item_display,tag=setting.game.round_length-updater,li
 tag @s remove modifiedSetting
 
 # update settings board
-execute as @e[type=text_display,tag=setting.game.round_length] run data merge entity @s {text:'[{"translate":"setting.purple.button.round_length.name","fallback":"Round Length: %s","with":[["",{"score":{"objective":"settings","name":".round_length"},"color":"green"},{"translate":"setting.purple.button.seconds","fallback":"s"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
+execute as @e[type=text_display,tag=setting.game.round_length] run data merge entity @s {text:[{"translate":"setting.purple.button.round_length.name","fallback":"Round Length: %s","with":[["",{"score":{"objective":"settings","name":".round_length"},"color":"green"},{"translate":"setting.purple.button.seconds","fallback":"s"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
 
 # clean up
 playsound minecraft:ui.button.click block @s

@@ -1,3 +1,5 @@
+execute if entity @s[tag=dev] unless function main:lobby/border/disable_dev_bypass run return fail
+
 execute unless block ~ -41 ~ tinted_glass run particle falling_dust{block_state:"minecraft:amethyst_block"} ~ ~ ~ 5 5 5 0 50 normal @s
 execute if block ~ -40 ~ bedrock run return run function main:lobby/border/outside
 

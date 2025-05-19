@@ -1,4 +1,6 @@
-spreadplayers ~ ~ 1 3 false @e[tag=new_corrupt_block]
+spreadplayers ~ ~ 1 3 false @e[tag=new_corrupt_block,tag=!small,tag=!large]
+spreadplayers ~ ~ 1 2 false @e[tag=new_corrupt_block,tag=small]
+spreadplayers ~ ~ 1 7 false @e[tag=new_corrupt_block,tag=large]
 execute as @e[tag=new_corrupt_block] at @s if block ~ ~-1 ~ #main:non_solid run spreadplayers ~ ~ 0 2 false @s
 execute as @e[tag=new_corrupt_block] at @s if block ~ ~-1 ~ #main:non_solid run kill @s
 

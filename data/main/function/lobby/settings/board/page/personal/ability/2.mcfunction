@@ -2,11 +2,11 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"selector":"@s"},{"text":" swapped
 kill @e[tag=settings,tag=!setting.board,tag=!setting.title,distance=..5]
 
 # set title
-execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:'[{"text":"\\n","bold":true},{"translate":"setting.purple.title.spectator_ability","fallback":"Choose Your Spectator Ability","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\\n                                            ","color":"gray"}]'}
+execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:[{"text":"\n","bold":true},{"translate":"setting.purple.title.spectator_ability","fallback":"Choose Your Spectator Ability","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\n                                            ","color":"gray"}]}
 
 # elements
 execute positioned ~-1.85 ~3.1 ~ run function main:lobby/settings/board/element/rectangle_left {setting:'setting.spectator_ability.fireworks',translate:"setting.purple.button.spectator_ability.fireworks.name",fallback:"Fireworks",texture:'"minecraft:firework_rocket"',background:'"minecraft:gray_concrete"'}
-execute positioned ~-1.85 ~2.1 ~ run function main:lobby/settings/board/element/rectangle_left {setting:'setting.spectator_ability.speed',translate:"setting.purple.button.spectator_ability.speed.name",fallback:"Speed Burst",texture:'"minecraft:potion",components:{"minecraft:hide_additional_tooltip":{},"minecraft:potion_contents":{custom_color:61183}}',background:'"minecraft:gray_concrete"'}
+execute positioned ~-1.85 ~2.1 ~ run function main:lobby/settings/board/element/rectangle_left {setting:'setting.spectator_ability.speed',translate:"setting.purple.button.spectator_ability.speed.name",fallback:"Speed Burst",texture:'"minecraft:potion",components:{"minecraft:potion_contents":{custom_color:61183}}',background:'"minecraft:gray_concrete"'}
 execute positioned ~-1.85 ~1.1 ~ run function main:lobby/settings/board/element/rectangle_left {setting:'setting.spectator_ability.teleport',translate:"setting.purple.button.spectator_ability.teleport.name",fallback:"Random Teleport",texture:'"minecraft:ender_eye"',background:'"minecraft:gray_concrete"'}
 
 execute positioned ~2.15 ~3.1 ~ run function main:lobby/settings/board/element/rectangle_right {setting:'setting.spectator_ability.slime',translate:"setting.purple.button.spectator_ability.slime.name",fallback:"Slime Swarm",texture:'"minecraft:slime_ball"',background:'"minecraft:gray_concrete"'}

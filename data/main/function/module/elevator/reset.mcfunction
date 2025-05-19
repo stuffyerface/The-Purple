@@ -1,3 +1,5 @@
+execute unless loaded 0 92 2999 run return fail
+
 schedule clear main:module/elevator/loop
 scoreboard players set .elevator data 0
 scoreboard players reset .elevator_y dummy

@@ -1,0 +1,85 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "nightlibra",
+        "nbt": "{UUID:[I;-1364134607,-750761016,-1398478805,842316956]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "stuffy",
+        "nbt": "{UUID:[I;754748853,1911377587,-1429384264,-1409327390]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Evtema3",
+        "nbt": "{UUID:[I;1143768566,1044072941,-1808662431,483304317]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "YZEROgame",
+        "nbt": "{UUID:[I;-1879887536,-1673376384,-1653471241,-507601540]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Raster_",
+        "nbt": "{UUID:[I;1877453502,890390565,-1952184669,1702329988]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "BlockyM_",
+        "nbt": "{UUID:[I;1483758530,847266185,-1434587083,1169713739]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Tai_zazanek",
+        "nbt": "{UUID:[I;483675371,1918650750,-1877476915,1372624576]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "ZeroIceBear",
+        "nbt": "{UUID:[I;2009721405,-2095561811,-1075379032,1294848694]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Shirowh_",
+        "nbt": "{UUID:[I;-1533562451,550719413,-1348927752,-160709537]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Pingoda",
+        "nbt": "{UUID:[I;153821213,-1550038881,-1824307139,1741933896]}"
+      }
+    }
+  ]
+}

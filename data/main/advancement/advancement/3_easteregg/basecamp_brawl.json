@@ -5,12 +5,12 @@
       "count": 1
     },
     "title": {
-      "translate": "advancements.top_secret.basecamp_brawl.title",
+      "translate": "advancements.easteregg.basecamp_brawl.title",
       "fallback": "Basecamp Brawl"
     },
     "description": {
-      "translate": "advancements.top_secret.basecamp_brawl.description",
-      "fallback": "Win a game in the Lobby"
+      "translate": "advancements.easteregg.basecamp_brawl.description",
+      "fallback": "Win a game on the Home Base secret map"
     },
     "frame": "task",
     "show_toast": true,

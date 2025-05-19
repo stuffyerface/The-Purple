@@ -2,30 +2,16 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:enchantments": {
-        "levels": {
-          "minecraft:lure": 5
-        },
-        "show_in_tooltip": false
-      }
-    }
-  },
-  {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:enchantment_glint_override": true
-    }
-  },
-  {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:custom_data": "{id:SUPER_FISHING_ROD}"
-    }
-  },
-  {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:item_name": "{\"fallback\":\"nightlibra's Fishing Rod\",\"translate\":\"item.purple.super_fishing_rod\"}"
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments",
+          "minecraft:unbreakable"
+        ]
+      },
+      "minecraft:enchantments": {"minecraft:lure": 5},
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_data": "{id:SUPER_FISHING_ROD}",
+      "minecraft:item_name": {"fallback":"nightlibra's Fishing Rod","translate":"item.purple.super_fishing_rod"}
     }
   }
 ]

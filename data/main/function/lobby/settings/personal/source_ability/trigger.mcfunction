@@ -12,6 +12,8 @@ execute if entity @s[advancements={main:triggers/settings/personal/source_abilit
 execute if entity @s[advancements={main:triggers/settings/personal/source_ability={lc_corruption=true}}] run function main:lobby/settings/personal/source_ability/corruption/root
 execute if entity @s[advancements={main:triggers/settings/personal/source_ability={rc_reach=true}}] run function main:lobby/settings/personal/source_ability/reach/root
 execute if entity @s[advancements={main:triggers/settings/personal/source_ability={lc_reach=true}}] run function main:lobby/settings/personal/source_ability/reach/root
+execute if entity @s[advancements={main:triggers/settings/personal/source_ability={rc_clone=true}}] run function main:lobby/settings/personal/source_ability/clone/root
+execute if entity @s[advancements={main:triggers/settings/personal/source_ability={lc_clone=true}}] run function main:lobby/settings/personal/source_ability/clone/root
 
 # clean up
 playsound minecraft:ui.button.click block @s

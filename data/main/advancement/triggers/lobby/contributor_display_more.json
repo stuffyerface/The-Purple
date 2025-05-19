@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"lobby.contributor_display\",\"contributor\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"lobby.contributor_display\",\"contributor\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lc",
+      "rc"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/furniture/contributor_display/credit_display/trigger"
+  }
+}

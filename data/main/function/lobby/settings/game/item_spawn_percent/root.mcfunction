@@ -9,7 +9,7 @@ execute if entity @s[advancements={main:triggers/settings/game/item_spawn_percen
 
 # check last updater
 tag @s add modifiedSetting
-data merge entity @e[type=text_display,tag=setting.game.item_spawn_percent-updater,limit=1] {text:'[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\\n                         "}]'}
+data merge entity @e[type=text_display,tag=setting.game.item_spawn_percent-updater,limit=1] {text:[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\n                         "}]}
 data modify storage main:settings setting.game.item_spawn_percent.last_updater_id set from entity @s UUID
 data modify storage main:settings setting.game.item_spawn_percent.last_updater_name set from entity @e[type=text_display,tag=setting.game.item_spawn_percent-updater,limit=1] text
 data remove entity @e[type=item_display,tag=setting.game.item_spawn_percent-updater,limit=1] item.components.minecraft:profile
@@ -17,7 +17,7 @@ data modify entity @e[type=item_display,tag=setting.game.item_spawn_percent-upda
 tag @s remove modifiedSetting
 
 # update settings board
-execute as @e[type=text_display,tag=setting.game.item_spawn_percent] run data merge entity @s {text:'[{"translate":"setting.purple.button.item_spawn_percent.name","fallback":"Item Spawn Chance: %s","with":[["",{"score":{"objective":"settings","name":".item_spawn_percent"},"color":"green"},{"translate":"setting.purple.button.percent","fallback":"%"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
+execute as @e[type=text_display,tag=setting.game.item_spawn_percent] run data merge entity @s {text:[{"translate":"setting.purple.button.item_spawn_percent.name","fallback":"Item Spawn Chance: %s","with":[["",{"score":{"objective":"settings","name":".item_spawn_percent"},"color":"green"},{"translate":"setting.purple.button.percent","fallback":"%"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
 
 # clean up
 playsound minecraft:ui.button.click block @s

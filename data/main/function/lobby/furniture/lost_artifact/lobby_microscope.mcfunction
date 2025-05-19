@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.microscope] run return run 
 
 # give artifact
 tag @s add artifact.microscope
-give @s spyglass[max_stack_size=1,item_name='{"fallback":"Microscope","translate":"item.purple.artifact.microscope.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_MICROSCOPE"}] 1
+give @s spyglass[max_stack_size=1,item_name={"fallback":"Microscope","translate":"item.purple.artifact.microscope.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_MICROSCOPE"}] 1
+scoreboard players set artifact.microscope data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

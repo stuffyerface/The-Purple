@@ -1,6 +1,7 @@
 execute unless score .game data matches 2 run scoreboard players set .game data 2
 execute unless score .time data matches 0 run scoreboard players set .time data 0
 
+execute unless score .between_rounds data matches 1.. if function main:module/music/reset_most as @a[tag=alive] at @s run playsound purple:music.end_hit master @s ~ ~ ~ 0.33
 execute unless score .between_rounds data matches 1.. run function main:message/game/end_round
 execute unless score .between_rounds data matches 1.. run function main:game/tag/function/kill_infected
 execute unless score .between_rounds data matches 1.. run bossbar set main:time players @a[tag=player]

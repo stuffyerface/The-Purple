@@ -1,6 +1,6 @@
 # setting
 $summon item_display ~-2 ~0.4 ~0.002 {Tags:["$(setting)","settings"],item_display:"gui",billboard:"fixed",item:{id:$(texture),count:1},Rotation:[180.0f,0.0f],transformation:[1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,0.01f,0.0f,0.0f,0.0f,0.0f,2.0f]}
-$summon text_display ~ ~ ~0.001 {Tags:["$(setting)","settings"],shadow:1b,background:0,alignment:"left",text:'[{"translate":"$(translate)","fallback":"$(fallback)","with":[$(with)]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
+$summon text_display ~ ~ ~0.001 {Tags:["$(setting)","settings"],shadow:1b,background:0,alignment:"left",text:[{"translate":"$(translate)","fallback":"$(fallback)","with":[$(with)]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
 $summon interaction ~-0.21 ~0.075 ~-1.9 {Tags:["$(setting)","settings","rectangle_setting"],width:4.1f,height:0.6f,response:1b} 
 $summon block_display ~-2.250 ~0.08 ~-0.001 {Tags:["$(setting)","settings","setting.background","setting.background.1"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
 $summon block_display ~-1.665 ~0.08 ~-0.001 {Tags:["$(setting)","settings","setting.background","setting.background.2"],billboard:"fixed",block_state:{Name:$(background),count:1},transformation:[0.88f,0.0f,0.0f,0.0f,0.0f,0.88f,0.0f,0.0f,0.0f,0.0f,0.002f,0.0f,0.0f,0.0f,0.0f,1.5f]}
@@ -12,6 +12,6 @@ $summon block_display ~1.2600 ~0.08 ~-0.001 {Tags:["$(setting)","settings","sett
 
 # last updated by
 $summon item_display ~4.55 ~0.55 ~0.002 {Tags:["$(setting)-updater","settings"],item_display:"none",billboard:"fixed",item:{id:"minecraft:player_head",count:1},Rotation:[180.0f,0.0f],transformation:[1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,0.01f,0.0f,0.0f,0.0f,0.0f,1.5f]}
-$summon text_display ~3.20 ~0.05 ~0.002 {Tags:["$(setting)-updater","settings"],line_width:110,shadow:1b,background:0,alignment:"right",text:'["",{"text":" ","color":"gray","strikethrough":true}," ",{"translate":"setting.purple.button.default","fallback":"default","color":"gray"},{"text":"\\n                         "}]',transformation:[1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,0.02f,0.0f,0.0f,0.0f,0.0f,1.25f]}
+$summon text_display ~3.20 ~0.05 ~0.002 {Tags:["$(setting)-updater","settings"],line_width:110,shadow:1b,background:0,alignment:"right",text:["",{"text":" ","color":"gray","strikethrough":true}," ",{"translate":"setting.purple.button.default","fallback":"default","color":"gray"},{"text":"\n                         "}],transformation:[1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,0.02f,0.0f,0.0f,0.0f,0.0f,1.25f]}
 $data modify entity @e[type=item_display,tag=$(setting)-updater,limit=1] item.components.minecraft:profile.id set from storage main:settings $(setting).last_updater_id
 $data modify entity @e[type=text_display,tag=$(setting)-updater,limit=1] text set from storage main:settings $(setting).last_updater_name

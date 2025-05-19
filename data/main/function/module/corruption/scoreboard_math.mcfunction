@@ -4,7 +4,6 @@ scoreboard players set .divide infected 15
 scoreboard players operation .math infected = .total infected
 scoreboard players operation .math infected /= .divide infected
 scoreboard players operation .add infected = .math infected
-execute if score .math infected matches ..5 run scoreboard players set .math infected 5
 
 scoreboard players operation .01 infected = .math infected
 scoreboard players operation .math infected += .add infected

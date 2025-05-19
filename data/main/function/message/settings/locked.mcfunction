@@ -1,4 +1,4 @@
-execute if entity @s[tag=admin] run return 0
+execute if entity @s[tag=dev] run return 0
 
 scoreboard players set @s actionbar 30
 title @s actionbar {"translate":"message.purple.locked","fallback":"This is locked during the game!","color":"red"}

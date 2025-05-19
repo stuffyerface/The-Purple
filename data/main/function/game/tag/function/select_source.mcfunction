@@ -21,6 +21,8 @@ execute as @a[tag=source] run advancement grant @s only main:advancement/1_gamep
 execute as @a[tag=alive] run function main:id/team/set_color
 execute as @a[tag=alive] run function main:module/disconnect/sync/marker
 
+function main:module/music/loop/main_theme
+
 scoreboard players set .corrupted data 0
 execute as @a[tag=source] run scoreboard players add .corrupted data 1
 scoreboard players set .spectating data 0

@@ -5,6 +5,7 @@ tellraw @a[tag=debug] ["[Console] ",{"text":"Setup complete.","color":"green"}]
 setworldspawn -23 16 -5
 time set 14000
 function init:load_items
+function init:setup/rock
 bossbar add main:time ""
 bossbar set main:time color purple
 team add hide_nametag
@@ -59,7 +60,6 @@ scoreboard objectives add cooldown.item.ready dummy
 scoreboard objectives add cooldown.item.not_ready dummy
 scoreboard objectives add cooldown.furniture.contributor_display.stuffy dummy
 scoreboard objectives add cooldown.furniture.contributor_display.nightlibra dummy
-scoreboard objectives add cooldown.furniture.use_elevator dummy
 scoreboard objectives add stat.total_games dummy
 scoreboard objectives add stat.total_wins dummy
 scoreboard objectives add stat.total_rounds dummy
@@ -69,6 +69,7 @@ scoreboard objectives add stat.total_deaths_by_quicksand dummy
 scoreboard objectives add stat.total_revives dummy
 scoreboard objectives add stat.infection_received dummy
 scoreboard objectives add stat.infection_passed dummy
+scoreboard objectives add stat.used_elevator dummy
 scoreboard objectives add stat.found_items dummy
 scoreboard objectives add stat.item.small_mushroom dummy
 scoreboard objectives add stat.item.glow_horn dummy
@@ -121,12 +122,14 @@ scoreboard objectives add setting.rope_clicks trigger
 scoreboard objectives add setting.corruption_despawn_time trigger
 scoreboard objectives add setting.reach trigger
 scoreboard objectives add setting.round_teleport trigger
+scoreboard objectives add setting.meteor_spawn_chance trigger
 
 scoreboard objectives add ability.speed2 trigger
 scoreboard objectives add ability.invisible trigger
 scoreboard objectives add ability.darkness trigger
 scoreboard objectives add ability.corruption trigger
 scoreboard objectives add ability.reach trigger
+scoreboard objectives add ability.clone trigger
 
 scoreboard objectives add ability.fireworks trigger
 scoreboard objectives add ability.speed trigger
@@ -137,6 +140,7 @@ scoreboard objectives add ability.item trigger
 
 # set default settings
 scoreboard players set .game data -1
+scoreboard players set .elevator data 0
 scoreboard players set .map settings 1
 scoreboard players set .limit_ugly_fish settings 1
 scoreboard players set .rock_dupe settings 0
@@ -148,8 +152,8 @@ scoreboard players set .starting_immunity settings 3
 scoreboard players set .double_tap settings 1
 scoreboard players set .tagback settings 0
 scoreboard players set .total_items settings 10
-scoreboard players set .item_spawn_percent settings 40
-scoreboard players set .infection_time settings 35
+scoreboard players set .item_spawn_percent settings 75
+scoreboard players set .infection_time settings 30
 scoreboard players set .winners settings 1
 scoreboard players set .players_ready_percent settings 100
 scoreboard players set .offline_time settings 200
@@ -158,15 +162,17 @@ scoreboard players set .rope_clicks settings 5
 scoreboard players set .corruption_despawn_time settings 600
 scoreboard players set .reach settings 3
 scoreboard players set .round_teleport settings 5
+scoreboard players set .meteor_spawn_chance settings 50
 
 scoreboard players set .ability_speed2 settings 20
 scoreboard players set .ability_invisible settings 20
 scoreboard players set .ability_darkness settings 20
 scoreboard players set .ability_corruption settings 20
 scoreboard players set .ability_reach settings 20
+scoreboard players set .ability_clone settings 20
 
 scoreboard players set .ability_fireworks settings 15
-scoreboard players set .ability_speed settings 10
+scoreboard players set .ability_speed settings 15
 scoreboard players set .ability_teleport settings 30
 scoreboard players set .ability_slime settings 20
 scoreboard players set .ability_time settings 60
@@ -256,7 +262,7 @@ scoreboard players display name $line6 title ""
 scoreboard players display name $line5 title ""
 scoreboard players display name $line4 title ""
 scoreboard players display name $line3 title ""
-scoreboard players display name $line2 title {"translate":"scoreboard.purple.footer.1","fallback":"Made by stuffy","color":"#555555"}
+scoreboard players display name $line2 title {"translate":"scoreboard.purple.footer.1","fallback":"Made by Stuffy","color":"#555555"}
 scoreboard players display name $line1 title {"translate":"scoreboard.purple.footer.2","fallback":" and nightlibra","color":"#555555"}
 scoreboard players display numberformat $line15 title blank
 scoreboard players display numberformat $line14 title blank

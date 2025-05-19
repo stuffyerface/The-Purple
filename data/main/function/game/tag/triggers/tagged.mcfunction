@@ -8,17 +8,17 @@ advancement revoke @s only main:triggers/game/tagged
 #execute on attacker unless entity @s[distance=..6] run return run tellraw @a[tag=debug] ["[Console] ",{"selector":"@s"},{"text":" triggered a distance check","color":"dark_red"}]
 
 # if already tagged, return
-execute unless entity @s[tag=player] at @s on attacker run return run function main:message/tagged/invalid_target
+execute unless entity @s[tag=player] unless entity @s[tag=disconnect.zombie] at @s on attacker run return run function main:message/tagged/invalid_target
 execute if entity @s[tag=source] at @s on attacker run return run function main:message/tagged/already_infected
 execute if entity @s[tag=corrupted] at @s on attacker run return run function main:message/tagged/already_dead
 execute on attacker if entity @s[tag=dying] run return fail
 
 # [safety vest item] if the hit gets cancelled, return
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}},Slot:102b}]}] at @s run scoreboard players add @s stat.item.safety_vest 1
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}},Slot:102b}]}] at @s run function main:message/tagged/safety_vest
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}},Slot:102b}]}] at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}},Slot:102b}]}] at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}},Slot:102b}]}] at @s run return run item replace entity @s armor.chest with air
+execute if predicate main:has_item/safety_vest at @s run scoreboard players add @s stat.item.safety_vest 1
+execute if predicate main:has_item/safety_vest at @s run function main:message/tagged/safety_vest
+execute if predicate main:has_item/safety_vest at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
+execute if predicate main:has_item/safety_vest at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
+execute if predicate main:has_item/safety_vest at @s run return run item replace entity @s armor.chest with air
 
 # [starting immunity setting] if immune, return
 execute if score .starting_immunity data matches 1.. run playsound minecraft:item.shield.block player @a[distance=..10]

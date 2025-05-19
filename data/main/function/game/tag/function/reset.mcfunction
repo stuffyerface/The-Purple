@@ -1,4 +1,5 @@
 function main:module/elevator/reset
+function main:module/music/reset
 schedule clear main:game/tag/start
 execute as @a[tag=player] run ride @s dismount
 execute at @a[tag=player] run kill @e[type=item,distance=..1]
@@ -6,8 +7,10 @@ tp @e[tag=victory_dance] ~ -64 ~
 kill @e[tag=victory_dance]
 kill @e[tag=disconnect.zombie]
 kill @e[tag=footstep]
+kill @e[tag=kill_meteor]
 kill @e[tag=corrupt_block,tag=!dontkillme]
 kill @e[tag=item.display,tag=!dontkillme]
+kill @e[tag=item.display.gravity]
 kill @e[tag=death_effect.grave,tag=!dontkillme]
 kill @e[type=#main:kill]
 tag @e[tag=item_spawner] remove item
@@ -39,6 +42,7 @@ execute as @a[tag=!player] run function c:item/ready
 execute as @a[tag=player] run gamemode adventure @s
 execute as @a[tag=player] run scoreboard players set @s teleport_lock 0
 execute as @a[tag=player] run function main:game/tag/function/player_reset
+execute as @a[tag=was_in_game] run tag @s remove was_in_game
 function main:game/tag/function/check_required
 
 execute at @e[tag=block.turtle_egg.1] unless block ~ ~ ~ turtle_egg[eggs=1] run setblock ~ ~ ~ turtle_egg[eggs=1]

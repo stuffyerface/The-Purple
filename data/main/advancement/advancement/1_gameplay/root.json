@@ -13,7 +13,7 @@
       "translate": "advancements.gameplay.root.description",
       "fallback": "Enjoy the game! :)"
     },
-    "background": "minecraft:textures/block/chorus_plant.png",
+    "background": "minecraft:block/chorus_plant",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

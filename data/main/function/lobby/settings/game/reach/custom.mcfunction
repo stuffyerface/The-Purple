@@ -11,5 +11,5 @@ scoreboard players operation .reach settings = @s setting.reach
 scoreboard players set @s setting.reach -2147483648
 
 # update page
-execute unless entity @n[tag=setting.game.reach,distance=..10] at @n[tag=setting.board] run function main:lobby/settings/board/page/game/5
+execute unless entity @n[tag=setting.game.reach,distance=..10] at @n[tag=setting.board] run function main:lobby/settings/board/page/game/6
 function main:lobby/settings/game/reach/root

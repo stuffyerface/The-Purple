@@ -10,9 +10,9 @@
     },
     "description": {
       "translate": "advancements.challenge.root.description",
-      "fallback": "Can you complete them all? Good luck, You'll need it!"
+      "fallback": "Can you complete them all? Good luck, you'll need it!"
     },
-    "background": "minecraft:textures/block/ancient_debris_side.png",
+    "background": "minecraft:block/ancient_debris_side",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

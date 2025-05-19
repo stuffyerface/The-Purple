@@ -7,9 +7,20 @@ execute as @e[type=interaction,tag=lobby.artifact_display] at @s on target if en
 tag @s remove interact_with_display
 
 # debug stick
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] at @n[tag=modify_this_entity,tag=full] positioned ~ ~1 ~ run scoreboard players remove .total_artifacts data 1
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] run scoreboard players remove .total_artifacts data 1
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.frying_pan] run scoreboard players reset artifact.frying_pan data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.microscope] run scoreboard players reset artifact.microscope data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.ugly_fish] run scoreboard players reset artifact.ugly_fish data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.potted_plant] run scoreboard players reset artifact.potted_plant data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.rope] run scoreboard players reset artifact.rope data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.drill] run scoreboard players reset artifact.drill data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.meteorite] run scoreboard players reset artifact.meteorite data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.gears] run scoreboard players reset artifact.gears data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.lantern] run scoreboard players reset artifact.lantern data
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] as @n[tag=modify_this_entity,tag=full] if entity @s[tag=artifact.test] run scoreboard players reset artifact.test data
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] at @n[tag=modify_this_entity,tag=full] positioned ~ ~1 ~ run kill @e[distance=..1,tag=furniture.artifact]
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:debug_stick"}}] at @n[tag=modify_this_entity,tag=full] as @e[limit=2,sort=nearest,tag=lobby.artifact_display,tag=full] run data merge entity @s {Tags:["modify_this_entity","lobby.artifact_display","empty"],view_range:1f}
+
 
 # place artifacts
 execute if entity @s[tag=artifact.frying_pan] as @n[tag=modify_this_entity,tag=empty] at @s positioned ~ ~1 ~ run function main:lobby/furniture/artifact_display/lobby_frying_pan

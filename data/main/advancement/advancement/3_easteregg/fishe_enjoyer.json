@@ -5,12 +5,12 @@
       "count": 1
     },
     "title": {
-      "translate": "advancements.top_secret.fishe_enjoyer.title",
+      "translate": "advancements.easteregg.fishe_enjoyer.title",
       "fallback": "Fishe Enjoyer"
     },
     "description": {
-      "translate": "advancements.top_secret.fishe_enjoyer.description",
-      "fallback": "Fish using nightlibra's\nFishing Rod"
+      "translate": "advancements.easteregg.fishe_enjoyer.description",
+      "fallback": "Catch a fish while using nightlibra's\nFishing Rod"
     },
     "frame": "task",
     "show_toast": true,

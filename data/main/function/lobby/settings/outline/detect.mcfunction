@@ -24,6 +24,7 @@ execute if entity @s[tag=setting.game.corruption_despawn_time] unless entity @e[
 execute if entity @s[tag=setting.game.reduce_timer] unless entity @e[type=text_display,tag=setting.game.reduce_timer.desc] at @n[type=text_display,tag=setting.game.reduce_timer] run return run function main:lobby/settings/game/reduce_timer/description
 execute if entity @s[tag=setting.game.reach] unless entity @e[type=text_display,tag=setting.game.reach.desc] at @n[type=text_display,tag=setting.game.reach] run return run function main:lobby/settings/game/reach/description
 execute if entity @s[tag=setting.game.round_teleport] unless entity @e[type=text_display,tag=setting.game.round_teleport.desc] at @n[type=text_display,tag=setting.game.round_teleport] run return run function main:lobby/settings/game/round_teleport/description
+execute if entity @s[tag=setting.game.meteor_spawn_chance] unless entity @e[type=text_display,tag=setting.game.meteor_spawn_chance.desc] at @n[type=text_display,tag=setting.game.meteor_spawn_chance] run return run function main:lobby/settings/game/meteor_spawn_chance/description
 
 # add setting presets descriptions
 execute if entity @s[tag=setting.presets.1] unless entity @e[type=text_display,tag=setting.presets.1.desc] at @n[type=text_display,tag=setting.presets.1] run return run function main:lobby/settings/game/presets/1/description
@@ -47,6 +48,7 @@ execute if entity @s[tag=setting.source_ability.invisible] unless entity @e[type
 execute if entity @s[tag=setting.source_ability.darkness] unless entity @e[type=text_display,tag=setting.source_ability.darkness.desc] at @n[type=text_display,tag=setting.source_ability.darkness] run return run function main:lobby/settings/personal/source_ability/darkness/description
 execute if entity @s[tag=setting.source_ability.corruption] unless entity @e[type=text_display,tag=setting.source_ability.corruption.desc] at @n[type=text_display,tag=setting.source_ability.corruption] run return run function main:lobby/settings/personal/source_ability/corruption/description
 execute if entity @s[tag=setting.source_ability.reach] unless entity @e[type=text_display,tag=setting.source_ability.reach.desc] at @n[type=text_display,tag=setting.source_ability.reach] run return run function main:lobby/settings/personal/source_ability/reach/description
+execute if entity @s[tag=setting.source_ability.clone] unless entity @e[type=text_display,tag=setting.source_ability.clone.desc] at @n[type=text_display,tag=setting.source_ability.clone] run return run function main:lobby/settings/personal/source_ability/clone/description
 
 # add death effect descriptions
 execute if entity @s[tag=setting.death_effect.explode] unless entity @e[type=text_display,tag=setting.death_effect.explode.desc] at @n[type=text_display,tag=setting.death_effect.explode] run return run function main:lobby/settings/personal/death_effect/explode/description

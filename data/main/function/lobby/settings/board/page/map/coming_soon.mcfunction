@@ -3,7 +3,7 @@ execute if entity @s[type=player] run tellraw @a[tag=debug] [{"text":"[Console] 
 kill @e[tag=settings,tag=!setting.board,tag=!setting.title,distance=..5]
 
 # set title
-execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:'[{"text":"\\n","bold":true},{"translate":"setting.purple.title.map","fallback":"Map Selector","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\\n                     ","color":"gray"}]'}
+execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:[{"text":"\n","bold":true},{"translate":"setting.purple.title.map","fallback":"Map Selector","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\n                     ","color":"gray"}]}
 
 # map preview
 summon painting ~-1 ~2 ~ {Tags:["setting.map.coming_soon","settings"],variant:"minecraft:fighters",Invulnerable:1b,Rotation:[0.0f,0.0f]}

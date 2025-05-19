@@ -12,7 +12,7 @@
       "translate": "advancements.easteregg.root.description",
       "fallback": "Super Secret!"
     },
-    "background": "minecraft:textures/block/cherry_log.png",
+    "background": "minecraft:block/cherry_log",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

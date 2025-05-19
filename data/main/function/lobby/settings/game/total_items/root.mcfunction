@@ -9,7 +9,7 @@ execute if entity @s[advancements={main:triggers/settings/game/total_items={shif
 
 # save last updater
 tag @s add modifiedSetting
-data merge entity @e[type=text_display,tag=setting.game.total_items-updater,limit=1] {text:'[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\\n                         "}]'}
+data merge entity @e[type=text_display,tag=setting.game.total_items-updater,limit=1] {text:[{"text":""},{"text":" ","strikethrough":true,"color":"gray"},{"text":" "},{"selector":"@p[tag=modifiedSetting]"},{"text":"\n                         "}]}
 data modify storage main:settings setting.game.total_items.last_updater_id set from entity @s UUID
 data modify storage main:settings setting.game.total_items.last_updater_name set from entity @e[type=text_display,tag=setting.game.total_items-updater,limit=1] text
 data remove entity @e[type=item_display,tag=setting.game.total_items-updater,limit=1] item.components.minecraft:profile
@@ -17,8 +17,8 @@ data modify entity @e[type=item_display,tag=setting.game.total_items-updater,lim
 tag @s remove modifiedSetting
 
 # update settings board
-execute if score .total_items settings matches 1.. as @e[type=text_display,tag=setting.game.total_items] run data merge entity @s {text:'[{"translate":"setting.purple.button.total_items.name","fallback":"Total Items: %s","with":[["",{"score":{"objective":"settings","name":".total_items"},"color":"green"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
-execute if score .total_items settings matches ..0 as @e[type=text_display,tag=setting.game.total_items] run data merge entity @s {text:'[{"translate":"setting.purple.button.total_items.name","fallback":"Total Items: %s","with":[["",{"translate":"setting.purple.button.off","fallback":"Off","color":"red"}]]},{"strikethrough":true,"text":"\\n                                  ","color":"dark_gray"}]'}
+execute if score .total_items settings matches 1.. as @e[type=text_display,tag=setting.game.total_items] run data merge entity @s {text:[{"translate":"setting.purple.button.total_items.name","fallback":"Total Items: %s","with":[["",{"score":{"objective":"settings","name":".total_items"},"color":"green"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
+execute if score .total_items settings matches ..0 as @e[type=text_display,tag=setting.game.total_items] run data merge entity @s {text:[{"translate":"setting.purple.button.total_items.name","fallback":"Total Items: %s","with":[["",{"translate":"setting.purple.button.off","fallback":"Off","color":"red"}]]},{"strikethrough":true,"text":"\n                                  ","color":"dark_gray"}]}
 
 # clean up
 playsound minecraft:ui.button.click block @s

@@ -1,0 +1,149 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"FISHING_ROD\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"READY\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"NOT_READY\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SPECTATE_GAME\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SOURCE_ABILITY\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SPECTATOR_ABILITY\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.1\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.2\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.3\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.4\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.5\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_1.6\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.1\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.2\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.3\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.4\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.5\"}}}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT_2.6\"}}}]}"
+        }
+      }
+    }
+  ]
+}

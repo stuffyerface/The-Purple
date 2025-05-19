@@ -2,7 +2,8 @@ execute unless entity @n[tag=furniture.lost_artifact.drill] run return run funct
 
 # give artifact
 tag @s add artifact.drill
-give @s golden_carrot[max_stack_size=1,item_name='{"fallback":"Jackhammer","translate":"item.purple.artifact.drill.name"}',lore=['{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}'],rarity="uncommon",custom_data={id:"ARTIFACT_DRILL"}] 1
+give @s golden_carrot[max_stack_size=1,item_name={"fallback":"Jackhammer","translate":"item.purple.artifact.drill.name"},lore=[{"color":"dark_gray","fallback":"Artifact","italic":false,"translate":"item.purple.artifact.lore"}],rarity="uncommon",custom_data={id:"ARTIFACT_DRILL"}] 1
+scoreboard players set artifact.drill data 1
 
 # cleanup
 scoreboard players set @s actionbar 50

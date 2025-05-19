@@ -10,7 +10,7 @@
     },
     "description": {
       "translate": "advancements.challenge.not_even_close.description",
-      "fallback": "Survive the round after being infected with 1s remaining"
+      "fallback": "Survive the round after having been infected with 1s remaining"
     },
     "frame": "challenge",
     "show_toast": true,

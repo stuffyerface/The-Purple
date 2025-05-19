@@ -2,7 +2,7 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"selector":"@s"},{"text":" swapped
 kill @e[tag=settings,tag=!setting.board,tag=!setting.title,distance=..5]
 
 # set title
-execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:'[{"text":"\\n","bold":true},{"translate":"setting.purple.title.menu","fallback":"Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\\n               ","color":"gray"}]', alignment: "center"}
+execute as @n[type=text_display,tag=setting.title] run data merge entity @s {text:[{"text":"\n","bold":true},{"translate":"setting.purple.title.menu","fallback":"Settings","color":"dark_purple"},{"strikethrough":true,"bold":false,"text":"\n               ","color":"gray"}], alignment: "center"}
 
 # left buttons
 execute positioned ~-2 ~3.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.close',translate:"setting.purple.button.main",fallback:"Title Page",background:'"minecraft:gray_concrete"'}
@@ -11,7 +11,7 @@ execute if score .map settings matches 1 positioned ~-2 ~2.1 ~ run function main
 execute if score .map settings matches 2 positioned ~-2 ~2.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.map.page_2',translate:"setting.purple.button.map",fallback:"Map Selector",background:'"minecraft:gray_concrete"'}
 execute if score .map settings matches 3 positioned ~-2 ~2.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.map.page_3',translate:"setting.purple.button.map",fallback:"Map Selector",background:'"minecraft:gray_concrete"'}
 execute unless score .map settings matches 0..3 positioned ~-2 ~2.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.map.page_1',translate:"setting.purple.button.map",fallback:"Map Selector",background:'"minecraft:gray_concrete"'}
-execute positioned ~-2 ~1.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.ability.page_1',translate:"setting.purple.button.abilities",fallback:"Your Abilities",background:'"minecraft:gray_concrete"'}
+execute positioned ~-2 ~1.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.ability.page_1',translate:"setting.purple.button.ability",fallback:"Your Abilities",background:'"minecraft:gray_concrete"'}
 
 # right buttons
 execute positioned ~2 ~3.1 ~ run function main:lobby/settings/board/element/rectangle {setting:'setting.stats.page_1',translate:"setting.purple.button.stats",fallback:"Statistics",background:'"minecraft:gray_concrete"'}
