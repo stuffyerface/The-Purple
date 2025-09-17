@@ -1,4 +1,5 @@
 advancement revoke @s only main:triggers/items/rock
+scoreboard players add @s stat.item.rock 1
 
 # find motion
 execute positioned ~ ~1.5 ~ run summon marker ^ ^ ^0.0 {Tags:["rock.find_motion","rock.origin"]}

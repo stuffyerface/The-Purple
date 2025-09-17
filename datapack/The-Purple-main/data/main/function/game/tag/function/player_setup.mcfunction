@@ -24,6 +24,7 @@ execute as @a[tag=ready] run tag @s remove source
 execute as @a[tag=ready] run tag @s remove infected
 execute as @a[tag=ready] run tag @s remove spectator
 execute as @a[tag=ready] run tag @s remove ready
+execute as @a[tag=ready] run stopsound @s music
 
 function main:module/miscellaneous/setting/reach
 function main:game/tag/function/select_source

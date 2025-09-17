@@ -25,6 +25,8 @@ execute if entity @s[tag=setting.game.reduce_timer] unless entity @e[type=text_d
 execute if entity @s[tag=setting.game.reach] unless entity @e[type=text_display,tag=setting.game.reach.desc] at @n[type=text_display,tag=setting.game.reach] run return run function main:lobby/settings/game/reach/description
 execute if entity @s[tag=setting.game.round_teleport] unless entity @e[type=text_display,tag=setting.game.round_teleport.desc] at @n[type=text_display,tag=setting.game.round_teleport] run return run function main:lobby/settings/game/round_teleport/description
 execute if entity @s[tag=setting.game.meteor_spawn_chance] unless entity @e[type=text_display,tag=setting.game.meteor_spawn_chance.desc] at @n[type=text_display,tag=setting.game.meteor_spawn_chance] run return run function main:lobby/settings/game/meteor_spawn_chance/description
+execute if entity @s[tag=setting.game.locator_bar] unless entity @e[type=text_display,tag=setting.game.locator_bar.desc] at @n[type=text_display,tag=setting.game.locator_bar] run return run function main:lobby/settings/game/locator_bar/description
+execute if entity @s[tag=setting.game.max_rounds] unless entity @e[type=text_display,tag=setting.game.max_rounds.desc] at @n[type=text_display,tag=setting.game.max_rounds] run return run function main:lobby/settings/game/max_rounds/description
 
 # add setting presets descriptions
 execute if entity @s[tag=setting.presets.1] unless entity @e[type=text_display,tag=setting.presets.1.desc] at @n[type=text_display,tag=setting.presets.1] run return run function main:lobby/settings/game/presets/1/description

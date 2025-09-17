@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "yum": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{id:EDIBLE_ROCK}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/rock/edible"
+  }
+}

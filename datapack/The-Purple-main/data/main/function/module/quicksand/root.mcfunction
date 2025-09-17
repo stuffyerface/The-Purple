@@ -5,8 +5,8 @@ execute if score .rope_animation quicksand matches 1 run function main:module/qu
 execute as @e[tag=trap.quicksand.rope.1] at @s if score @s quicksand matches 0.. run function main:module/quicksand/animation/whip_back
 
 # in quicksand
-execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..1.5] run title @s clear
-execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..1.5] run tag @s remove in_quicksand
+execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..3] run title @s clear
+execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..3] run tag @s remove in_quicksand
 execute at @e[tag=trap.quicksand.rope.1] as @a[distance=..20,tag=!in_quicksand,gamemode=!spectator] at @s if entity @e[tag=trap.quicksand.block,distance=..1] run function main:module/quicksand/trap
 execute as @e[tag=trap.quicksand.ride] at @s unless entity @p[distance=..1,nbt={RootVehicle:{Entity:{Tags:["trap.quicksand.ride"]}}}] run kill @s
 

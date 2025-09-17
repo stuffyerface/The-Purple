@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:player",
-    "minecraft:zombie"
+    "minecraft:zombie",
+    "minecraft:mannequin"
   ]
 }

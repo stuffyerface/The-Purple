@@ -7,6 +7,7 @@ tag @s remove source
 tag @s remove infected
 tag @s remove corrupted
 tag @s remove spectator
+tag @s remove was_source
 tag @s remove death_effect.shrink
 tag @s remove remove_my_glass_bottle
 tag @s remove used_ability_before
@@ -28,5 +29,7 @@ attribute @s minecraft:scale modifier remove purple:corrupted
 attribute @s minecraft:scale modifier remove purple:death_effect.shrink
 attribute @s minecraft:entity_interaction_range modifier remove purple:reach
 attribute @s minecraft:entity_interaction_range base reset
+attribute @s minecraft:waypoint_receive_range modifier remove purple:locator_bar
+attribute @s minecraft:waypoint_receive_range base set 0.01
 
 function main:lobby/player/inventory

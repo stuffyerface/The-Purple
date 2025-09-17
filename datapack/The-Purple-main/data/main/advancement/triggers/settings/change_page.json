@@ -240,6 +240,36 @@
         ]
       }
     },
+    "game_7_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_7\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_8_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_8\"]}"
+            }
+          }
+        ]
+      }
+    },
     "presets_1_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -615,6 +645,36 @@
         ]
       }
     },
+    "game_7_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_7\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "game_8_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.game.page_8\"]}"
+            }
+          }
+        ]
+      }
+    },
     "presets_1_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
@@ -769,6 +829,8 @@
       "game_4_lc",
       "game_5_lc",
       "game_6_lc",
+      "game_7_lc",
+      "game_8_lc",
       "presets_1_lc",
       "presets_2_lc",
       "item_1_lc",
@@ -794,6 +856,8 @@
       "game_4_rc",
       "game_5_rc",
       "game_6_rc",
+      "game_7_rc",
+      "game_8_rc",
       "presets_1_rc",
       "presets_2_rc",
       "item_1_rc",

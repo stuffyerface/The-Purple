@@ -18,6 +18,8 @@ execute if entity @s[scores={setting.corruption_despawn_time=-2147483647..}] run
 execute if entity @s[scores={setting.reach=-2147483647..}] run function main:lobby/settings/game/reach/custom
 execute if entity @s[scores={setting.round_teleport=-2147483647..}] run function main:lobby/settings/game/round_teleport/custom
 execute if entity @s[scores={setting.meteor_spawn_chance=-2147483647..}] run function main:lobby/settings/game/meteor_spawn_chance/custom
+execute if entity @s[scores={setting.locator_bar=-2147483647..}] run function main:lobby/settings/game/locator_bar/custom
+execute if entity @s[scores={setting.max_rounds=-2147483647..}] run function main:lobby/settings/game/max_rounds/custom
 
 execute if entity @s[scores={ability.speed2=-2147483647..}] run function main:lobby/settings/personal/source_ability/speed/custom
 execute if entity @s[scores={ability.invisible=-2147483647..}] run function main:lobby/settings/personal/source_ability/invisible/custom

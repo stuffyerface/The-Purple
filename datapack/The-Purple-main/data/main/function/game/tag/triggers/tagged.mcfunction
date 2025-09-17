@@ -62,12 +62,14 @@ effect give @s speed infinite 1 true
 tag @s add source
 tag @s add infected
 tag @s add has_been_infected
-function c:item/source
+execute unless predicate main:has_item/source run function c:item/source
 function main:id/team/set_color
 function main:module/disconnect/sync/marker
-execute if entity @s[nbt={RootVehicle:{Entity:{Tags:["elevator.chair"]}}}] run ride @s dismount
+playsound purple:infected player @s ~ ~ ~ 0.9 2
+execute on vehicle if entity @s[tag=elevator.chair] on passengers run ride @s dismount
 scoreboard players add @s stat.infection_received 1
 advancement grant @s only main:advancement/1_gameplay/infectious_disease
+execute if entity @s[tag=disconnect.zombie] run data modify entity @s CustomName.color set value "dark_purple"
 
 # as attacker
 execute on attacker run tag @s remove source

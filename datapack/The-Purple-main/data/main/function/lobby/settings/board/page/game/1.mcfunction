@@ -14,5 +14,5 @@ execute positioned ~1.5 ~0.45 ~ run function main:lobby/settings/board/element/s
 execute positioned ~2.425 ~0.45 ~ run function main:lobby/settings/board/element/square {setting:'setting.close',texture:'"minecraft:barrier"',background:'"minecraft:air"'}
 execute positioned ~3.35 ~0.45 ~ run function main:lobby/settings/board/element/square {setting:'setting.change_settings',texture:'"minecraft:command_block"',background:'"minecraft:air"'}
 
-execute positioned ~-2.03 ~0.25 ~ run function main:lobby/settings/board/element/arrow_left {"page":"game","number":"6"}
+execute positioned ~-2.03 ~0.25 ~ run function main:lobby/settings/board/element/arrow_left {"page":"game","number":"7"}
 execute positioned ~-1.03 ~0.25 ~ run function main:lobby/settings/board/element/arrow_right {"page":"game","number":"2"}

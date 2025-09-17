@@ -1,0 +1,7 @@
+$summon minecraft:item_display ~ ~ ~ {Tags:["lobby.contributor_display","contributor","contributor.lang.ko_kr","$(line)"], start_interpolation:0, interpolation_duration:10, teleport_duration:10, billboard: "vertical", item: {Count: 1b, id: "minecraft:player_head", components: {"minecraft:profile": {id: [I;2107153181,1241074629,-1774625579,-645405513]}}}, transformation: [-1f,0f,0f,-1.25f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1.5f], Passengers: [{id: "minecraft:text_display", Tags:["lobby.contributor_display","contributor","contributor.lang.ko_kr","$(line)"], start_interpolation:0, interpolation_duration:10, teleport_duration:10, background: 0, billboard: "vertical", line_width: 200, text: [{"translate":"contributor.purple.credit.line","fallback":"%s - %s","with":[{"text":"TheOnlyMann","color":"white"},{"translate":"contributor.purple.lang.ko_kr","fallback":"Korean Translator","color":"white"}],"color":"gray"},{"text":"\n                                                   "}], alignment: "left", transformation: [1f,0f,0f,1.25f,0f,1f,0f,-0.75f,0f,0f,1f,0f,0f,0f,0f,2.0f]}]}
+
+# cosmetic
+execute if score .disable_contributor_cosmetics dummy matches 1 run return fail
+data merge entity @n[type=item_display,tag=contributor.lang.ko_kr] {transformation:[-1f,0f,0f,-1.25f,0f,1f,0f,-5f,0f,0f,-1f,0f,0f,0f,0f,19.5f]}
+data merge entity @n[type=text_display,tag=contributor.lang.ko_kr] {transformation:[1f,0f,0f,1.25f,0f,1f,0f,-5.75f,0f,0f,1f,0f,0f,0f,0f,20.0f]}
+particle minecraft:glow_squid_ink ~ ~-0.1 ~ 0.2 0.05 0.2 0.05 3

@@ -1,4 +1,9 @@
 {
+    "pack": {
+        "min_format": [87, 1],
+        "max_format": [87, 1],
+        "description": "The Purple v1.0.6"
+    },
     "filter": {
         "block": [
             {
@@ -8,11 +13,11 @@
             {
                 "namespace": "^minecraft$",
                 "path": "advancement/.*"
+            },
+            {
+                "namespace": "^minecraft$",
+                "path": "loot_table/.*"
             }
         ]
-    },
-    "pack": {
-        "pack_format": 81,
-        "description": "The Purple v1.0.5"
     }
 }

@@ -39,6 +39,8 @@ execute as @a at @s if entity @s[y=-70,dy=-100] run function c:tp/current_locati
 execute as @a[scores={cooldown.furniture.contributor_display.stuffy=0..}] run scoreboard players remove @s cooldown.furniture.contributor_display.stuffy 1
 execute as @a[scores={cooldown.furniture.contributor_display.nightlibra=0..}] run scoreboard players remove @s cooldown.furniture.contributor_display.nightlibra 1
 execute as @a[scores={cooldown.furniture.use_elevator=0..}] run scoreboard players remove @s cooldown.furniture.use_elevator 1
+execute as @a[scores={cooldown.locator_bar=0..}] run scoreboard players remove @s cooldown.locator_bar 1
+execute as @a[scores={cooldown.locator_bar=0}] run attribute @s minecraft:waypoint_receive_range base set 0.01
 execute as @a[scores={actionbar=0..}] run scoreboard players remove @s actionbar 1
 execute as @a[scores={return_to_lobby_confirm=0..}] run scoreboard players remove @s return_to_lobby_confirm 1
 execute as @a[scores={spectate_confirm=0..}] run scoreboard players remove @s spectate_confirm 1
@@ -58,8 +60,12 @@ execute if entity @e[tag=infected] run function main:module/cosmetic/infected_pa
 execute as @e[tag=corrupt_block] unless score .corruption_despawn_time settings matches -1 run scoreboard players add @s age 1
 execute as @e[tag=corrupt_block] if score @s age >= .corruption_despawn_time settings run kill @s
 
-execute as @e[tag=clone] run scoreboard players add @s age 1
-execute as @e[tag=clone,scores={age=250..}] run kill @s
+execute as @e[tag=clone] at @s run function main:module/source/ability/clone/tick
+execute as @e[tag=clone_entity,scores={age=250..}] run tp @s ~ -64 ~
+execute as @e[tag=clone_entity,scores={age=250..}] run kill @s
+
+execute as @e[type=villager,tag=decoy] at @s run function main:module/item/function/decoy/tick_ai
+execute as @e[type=mannequin,tag=decoy] at @s run function main:module/item/function/decoy/tick_display
 
 # items
 execute as @e[type=item] if data entity @s Thrower run function main:module/inventory/function/return_thrown_item
@@ -92,7 +98,7 @@ execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",amplifier:-1b}]}
 
 # lobby
 execute at @n[tag=block.beacon.source] run playsound minecraft:block.beacon.ambient block @a[distance=..15] ~ ~ ~ 1 0
-execute at @n[tag=block.beacon.source] run particle minecraft:flash ~ 256 ~ 0.5 0.5 0.5 0 1 force
+execute at @n[tag=block.beacon.source] run particle minecraft:flash{color:0xFFFFFF} ~ 256 ~ 0.5 0.5 0.5 0 1 force
 execute as @e[tag=block.beacon.source] at @s run rotate @s ~90 ~
 execute as @e[tag=block.beacon.ring_1] at @s run rotate @s ~3 ~
 execute as @e[tag=block.beacon.ring_2] at @s run rotate @s ~-6 ~

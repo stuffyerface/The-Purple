@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "tag_logout": {
+      "trigger": "minecraft:player_hurt_entity",
+       "conditions": {
+        "entity": {
+          "type": "minecraft:mannequin",
+          "nbt": "{Tags:[\"decoy\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:game/tag/triggers/tag_decoy"
+  }
+}

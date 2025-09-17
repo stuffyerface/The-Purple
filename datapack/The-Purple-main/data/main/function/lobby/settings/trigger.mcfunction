@@ -22,6 +22,8 @@ scoreboard players enable @s setting.corruption_despawn_time
 scoreboard players enable @s setting.reach
 scoreboard players enable @s setting.round_teleport
 scoreboard players enable @s setting.meteor_spawn_chance
+scoreboard players enable @s setting.locator_bar
+scoreboard players enable @s setting.max_rounds
 scoreboard players enable @s ability.speed2
 scoreboard players enable @s ability.invisible
 scoreboard players enable @s ability.darkness
@@ -53,6 +55,8 @@ scoreboard players set @s setting.corruption_despawn_time -2147483648
 scoreboard players set @s setting.reach -2147483648
 scoreboard players set @s setting.round_teleport -2147483648
 scoreboard players set @s setting.meteor_spawn_chance -2147483648
+scoreboard players set @s setting.locator_bar -2147483648
+scoreboard players set @s setting.max_rounds -2147483648
 scoreboard players set @s ability.speed2 -2147483648
 scoreboard players set @s ability.invisible -2147483648
 scoreboard players set @s ability.darkness -2147483648

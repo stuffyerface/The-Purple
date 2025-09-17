@@ -22,6 +22,8 @@ scoreboard players reset @s setting.corruption_despawn_time
 scoreboard players reset @s setting.reach
 scoreboard players reset @s setting.round_teleport
 scoreboard players reset @s setting.meteor_spawn_chance
+scoreboard players reset @s setting.locator_bar
+scoreboard players reset @s setting.max_rounds
 
 scoreboard players reset @s ability.speed2
 scoreboard players reset @s ability.invisible

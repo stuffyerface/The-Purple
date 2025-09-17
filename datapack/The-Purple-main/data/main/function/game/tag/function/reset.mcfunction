@@ -3,6 +3,7 @@ function main:module/music/reset
 schedule clear main:game/tag/start
 execute as @a[tag=player] run ride @s dismount
 execute at @a[tag=player] run kill @e[type=item,distance=..1]
+execute as @e[tag=victory_dance] run data remove entity @s CustomName
 tp @e[tag=victory_dance] ~ -64 ~
 kill @e[tag=victory_dance]
 kill @e[tag=disconnect.zombie]

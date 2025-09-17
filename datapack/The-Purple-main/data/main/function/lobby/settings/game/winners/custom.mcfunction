@@ -3,8 +3,8 @@ execute if score .game data matches 0.. if function main:message/settings/locked
 
 # filter
 execute if score @s setting.winners matches -1 run scoreboard players set @s setting.winners 1
-execute unless score @s setting.winners matches 1..100 run function main:message/settings/invalid
-execute unless score @s setting.winners matches 1..100 run return run scoreboard players set @s setting.winners -2147483648
+execute unless score @s setting.winners matches 0..100 run function main:message/settings/invalid
+execute unless score @s setting.winners matches 0..100 run return run scoreboard players set @s setting.winners -2147483648
 
 # merge score
 scoreboard players operation .winners settings = @s setting.winners

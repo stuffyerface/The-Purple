@@ -7,7 +7,7 @@
           "nbt": "{Tags:[\"source\"]}"
         },
         "entity": {
-          "type": "minecraft:zombie",
+          "type": "minecraft:mannequin",
           "nbt": "{Tags:[\"disconnect.zombie\",\"alive\"]}"
         }
       }

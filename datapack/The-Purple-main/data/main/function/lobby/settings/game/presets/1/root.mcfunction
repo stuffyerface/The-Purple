@@ -17,6 +17,43 @@ scoreboard players set @s setting.corruption_despawn_time 600
 scoreboard players set @s setting.reach 3
 scoreboard players set @s setting.round_teleport 5
 scoreboard players set @s setting.meteor_spawn_chance 50
+scoreboard players set @s setting.locator_bar 0
+scoreboard players set @s setting.max_rounds 0
+
+scoreboard players set .item_SMALL_MUSHROOM settings 1
+scoreboard players set .item_CHORUS_FRUIT settings 1
+scoreboard players set .item_ENDER_PEARL settings 1
+scoreboard players set .item_GLOW_HORN settings 1
+scoreboard players set .item_TOTEM_OF_UNDYING settings 1
+scoreboard players set .item_TRIDENT settings 1
+scoreboard players set .item_SAFETY_VEST settings 1
+scoreboard players set .item_PRISON_KEY settings 1
+scoreboard players set .item_COMPASS settings 1
+scoreboard players set .item_FREEZE_TIME settings 1
+scoreboard players set .item_SMOKE_BOMB settings 1
+scoreboard players set .item_ANTIDOTE settings 1
+scoreboard players set .item_WIND_CHARGE settings 1
+scoreboard players set .item_REVIVAL_POTION settings 1
+scoreboard players set .item_DECOY settings 1
+scoreboard players set .item_GAME_ROCK settings 0
+
+data remove storage main:item random.common
+data modify storage main:item random.common append from storage main:item id.SMALL_MUSHROOM
+data modify storage main:item random.common append from storage main:item id.CHORUS_FRUIT
+data modify storage main:item random.common append from storage main:item id.ENDER_PEARL
+data modify storage main:item random.common append from storage main:item id.GLOW_HORN
+data modify storage main:item random.common append from storage main:item id.TOTEM_OF_UNDYING
+data modify storage main:item random.common append from storage main:item id.TRIDENT
+data modify storage main:item random.common append from storage main:item id.SAFETY_VEST
+data modify storage main:item random.common append from storage main:item id.PRISON_KEY
+data modify storage main:item random.common append from storage main:item id.COMPASS
+data modify storage main:item random.common append from storage main:item id.FREEZE_TIME
+data modify storage main:item random.common append from storage main:item id.SMOKE_BOMB
+data modify storage main:item random.common append from storage main:item id.ANTIDOTE
+data modify storage main:item random.common append from storage main:item id.WIND_CHARGE
+data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
+data modify storage main:item random.common append from storage main:item id.DECOY
+#data modify storage main:item random.common append from storage main:item id.GAME_ROCK
 
 # console log
 tellraw @a[tag=debug] ["[Console] ",{"selector":"@s"}," changed settings to preset ",{"text":"#1","color":"gray"}]

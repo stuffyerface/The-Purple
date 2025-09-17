@@ -131,6 +131,50 @@
           }
         ]
       }
+    },
+    "rc_golden_grave": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.death_effect.golden_grave\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_golden_grave": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.death_effect.golden_grave\"]}"
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -140,7 +184,9 @@
       "rc_shrink",
       "lc_shrink",
       "rc_grave",
-      "lc_grave"
+      "lc_grave",
+      "rc_golden_grave",
+      "lc_golden_grave"
     ]
   ],
   "rewards": {

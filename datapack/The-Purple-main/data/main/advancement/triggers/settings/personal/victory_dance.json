@@ -131,6 +131,50 @@
           }
         ]
       }
+    },
+    "rc_golden_throne": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.victory_dance.golden_throne\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_golden_throne": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.victory_dance.golden_throne\"]}"
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -140,7 +184,9 @@
       "rc_rainbow_sheep",
       "lc_rainbow_sheep",
       "rc_horse",
-      "lc_horse"
+      "lc_horse",
+      "rc_golden_throne",
+      "lc_golden_throne"
     ]
   ],
   "rewards": {

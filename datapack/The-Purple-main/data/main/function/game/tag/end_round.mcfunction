@@ -12,6 +12,7 @@ execute unless score .between_rounds data matches 1.. as @a[tag=alive] run xp ad
 execute unless score .between_rounds data matches 1.. as @a[tag=alive,tag=last_second] run advancement grant @s only main:advancement/2_challenge/not_even_close
 execute unless score .between_rounds data matches 1.. as @a[tag=alive,tag=last_second] run tag @s remove last_second
 execute unless score .between_rounds data matches 1.. if score .alive data <= .winners settings run return run function main:game/tag/end_game
+execute unless score .between_rounds data matches 1.. if score .round data >= .max_rounds settings unless score .max_rounds settings matches ..0 run return run function main:game/tag/end_game
 execute unless score .between_rounds data matches 1.. run scoreboard players set .between_rounds data 1
 
 execute if score .between_rounds data matches 1 unless score .countdown data matches 1.. run scoreboard players set .countdown data 6
@@ -38,9 +39,10 @@ scoreboard players reset * tagback_timer
 scoreboard players reset * tagback_uuid.0
 scoreboard players reset * tagback_uuid.1
 execute if score .reduce_timer settings matches 1.. run function main:game/tag/function/reduce_timer
-execute if score .round_teleport settings <= .round data as @a[tag=player,tag=!corrupted,gamemode=!spectator] run function c:tp/current_location
+execute if score .round data >= .round_teleport settings as @a[tag=player,tag=!corrupted,gamemode=!spectator] run function c:tp/current_location
+execute if score .round data >= .locator_bar settings as @a[tag=player] run attribute @s minecraft:waypoint_receive_range modifier add purple:locator_bar 500 add_value
 function main:game/tag/function/select_source
-
+execute as @a[tag=player] run stopsound @s music
 
 ## end round
 #  - kill all infected players

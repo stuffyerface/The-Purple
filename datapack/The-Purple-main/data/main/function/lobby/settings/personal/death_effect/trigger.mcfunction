@@ -7,6 +7,8 @@ execute if entity @s[advancements={main:triggers/settings/personal/death_effect=
 execute if entity @s[advancements={main:triggers/settings/personal/death_effect={lc_shrink=true}}] run function main:lobby/settings/personal/death_effect/shrink/root
 execute if entity @s[advancements={main:triggers/settings/personal/death_effect={rc_grave=true}}] run function main:lobby/settings/personal/death_effect/grave/root
 execute if entity @s[advancements={main:triggers/settings/personal/death_effect={lc_grave=true}}] run function main:lobby/settings/personal/death_effect/grave/root
+execute if entity @s[advancements={main:triggers/settings/personal/death_effect={rc_golden_grave=true}}] run function main:lobby/settings/personal/death_effect/golden_grave/root
+execute if entity @s[advancements={main:triggers/settings/personal/death_effect={lc_golden_grave=true}}] run function main:lobby/settings/personal/death_effect/golden_grave/root
 
 # clean up
 advancement grant @s only main:advancement/1_gameplay/choices_choices death_effect

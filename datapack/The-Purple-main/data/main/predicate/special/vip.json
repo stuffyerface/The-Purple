@@ -80,6 +80,14 @@
         "type": "minecraft:player", "_username": "Pingoda",
         "nbt": "{UUID:[I;153821213,-1550038881,-1824307139,1741933896]}"
       }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "TheOnlyMann",
+        "nbt": "{UUID:[I;2107153181,1241074629,-1774625579,-645405513]}"
+      }
     }
   ]
 }

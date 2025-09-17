@@ -8,10 +8,10 @@ execute if score .elevator data matches 1 as @e[tag=elevator] at @s run tp @s ~ 
 execute if score .elevator data matches -1 if score .elevator_y dummy matches 940.. as @e[tag=elevator] at @s run tp @s ~ ~-1 ~
 
 # blocks
-execute as @n[tag=elevator.base] at @s positioned ~1 ~6 ~1 if block ~ ~ ~ chain run setblock ~ ~ ~ air
-execute as @n[tag=elevator.base] at @s positioned ~1 ~7 ~1 if block ~ ~ ~ barrier run setblock ~ ~ ~ chain[axis=y]
-execute as @n[tag=elevator.base] at @s positioned ~-1 ~6 ~-1 if block ~ ~ ~ chain run setblock ~ ~ ~ air
-execute as @n[tag=elevator.base] at @s positioned ~-1 ~7 ~-1 if block ~ ~ ~ barrier run setblock ~ ~ ~ chain[axis=y]
+execute as @n[tag=elevator.base] at @s positioned ~1 ~6 ~1 if block ~ ~ ~ iron_chain run setblock ~ ~ ~ air
+execute as @n[tag=elevator.base] at @s positioned ~1 ~7 ~1 if block ~ ~ ~ barrier run setblock ~ ~ ~ iron_chain[axis=y]
+execute as @n[tag=elevator.base] at @s positioned ~-1 ~6 ~-1 if block ~ ~ ~ iron_chain run setblock ~ ~ ~ air
+execute as @n[tag=elevator.base] at @s positioned ~-1 ~7 ~-1 if block ~ ~ ~ barrier run setblock ~ ~ ~ iron_chain[axis=y]
 execute as @e[tag=elevator.barrier] at @s run fill ~ ~1 ~ ~ ~-2 ~ air replace barrier
 execute as @e[tag=elevator.barrier] at @s if block ~ ~ ~ air run setblock ~ ~ ~ barrier
 

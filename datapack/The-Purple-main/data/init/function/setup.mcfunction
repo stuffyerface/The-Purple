@@ -22,6 +22,7 @@ scoreboard objectives add quicksand dummy
 scoreboard objectives add age dummy
 scoreboard objectives add disconnect dummy
 scoreboard objectives add id dummy
+scoreboard objectives add clone_id dummy
 scoreboard objectives add preview dummy
 scoreboard objectives add tagback_timer dummy
 scoreboard objectives add tagback_uuid.0 dummy
@@ -60,6 +61,7 @@ scoreboard objectives add cooldown.item.ready dummy
 scoreboard objectives add cooldown.item.not_ready dummy
 scoreboard objectives add cooldown.furniture.contributor_display.stuffy dummy
 scoreboard objectives add cooldown.furniture.contributor_display.nightlibra dummy
+scoreboard objectives add cooldown.locator_bar dummy
 scoreboard objectives add stat.total_games dummy
 scoreboard objectives add stat.total_wins dummy
 scoreboard objectives add stat.total_rounds dummy
@@ -85,6 +87,9 @@ scoreboard objectives add stat.item.trident minecraft.used:minecraft.trident
 scoreboard objectives add stat.item.wind_charge minecraft.used:minecraft.wind_charge
 scoreboard objectives add stat.item.smoke_bomb minecraft.used:minecraft.lingering_potion
 scoreboard objectives add stat.item.revival_potion minecraft.used:minecraft.splash_potion
+scoreboard objectives add stat.item.decoy minecraft.used:minecraft.villager_spawn_egg
+scoreboard objectives add stat.item.rock dummy
+scoreboard objectives add stat.item.edible_rock dummy
 scoreboard objectives add stat.fish.glowing_minnow dummy
 scoreboard objectives add stat.fish.squishscale dummy
 scoreboard objectives add stat.fish.crimson_drifter dummy
@@ -123,6 +128,8 @@ scoreboard objectives add setting.corruption_despawn_time trigger
 scoreboard objectives add setting.reach trigger
 scoreboard objectives add setting.round_teleport trigger
 scoreboard objectives add setting.meteor_spawn_chance trigger
+scoreboard objectives add setting.locator_bar trigger
+scoreboard objectives add setting.max_rounds trigger
 
 scoreboard objectives add ability.speed2 trigger
 scoreboard objectives add ability.invisible trigger
@@ -162,7 +169,8 @@ scoreboard players set .rope_clicks settings 5
 scoreboard players set .corruption_despawn_time settings 600
 scoreboard players set .reach settings 3
 scoreboard players set .round_teleport settings 5
-scoreboard players set .meteor_spawn_chance settings 50
+scoreboard players set .locator_bar settings -1
+scoreboard players set .max_rounds settings -1
 
 scoreboard players set .ability_speed2 settings 20
 scoreboard players set .ability_invisible settings 20
@@ -193,6 +201,8 @@ scoreboard players set .item_SMOKE_BOMB settings 1
 scoreboard players set .item_ANTIDOTE settings 1
 scoreboard players set .item_WIND_CHARGE settings 1
 scoreboard players set .item_REVIVAL_POTION settings 1
+scoreboard players set .item_DECOY settings 1
+scoreboard players set .item_GAME_ROCK settings 0
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"SMALL_MUSHROOM"}}}] run data modify storage main:item random.common append from storage main:item id.SMALL_MUSHROOM
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"CHORUS_FRUIT"}}}] run data modify storage main:item random.common append from storage main:item id.CHORUS_FRUIT
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"ENDER_PEARL"}}}] run data modify storage main:item random.common append from storage main:item id.ENDER_PEARL
@@ -207,9 +217,10 @@ execute unless data storage main:item random.common[{components:{"minecraft:cust
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"ANTIDOTE"}}}] run data modify storage main:item random.common append from storage main:item id.ANTIDOTE
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"WIND_CHARGE"}}}] run data modify storage main:item random.common append from storage main:item id.WIND_CHARGE
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"REVIVAL_POTION"}}}] run data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
+execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"DECOY"}}}] run data modify storage main:item random.common append from storage main:item id.DECOY
+execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
 
 # set gamerules
-gamerule locatorBar false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doFireTick false
@@ -225,6 +236,7 @@ gamerule freezeDamage false
 gamerule fireDamage false
 gamerule fallDamage false
 gamerule projectilesCanBreakBlocks false
+gamerule allowEnteringNetherUsingPortals false
 
 gamerule doImmediateRespawn true
 gamerule enderPearlsVanishOnDeath true
@@ -262,9 +274,9 @@ scoreboard players display name $line7 title ""
 scoreboard players display name $line6 title ""
 scoreboard players display name $line5 title ""
 scoreboard players display name $line4 title ""
-scoreboard players display name $line3 title ""
-scoreboard players display name $line2 title {"translate":"scoreboard.purple.footer.1","fallback":"Made by Stuffy","color":"#555555"}
-scoreboard players display name $line1 title {"translate":"scoreboard.purple.footer.2","fallback":" and nightlibra","color":"#555555"}
+scoreboard players display name $line3 title {"translate":"scoreboard.purple.footer.1","fallback":"Made by Stuffy","color":"#555555"}
+scoreboard players display name $line2 title {"translate":"scoreboard.purple.footer.2","fallback":" and nightlibra","color":"#555555"}
+scoreboard players display name $line1 title {"translate":"scoreboard.purple.footer.3","fallback":"","color":"#555555"}
 scoreboard players display numberformat $line15 title blank
 scoreboard players display numberformat $line14 title blank
 scoreboard players display numberformat $line13 title blank
@@ -280,3 +292,18 @@ scoreboard players display numberformat $line4 title blank
 scoreboard players display numberformat $line3 title blank
 scoreboard players display numberformat $line2 title blank
 scoreboard players display numberformat $line1 title blank
+
+# set basic values
+scoreboard players add .ready data 0
+scoreboard players add .required data 0
+scoreboard players add .total_games data 0
+scoreboard players add .total_rounds data 0
+scoreboard players add .total_deaths data 0
+scoreboard players add .total_items data 0
+scoreboard players add .total_fish data 0
+scoreboard players add .total_artifacts data 0
+scoreboard players add .alive data 0
+scoreboard players add .players data 0
+scoreboard players add .corrupted data 0
+scoreboard players add .spectating data 0
+scoreboard players add .round data 0

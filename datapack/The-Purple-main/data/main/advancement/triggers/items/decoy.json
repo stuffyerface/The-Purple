@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "placed_decoy": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:villager_spawn_egg",
+              "predicates": {
+                "minecraft:custom_data": "{id:'DECOY'}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/decoy/trigger"
+  }
+}

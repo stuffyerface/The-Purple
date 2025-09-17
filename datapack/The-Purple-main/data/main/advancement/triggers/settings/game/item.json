@@ -615,6 +615,94 @@
           }
         ]
       }
+    },
+    "rc_GAME_ROCK": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.GAME_ROCK\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_GAME_ROCK": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.GAME_ROCK\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "rc_DECOY": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.DECOY\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "lc_DECOY": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.items.DECOY\"]}"
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -646,7 +734,11 @@
       "rc_WIND_CHARGE",
       "lc_WIND_CHARGE",
       "rc_REVIVAL_POTION",
-      "lc_REVIVAL_POTION"
+      "lc_REVIVAL_POTION",
+      "rc_GAME_ROCK",
+      "lc_GAME_ROCK",
+      "rc_DECOY",
+      "lc_DECOY"
     ]
   ],
   "rewards": {

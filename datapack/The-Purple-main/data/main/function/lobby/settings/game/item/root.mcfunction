@@ -30,6 +30,10 @@ execute if entity @s[advancements={main:triggers/settings/game/item={rc_WIND_CHA
 execute if entity @s[advancements={main:triggers/settings/game/item={lc_WIND_CHARGE=true}}] run function main:lobby/settings/game/item/detect {id:"WIND_CHARGE",rarity:"common"}
 execute if entity @s[advancements={main:triggers/settings/game/item={rc_REVIVAL_POTION=true}}] run function main:lobby/settings/game/item/detect {id:"REVIVAL_POTION",rarity:"common"}
 execute if entity @s[advancements={main:triggers/settings/game/item={lc_REVIVAL_POTION=true}}] run function main:lobby/settings/game/item/detect {id:"REVIVAL_POTION",rarity:"common"}
+execute if entity @s[advancements={main:triggers/settings/game/item={rc_DECOY=true}}] run function main:lobby/settings/game/item/detect {id:"DECOY",rarity:"common"}
+execute if entity @s[advancements={main:triggers/settings/game/item={lc_DECOY=true}}] run function main:lobby/settings/game/item/detect {id:"DECOY",rarity:"common"}
+execute if entity @s[advancements={main:triggers/settings/game/item={rc_GAME_ROCK=true}}] run function main:lobby/settings/game/item/detect {id:"GAME_ROCK",rarity:"common"}
+execute if entity @s[advancements={main:triggers/settings/game/item={lc_GAME_ROCK=true}}] run function main:lobby/settings/game/item/detect {id:"GAME_ROCK",rarity:"common"}
 
 # console log
 tellraw @a[tag=debug] ["[Console] ",{"selector":"@s"},{"text":" modified the random item pool."}]

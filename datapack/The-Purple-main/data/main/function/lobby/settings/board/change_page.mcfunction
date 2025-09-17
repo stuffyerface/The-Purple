@@ -17,6 +17,8 @@ execute if entity @s[advancements={main:triggers/settings/change_page={game_3_lc
 execute if entity @s[advancements={main:triggers/settings/change_page={game_4_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/4
 execute if entity @s[advancements={main:triggers/settings/change_page={game_5_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/5
 execute if entity @s[advancements={main:triggers/settings/change_page={game_6_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/6
+execute if entity @s[advancements={main:triggers/settings/change_page={game_7_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/7
+execute if entity @s[advancements={main:triggers/settings/change_page={game_8_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/8
 execute if entity @s[advancements={main:triggers/settings/change_page={presets_1_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/presets/1
 execute if entity @s[advancements={main:triggers/settings/change_page={presets_2_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/presets/2
 execute if entity @s[advancements={main:triggers/settings/change_page={item_1_lc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/item/1
@@ -44,6 +46,8 @@ execute if entity @s[advancements={main:triggers/settings/change_page={game_3_rc
 execute if entity @s[advancements={main:triggers/settings/change_page={game_4_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/4
 execute if entity @s[advancements={main:triggers/settings/change_page={game_5_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/5
 execute if entity @s[advancements={main:triggers/settings/change_page={game_6_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/6
+execute if entity @s[advancements={main:triggers/settings/change_page={game_7_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/7
+execute if entity @s[advancements={main:triggers/settings/change_page={game_8_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/8
 execute if entity @s[advancements={main:triggers/settings/change_page={presets_1_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/presets/1
 execute if entity @s[advancements={main:triggers/settings/change_page={presets_2_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/game/presets/2
 execute if entity @s[advancements={main:triggers/settings/change_page={item_1_rc=true}}] at @n[type=text_display,tag=setting.board] run function main:lobby/settings/board/page/item/1
