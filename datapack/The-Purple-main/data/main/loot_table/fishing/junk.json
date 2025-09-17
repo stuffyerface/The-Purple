@@ -1,0 +1,129 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": [{"fallback":"Broken Fishing Rod","translate":"item.purple.junk.broken_fishing_rod"}," ",{"color":"dark_gray","fallback":"🗑","translate":"icon.purple.junk"}],
+                "minecraft:lore": [
+                  [" ",{"color":"gray","fallback":"Cracked in three spots,","italic":false,"translate":"item.purple.junk.broken_fishing_rod.1"}],
+                  [" ",{"color":"gray","fallback":"snapped in one. What","italic":false,"translate":"item.purple.junk.broken_fishing_rod.2"}],
+                  [" ",{"color":"gray","fallback":"could've done this?","italic":false,"translate":"item.purple.junk.broken_fishing_rod.3"}]
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:BROKEN_FISHING_ROD}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:max_damage": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flower_pot",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": [{"fallback":"Lost Soil Sample","translate":"item.purple.junk.lost_soil_sample"}," ",{"color":"dark_gray","fallback":"🗑","translate":"icon.purple.junk"}],
+                "minecraft:lore": [
+                  [" ",{"color":"gray","fallback":"Its empty. Well, full","italic":false,"translate":"item.purple.junk.lost_soil_sample.1"}],
+                  [" ",{"color":"gray","fallback":"of water. I suppose","italic":false,"translate":"item.purple.junk.lost_soil_sample.2"}],
+                  [" ",{"color":"gray","fallback":"that's to be expected.","italic":false,"translate":"item.purple.junk.lost_soil_sample.3"}]
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:LOST_SOIL_SAMPLE}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brush",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": [{"fallback":"Old Brush","translate":"item.purple.junk.old_brush"}," ",{"color":"dark_gray","fallback":"🗑","translate":"icon.purple.junk"}],
+                "minecraft:lore": [
+                  [" ",{"color":"gray","fallback":"Useful for drying off rock","italic":false,"translate":"item.purple.junk.old_brush.1"}],
+                  [" ",{"color":"gray","fallback":"samples, when its not","italic":false,"translate":"item.purple.junk.old_brush.2"}],
+                  [" ",{"color":"gray","fallback":"drenched itself anyways.","italic":false,"translate":"item.purple.junk.old_brush.3"}]
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:OLD_BRUSH}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "!minecraft:max_damage": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bamboo_raft",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": [{"fallback":"Sunken Raft","translate":"item.purple.junk.sunken_raft"}," ",{"color":"dark_gray","fallback":"🗑","translate":"icon.purple.junk"}],
+                "minecraft:lore": [
+                  [" ",{"color":"gray","fallback":"It looks to have been","italic":false,"translate":"item.purple.junk.sunken_raft.1"}],
+                  [" ",{"color":"gray","fallback":"dragged down, theres","italic":false,"translate":"item.purple.junk.sunken_raft.2"}],
+                  [" ",{"color":"gray","fallback":"bite marks on it too.","italic":false,"translate":"item.purple.junk.sunken_raft.3"}]
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:SUNKEN_RAFT}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:breeze_rod",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": [{"fallback":"Discarded Fuel Rod","translate":"item.purple.junk.discarded_fuel_rod"}," ",{"color":"dark_gray","fallback":"🗑","translate":"icon.purple.junk"}],
+                "minecraft:lore": [
+                  [" ",{"color":"gray","fallback":"These are usually stored","italic":false,"translate":"item.purple.junk.discarded_fuel_rod.1"}],
+                  [" ",{"color":"gray","fallback":"responsibly. This must've","italic":false,"translate":"item.purple.junk.discarded_fuel_rod.2"}],
+                  [" ",{"color":"gray","fallback":"ended up here by mistake.","italic":false,"translate":"item.purple.junk.discarded_fuel_rod.3"}]
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": "{id:DISCARDED_FUEL_ROD}",
+                "minecraft:rarity": "common",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/junk"
+}

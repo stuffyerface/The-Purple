@@ -1,1 +1,0 @@
-function main:lobby/settings/board/element/rectangle_setting {setting:'setting.game.rope_clicks',translate:"setting.purple.button.rope_clicks.name",fallback:"Rope Clicks: %s",with:'["",{"score":{"objective":"settings","name":".rope_clicks"},"color":"green"}]',texture:'"minecraft:lead"',background:'"minecraft:gray_concrete"'}

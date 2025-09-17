@@ -1,0 +1,171 @@
+{
+  "criteria": {
+    "map_x_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.coming_soon\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_0_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.0.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_1_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.1.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_2_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.2.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_3_lc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.3.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_x_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.coming_soon\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_0_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.0.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_1_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.1.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_2_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.2.preview\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "map_3_rc": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"setting.map.3.preview\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "map_x_lc",
+      "map_0_lc",
+      "map_1_lc",
+      "map_2_lc",
+      "map_3_lc",
+      "map_x_rc",
+      "map_0_rc",
+      "map_1_rc",
+      "map_2_rc",
+      "map_3_rc"
+    ]
+  ],
+  "rewards": {
+    "function": "main:lobby/settings/preview/trigger"
+  }
+}
