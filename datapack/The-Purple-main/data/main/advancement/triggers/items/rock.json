@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "using_item": {
+    "ROCK": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
@@ -9,8 +9,24 @@
           }
         }
       }
+    },
+    "GAME_ROCK": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{id:GAME_ROCK}"
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    [
+      "ROCK",
+      "GAME_ROCK"
+    ]
+  ],
   "rewards": {
     "function": "main:module/item/function/rock/throw"
   }

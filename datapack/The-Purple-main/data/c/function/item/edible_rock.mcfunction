@@ -1,0 +1,1 @@
+function main:module/item/system/macro/give {id:"EDIBLE_ROCK",slot:"weapon.mainhand"}

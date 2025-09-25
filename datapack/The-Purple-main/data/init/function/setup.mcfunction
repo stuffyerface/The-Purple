@@ -169,8 +169,9 @@ scoreboard players set .rope_clicks settings 5
 scoreboard players set .corruption_despawn_time settings 600
 scoreboard players set .reach settings 3
 scoreboard players set .round_teleport settings 5
-scoreboard players set .locator_bar settings -1
-scoreboard players set .max_rounds settings -1
+scoreboard players set .meteor_spawn_chance settings 50
+scoreboard players set .locator_bar settings 0
+scoreboard players set .max_rounds settings 0
 
 scoreboard players set .ability_speed2 settings 20
 scoreboard players set .ability_invisible settings 20
