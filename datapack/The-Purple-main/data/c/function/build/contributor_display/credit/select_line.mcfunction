@@ -1,5 +1,5 @@
 scoreboard players add .contributor_display data 1
-execute if score .contributor_display data matches 10.. run scoreboard players set .contributor_display data 1
+execute if score .contributor_display data matches 11.. run scoreboard players set .contributor_display data 1
 
 # select
 execute if score .contributor_display data matches 1 run function c:build/contributor_display/credit/name/raster {line:'bottom'}
@@ -11,3 +11,4 @@ execute if score .contributor_display data matches 6 run function c:build/contri
 execute if score .contributor_display data matches 7 run function c:build/contributor_display/credit/name/lang/ja_jp {line:'bottom'}
 execute if score .contributor_display data matches 8 run function c:build/contributor_display/credit/name/lang/zh_cn {line:'bottom'}
 execute if score .contributor_display data matches 9 run function c:build/contributor_display/credit/name/lang/ko_kr {line:'bottom'}
+execute if score .contributor_display data matches 10 run function c:build/contributor_display/credit/name/lang/ru_ru {line:'bottom'}
