@@ -219,7 +219,7 @@ execute unless data storage main:item random.common[{components:{"minecraft:cust
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"WIND_CHARGE"}}}] run data modify storage main:item random.common append from storage main:item id.WIND_CHARGE
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"REVIVAL_POTION"}}}] run data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"DECOY"}}}] run data modify storage main:item random.common append from storage main:item id.DECOY
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
+#execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
 
 # set gamerules
 gamerule doDaylightCycle false

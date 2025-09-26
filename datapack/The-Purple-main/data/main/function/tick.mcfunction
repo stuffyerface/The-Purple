@@ -44,7 +44,7 @@ execute as @a[scores={cooldown.locator_bar=0}] run attribute @s minecraft:waypoi
 execute as @a[scores={actionbar=0..}] run scoreboard players remove @s actionbar 1
 execute as @a[scores={return_to_lobby_confirm=0..}] run scoreboard players remove @s return_to_lobby_confirm 1
 execute as @a[scores={spectate_confirm=0..}] run scoreboard players remove @s spectate_confirm 1
-execute as @a[scores={return=-2147483647..}] run function main:game/tag/function/player_return
+execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/function/player_return
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
 execute if score .slow_tick dummy matches 0 as @a[tag=!player] unless predicate main:has_item/ready unless predicate main:has_item/not_ready unless predicate main:has_item/spectate_game run function main:module/inventory/trigger 

@@ -18,6 +18,7 @@ function main:module/item/function/reset
 function main:message/game/revive
 function main:module/cosmetic/space_helmet
 attribute @s minecraft:scale modifier remove purple:corrupted
+attribute @s minecraft:waypoint_receive_range base set 0.01
 gamemode adventure
 scoreboard players add @s stat.total_revives 1
 

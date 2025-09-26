@@ -11,7 +11,7 @@ execute positioned ~-1.85 ~1.1 ~ run function main:lobby/settings/board/element/
 
 execute positioned ~2.15 ~3.1 ~ run function main:lobby/settings/board/element/rectangle_right {setting:'setting.source_ability.corruption',translate:"setting.purple.button.source_ability.corruption.name",fallback:"Corrupt Growth",texture:'"minecraft:chorus_plant"',background:'"minecraft:gray_concrete"'}
 execute positioned ~2.15 ~2.1 ~ run function main:lobby/settings/board/element/rectangle_right {setting:'setting.source_ability.reach',translate:"setting.purple.button.source_ability.reach.name",fallback:"Long Arms",texture:'"minecraft:echo_shard"',background:'"minecraft:gray_concrete"'}
-execute positioned ~2.15 ~1.1 ~ run function main:lobby/settings/board/element/rectangle_right {setting:'setting.source_ability.clone',translate:"setting.purple.button.source_ability.clone.name",fallback:"Clone Ally",texture:'"minecraft:zombie_head"',background:'"minecraft:gray_concrete"'}
+execute positioned ~2.15 ~1.1 ~ run function main:lobby/settings/board/element/rectangle_right {setting:'setting.source_ability.clone',translate:"setting.purple.button.source_ability.clone.name",fallback:"Clone Ally",texture:'"minecraft:player_head"',background:'"minecraft:gray_concrete"'}
 
 execute positioned ~1.5 ~0.45 ~ run function main:lobby/settings/board/element/square {setting:'setting.ability.page_2',texture:'"minecraft:ender_eye"',background:'"minecraft:air"'}
 execute positioned ~2.425 ~0.45 ~ run function main:lobby/settings/board/element/square {setting:'setting.close',texture:'"minecraft:barrier"',background:'"minecraft:air"'}
