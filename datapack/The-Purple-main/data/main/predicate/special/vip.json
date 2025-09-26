@@ -88,6 +88,22 @@
         "type": "minecraft:player", "_username": "TheOnlyMann",
         "nbt": "{UUID:[I;2107153181,1241074629,-1774625579,-645405513]}"
       }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "4953makcim",
+        "nbt": "{UUID:[I;1214590053,456147933,-1570334701,1003883406]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player", "_username": "Yatloaf",
+        "nbt": "{UUID:[I;1356720797,-1795994109,-1552605678,1039199064]}"
+      }
     }
   ]
 }

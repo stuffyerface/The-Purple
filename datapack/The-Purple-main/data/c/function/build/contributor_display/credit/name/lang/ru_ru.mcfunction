@@ -4,3 +4,4 @@ $summon minecraft:item_display ~ ~ ~ {Tags:["lobby.contributor_display","contrib
 execute if score .disable_contributor_cosmetics dummy matches 1 run return fail
 data merge entity @n[type=item_display,tag=contributor.lang.ru_ru] {transformation:[-1f,0f,0f,-1.25f,0f,1f,0f,-5f,0f,0f,-1f,0f,0f,0f,0f,19.5f]}
 data merge entity @n[type=text_display,tag=contributor.lang.ru_ru] {transformation:[1f,0f,0f,1.25f,0f,1f,0f,-5.75f,0f,0f,1f,0f,0f,0f,0f,20.0f]}
+particle minecraft:sonic_boom ~ ~-0.25 ~ 0.12 0.1 0.12 0 3

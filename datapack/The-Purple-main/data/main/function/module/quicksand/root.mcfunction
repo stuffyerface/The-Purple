@@ -8,7 +8,6 @@ execute as @e[tag=trap.quicksand.rope.1] at @s if score @s quicksand matches 0..
 execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..3] run title @s clear
 execute as @a[tag=in_quicksand] at @s unless entity @e[tag=trap.quicksand.block,distance=..3] run tag @s remove in_quicksand
 execute at @e[tag=trap.quicksand.rope.1] as @a[distance=..20,tag=!in_quicksand,gamemode=!spectator] at @s if entity @e[tag=trap.quicksand.block,distance=..1] run function main:module/quicksand/trap
-execute as @e[tag=trap.quicksand.ride] unless predicate main:flag/has_passengers run tellraw @a[tag=debug] "[Console] vehicle killed!"
 execute as @e[tag=trap.quicksand.ride] unless predicate main:flag/has_passengers run kill @s
 
 # kill
