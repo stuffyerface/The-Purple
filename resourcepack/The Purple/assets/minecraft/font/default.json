@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "purple:font/emoji.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "🏆⌛⚔⚡🛡🧊\u0000\u0000\u0000\u0000"
+            ]
+        }
+    ]
+}

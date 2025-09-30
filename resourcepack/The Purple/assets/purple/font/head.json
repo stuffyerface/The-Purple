@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "purple:font/head.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "sn\u0000"
+            ]
+        }
+    ]
+}

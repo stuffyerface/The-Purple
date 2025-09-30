@@ -1,0 +1,3 @@
+emoji.png : https://github.com/AmberWat/PixelTwemojiMC-9
+icon.png  : Discord, Twitter, YouTube company logos
+logo.png  : Stuffy

@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "purple:font/icon.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "12345"
+            ]
+        }
+    ]
+}

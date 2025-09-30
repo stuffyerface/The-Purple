@@ -1,0 +1,43 @@
+{
+  "music.main": {
+    "subtitle": "subtitle.purple.music.main",
+    "sounds": [
+      {
+        "name": "purple:music/main"
+      }
+    ]
+  },
+  "music.dead": {
+    "subtitle": "subtitle.purple.music.dead",
+    "sounds": [
+      {
+        "name": "purple:music/dead"
+      }
+    ]
+  },
+  "music.near_end": {
+    "subtitle": "subtitle.purple.music.near_end",
+    "sounds": [
+      {
+        "name": "purple:music/near_end"
+      }
+    ]
+  },
+  "music.end_hit": {
+    "subtitle": "subtitle.purple.music.end_hit",
+    "sounds": [
+      {
+        "name": "purple:music/end_hit"
+      }
+    ]
+  },
+  "infected": {
+    "subtitle": "subtitle.purple.infected",
+    "sounds": [
+      {
+        "name": "minecraft:entity.zombie.converted_to_drowned",
+	"type": "event"
+      }
+    ]
+  }
+}
