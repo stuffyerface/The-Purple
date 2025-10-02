@@ -80,13 +80,13 @@ scoreboard objectives add stat.item.freeze_time dummy
 scoreboard objectives add stat.item.prison_key dummy
 scoreboard objectives add stat.item.compass dummy
 scoreboard objectives add stat.item.antidote dummy
+scoreboard objectives add stat.item.smoke_bomb dummy
+scoreboard objectives add stat.item.revival_potion dummy
 scoreboard objectives add stat.item.instant_chorus_fruit minecraft.used:minecraft.chorus_fruit
 scoreboard objectives add stat.item.totem_of_undying minecraft.used:minecraft.totem_of_undying
 scoreboard objectives add stat.item.ender_pearl minecraft.used:minecraft.ender_pearl
 scoreboard objectives add stat.item.trident minecraft.used:minecraft.trident
 scoreboard objectives add stat.item.wind_charge minecraft.used:minecraft.wind_charge
-scoreboard objectives add stat.item.smoke_bomb minecraft.used:minecraft.lingering_potion
-scoreboard objectives add stat.item.revival_potion minecraft.used:minecraft.splash_potion
 scoreboard objectives add stat.item.decoy minecraft.used:minecraft.villager_spawn_egg
 scoreboard objectives add stat.item.rock dummy
 scoreboard objectives add stat.item.edible_rock dummy

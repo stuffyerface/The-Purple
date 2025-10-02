@@ -95,6 +95,8 @@ execute as @e[type=slime,nbt={Size:0}] run tp ~ ~-64 ~
 
 execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",amplifier:-1b}]}] if entity @s[tag=corrupted] unless score .game data matches 3 run function main:game/tag/function/player_revive
 execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",amplifier:-1b}]}] run effect clear @s regeneration
+execute as @e[type=minecraft:lingering_potion] unless entity @s[tag=already_checked] run function main:module/miscellaneous/tick/potion_stat
+execute as @n[type=minecraft:area_effect_cloud] if data entity @s data{id:"REVIVAL_POTION"} run data merge entity @s {Duration:1}
 
 # lobby
 execute at @n[tag=block.beacon.source] run playsound minecraft:block.beacon.ambient block @a[distance=..15] ~ ~ ~ 1 0

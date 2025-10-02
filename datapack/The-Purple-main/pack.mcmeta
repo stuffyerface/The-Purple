@@ -2,7 +2,7 @@
     "pack": {
         "min_format": [88, 0],
         "max_format": [88, 0],
-        "description": "The Purple v1.0.6"
+        "description": "The Purple v1.0.7"
     },
     "filter": {
         "block": [
