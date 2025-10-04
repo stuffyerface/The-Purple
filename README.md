@@ -1,4 +1,4 @@
 # The Purple:
 
-- Release Trailer: https://youtube.com/CBzQuCIlSoQ
+- Release Trailer: https://youtu.be/CBzQuCIlSoQ
 - Planet Minecraft: https://www.planetminecraft.com/project/the-purple-6526015/
