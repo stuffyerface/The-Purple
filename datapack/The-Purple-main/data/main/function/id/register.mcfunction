@@ -22,6 +22,8 @@ gamemode adventure @s
 advancement grant @s only main:advancement/1_gameplay/root
 attribute @s minecraft:waypoint_receive_range base set 0.01
 scoreboard players enable @s secret
+scoreboard players enable @s version
+scoreboard players set @s version -2147483648
 scoreboard players set @s color 10
 execute store result score @s source_ability run random value 1..5
 execute store result score @s spectator_ability run random value 1..6

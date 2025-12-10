@@ -11,6 +11,7 @@ bossbar set main:time color purple
 team add hide_nametag
 team modify hide_nametag nametagVisibility never
 team modify hide_nametag collisionRule never
+data modify storage main:data version set value "v1.0.8"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -108,6 +109,7 @@ scoreboard objectives setdisplay list stat.total_wins
 # create triggers
 scoreboard objectives add return trigger
 scoreboard objectives add secret trigger
+scoreboard objectives add version trigger
 
 scoreboard objectives add setting.map trigger
 scoreboard objectives add setting.round_length trigger
@@ -222,29 +224,29 @@ execute unless data storage main:item random.common[{components:{"minecraft:cust
 #execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
 
 # set gamerules
-gamerule doDaylightCycle false
-gamerule doWeatherCycle false
-gamerule doFireTick false
-gamerule doVinesSpread false
-gamerule doInsomnia false
-gamerule doTraderSpawning false
-gamerule doPatrolSpawning false
-gamerule doWardenSpawning false
-gamerule doMobSpawning false
-gamerule mobGriefing false
-gamerule drowningDamage false
-gamerule freezeDamage false
-gamerule fireDamage false
-gamerule fallDamage false
-gamerule projectilesCanBreakBlocks false
-gamerule allowEnteringNetherUsingPortals false
+gamerule minecraft:advance_time false
+gamerule minecraft:advance_weather false
+gamerule minecraft:fire_spread_radius_around_player 0
+gamerule minecraft:spread_vines false
+gamerule minecraft:spawn_phantoms false
+gamerule minecraft:spawn_wandering_traders false
+gamerule minecraft:spawn_patrols false
+gamerule minecraft:spawn_wardens false
+gamerule minecraft:spawn_mobs false
+gamerule minecraft:mob_griefing false
+gamerule minecraft:drowning_damage false
+gamerule minecraft:freeze_damage false
+gamerule minecraft:fire_damage false
+gamerule minecraft:fall_damage false
+gamerule minecraft:projectiles_can_break_blocks false
+gamerule minecraft:allow_entering_nether_using_portals false
 
-gamerule doImmediateRespawn true
-gamerule enderPearlsVanishOnDeath true
-gamerule keepInventory true
+gamerule minecraft:immediate_respawn true
+gamerule minecraft:ender_pearls_vanish_on_death true
+gamerule minecraft:keep_inventory true
 
-gamerule spawnRadius 0
-gamerule randomTickSpeed 0
+gamerule minecraft:respawn_radius 0
+gamerule minecraft:random_tick_speed 0
 
 # setup title scoreboard
 scoreboard objectives setdisplay sidebar title
