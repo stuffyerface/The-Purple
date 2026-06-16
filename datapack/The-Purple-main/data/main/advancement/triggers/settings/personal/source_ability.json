@@ -15,8 +15,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.speed\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.speed"]}
             }
           }
         ]
@@ -37,8 +37,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.speed\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.speed"]}
             }
           }
         ]
@@ -59,8 +59,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.invisible\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.invisible"]}
             }
           }
         ]
@@ -81,8 +81,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.invisible\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.invisible"]}
             }
           }
         ]
@@ -103,8 +103,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.darkness\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.darkness"]}
             }
           }
         ]
@@ -125,8 +125,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.darkness\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.darkness"]}
             }
           }
         ]
@@ -147,8 +147,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.corruption\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.corruption"]}
             }
           }
         ]
@@ -169,8 +169,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.corruption\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.corruption"]}
             }
           }
         ]
@@ -191,8 +191,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.reach\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.reach"]}
             }
           }
         ]
@@ -213,8 +213,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.reach\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.reach"]}
             }
           }
         ]
@@ -235,8 +235,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.clone\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.clone"]}
             }
           }
         ]
@@ -257,8 +257,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.source_ability.clone\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.source_ability.clone"]}
             }
           }
         ]

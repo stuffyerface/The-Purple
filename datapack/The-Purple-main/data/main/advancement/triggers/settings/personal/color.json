@@ -15,8 +15,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.red_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.red_team"]}
             }
           }
         ]
@@ -37,8 +37,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.red_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.red_team"]}
             }
           }
         ]
@@ -59,8 +59,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.orange_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.orange_team"]}
             }
           }
         ]
@@ -81,8 +81,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.orange_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.orange_team"]}
             }
           }
         ]
@@ -103,8 +103,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.yellow_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.yellow_team"]}
             }
           }
         ]
@@ -125,8 +125,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.yellow_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.yellow_team"]}
             }
           }
         ]
@@ -147,8 +147,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.lime_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.lime_team"]}
             }
           }
         ]
@@ -169,8 +169,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.lime_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.lime_team"]}
             }
           }
         ]
@@ -191,8 +191,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.green_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.green_team"]}
             }
           }
         ]
@@ -213,8 +213,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.green_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.green_team"]}
             }
           }
         ]
@@ -235,8 +235,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.cyan_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.cyan_team"]}
             }
           }
         ]
@@ -257,8 +257,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.cyan_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.cyan_team"]}
             }
           }
         ]
@@ -279,8 +279,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.light_blue_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.light_blue_team"]}
             }
           }
         ]
@@ -301,8 +301,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.light_blue_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.light_blue_team"]}
             }
           }
         ]
@@ -323,8 +323,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.blue_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.blue_team"]}
             }
           }
         ]
@@ -345,8 +345,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.blue_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.blue_team"]}
             }
           }
         ]
@@ -367,8 +367,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.purple_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.purple_team"]}
             }
           }
         ]
@@ -389,8 +389,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.purple_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.purple_team"]}
             }
           }
         ]
@@ -411,8 +411,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.magenta_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.magenta_team"]}
             }
           }
         ]
@@ -433,8 +433,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.magenta_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.magenta_team"]}
             }
           }
         ]
@@ -455,8 +455,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.pink_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.pink_team"]}
             }
           }
         ]
@@ -477,8 +477,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.pink_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.pink_team"]}
             }
           }
         ]
@@ -499,8 +499,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.brown_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.brown_team"]}
             }
           }
         ]
@@ -521,8 +521,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.brown_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.brown_team"]}
             }
           }
         ]
@@ -543,8 +543,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.white_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.white_team"]}
             }
           }
         ]
@@ -565,8 +565,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.white_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.white_team"]}
             }
           }
         ]
@@ -587,8 +587,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.black_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.black_team"]}
             }
           }
         ]
@@ -609,8 +609,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.black_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.black_team"]}
             }
           }
         ]
@@ -631,8 +631,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.gray_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.gray_team"]}
             }
           }
         ]
@@ -653,8 +653,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.gray_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.gray_team"]}
             }
           }
         ]
@@ -675,8 +675,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.light_gray_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.light_gray_team"]}
             }
           }
         ]
@@ -697,8 +697,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"setting.color.light_gray_team\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.color.light_gray_team"]}
             }
           }
         ]

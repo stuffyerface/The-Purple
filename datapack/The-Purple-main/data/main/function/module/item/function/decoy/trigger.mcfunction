@@ -12,7 +12,6 @@ execute store result storage main:dummy ability.clone.id int 1 run scoreboard pl
 function main:module/item/function/decoy/join_team_macro with storage main:dummy ability.clone
 function main:module/item/function/decoy/set_profile
 execute as @n[tag=new_decoy_mannequin] run function main:module/cosmetic/space_helmet
-#team join hide_nametag @n[type=villager,tag=new_decoy]
 
 # clean up
 tag @e[tag=new_decoy] remove new_decoy

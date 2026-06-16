@@ -5,8 +5,8 @@
       "conditions": {
         "damage": {
           "source_entity": {
-            "type": "minecraft:zombie",
-            "nbt": "{Tags:[\"clone\"]}"
+            "minecraft:entity_type": "minecraft:zombie",
+            "minecraft:entity_tags": {"all_of": ["clone"]}
           }
         }
       }

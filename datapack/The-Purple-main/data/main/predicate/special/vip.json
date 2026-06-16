@@ -5,104 +5,104 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "nightlibra",
-        "nbt": "{UUID:[I;-1364134607,-750761016,-1398478805,842316956]}"
+        "minecraft:entity_tags": {"none_of":["nightlibra"]},
+        "minecraft:nbt": "{UUID:[I;-1364134607,-750761016,-1398478805,842316956]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "stuffy",
-        "nbt": "{UUID:[I;754748853,1911377587,-1429384264,-1409327390]}"
+        "minecraft:entity_tags": {"none_of":["stuffy"]},
+        "minecraft:nbt": "{UUID:[I;754748853,1911377587,-1429384264,-1409327390]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Evtema3",
-        "nbt": "{UUID:[I;1143768566,1044072941,-1808662431,483304317]}"
+        "minecraft:entity_tags": {"none_of":["Evtema3"]},
+        "minecraft:nbt": "{UUID:[I;1143768566,1044072941,-1808662431,483304317]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "YZEROgame",
-        "nbt": "{UUID:[I;-1879887536,-1673376384,-1653471241,-507601540]}"
+        "minecraft:entity_tags": {"none_of":["YZEROgame"]},
+        "minecraft:nbt": "{UUID:[I;-1879887536,-1673376384,-1653471241,-507601540]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Raster_",
-        "nbt": "{UUID:[I;1877453502,890390565,-1952184669,1702329988]}"
+        "minecraft:entity_tags": {"none_of":["Raster_"]},
+        "minecraft:nbt": "{UUID:[I;1877453502,890390565,-1952184669,1702329988]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "BlockyM_",
-        "nbt": "{UUID:[I;1483758530,847266185,-1434587083,1169713739]}"
+        "minecraft:entity_tags": {"none_of":["BlockyM_"]},
+        "minecraft:nbt": "{UUID:[I;1483758530,847266185,-1434587083,1169713739]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Tai_zazanek",
-        "nbt": "{UUID:[I;483675371,1918650750,-1877476915,1372624576]}"
+        "minecraft:entity_tags": {"none_of":["Tai_zazanek"]},
+        "minecraft:nbt": "{UUID:[I;483675371,1918650750,-1877476915,1372624576]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "ZeroIceBear",
-        "nbt": "{UUID:[I;2009721405,-2095561811,-1075379032,1294848694]}"
+        "minecraft:entity_tags": {"none_of":["ZeroIceBear"]},
+        "minecraft:nbt": "{UUID:[I;2009721405,-2095561811,-1075379032,1294848694]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Shirowh_",
-        "nbt": "{UUID:[I;-1533562451,550719413,-1348927752,-160709537]}"
+        "minecraft:entity_tags": {"none_of":["Shirowh_"]},
+        "minecraft:nbt": "{UUID:[I;-1533562451,550719413,-1348927752,-160709537]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Pingoda",
-        "nbt": "{UUID:[I;153821213,-1550038881,-1824307139,1741933896]}"
+        "minecraft:entity_tags": {"none_of":["Pingoda"]},
+        "minecraft:nbt": "{UUID:[I;153821213,-1550038881,-1824307139,1741933896]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "TheOnlyMann",
-        "nbt": "{UUID:[I;2107153181,1241074629,-1774625579,-645405513]}"
+        "minecraft:entity_tags": {"none_of":["TheOnlyMann"]},
+        "minecraft:nbt": "{UUID:[I;2107153181,1241074629,-1774625579,-645405513]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "4953makcim",
-        "nbt": "{UUID:[I;1214590053,456147933,-1570334701,1003883406]}"
+        "minecraft:entity_tags": {"none_of":["4953makcim"]},
+        "minecraft:nbt": "{UUID:[I;1214590053,456147933,-1570334701,1003883406]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:player", "_username": "Yatloaf",
-        "nbt": "{UUID:[I;1356720797,-1795994109,-1552605678,1039199064]}"
+        "minecraft:entity_tags": {"none_of":["Yatloaf"]},
+        "minecraft:nbt": "{UUID:[I;1356720797,-1795994109,-1552605678,1039199064]}"
       }
     }
   ]

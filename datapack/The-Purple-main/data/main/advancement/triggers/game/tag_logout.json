@@ -4,11 +4,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
-          "nbt": "{Tags:[\"source\"]}"
+          "minecraft:entity_tags": {"all_of": ["source"]}
         },
         "entity": {
-          "type": "minecraft:mannequin",
-          "nbt": "{Tags:[\"disconnect.zombie\",\"alive\"]}"
+          "minecraft:entity_type": "minecraft:mannequin",
+          "minecraft:entity_tags": {"all_of": ["disconnect.zombie","alive"]}
         }
       }
     }

@@ -4,8 +4,8 @@
       "trigger": "minecraft:player_hurt_entity",
        "conditions": {
         "entity": {
-          "type": "minecraft:mannequin",
-          "nbt": "{Tags:[\"decoy\"]}"
+          "minecraft:entity_type": "minecraft:mannequin",
+          "minecraft:entity_tags": {"all_of": ["decoy"]}
         }
       }
     }

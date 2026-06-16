@@ -1,12 +1,12 @@
 ﻿{
   "pack": {
     "min_format": [84, 0],
-    "max_format": [84, 0],
-    "description": "By Stuffy & nightlibra\n§826.1 | v1.0.9§r"
+    "max_format": [88, 0],
+    "description": "By Stuffy & nightlibra\n§826.2 | v1.0.10§r"
   },
 
   "meta": {
-    "version": ["v1.0.9", "mc:26.1"],
+    "version": ["v1.0.10", "mc:26.2"],
     "discord": "https://discord.com/users/273231421961797632"
   }
 }

@@ -8,10 +8,9 @@ function init:load_items
 function init:setup/rock
 bossbar add main:time ""
 bossbar set main:time color purple
-team add hide_nametag
-team modify hide_nametag nametagVisibility never
-team modify hide_nametag collisionRule never
-data modify storage main:data version set value "v1.0.9"
+team add no_collision
+team modify no_collision collisionRule never
+data modify storage main:data version set value "v1.0.10"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
