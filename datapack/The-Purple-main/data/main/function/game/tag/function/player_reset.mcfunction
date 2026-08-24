@@ -9,7 +9,6 @@ tag @s remove corrupted
 tag @s remove spectator
 tag @s remove was_source
 tag @s remove death_effect.shrink
-tag @s remove remove_my_glass_bottle
 tag @s remove used_ability_before
 tag @s remove has_been_revived
 tag @s remove has_been_infected
