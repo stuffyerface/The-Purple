@@ -3,177 +3,145 @@
     "rc_explode": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.explode"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_explode": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.explode"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_shrink": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.shrink"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_shrink": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.shrink"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_grave": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.grave"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_grave": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.grave"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_golden_grave": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.golden_grave"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_golden_grave": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.death_effect.golden_grave"]}
             }
-          }
-        ]
+        }
       }
     }
   },

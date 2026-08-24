@@ -3,61 +3,53 @@
     "lc_stuffy": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","stuffy"]}
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","stuffy"]}
           }
-        ]
+        }
       }
     },
     "rc_stuffy": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","stuffy"]}
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","stuffy"]}
           }
-        ]
+        }
       }
     },
     "lc_nightlibra": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","nightlibra"]}
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","nightlibra"]}
           }
-        ]
+        }
       }
     },
     "rc_nightlibra": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","nightlibra"]}
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["lobby.contributor_display","nightlibra"]}
           }
-        ]
+        }
       }
     }
   },

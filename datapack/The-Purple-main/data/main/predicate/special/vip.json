@@ -1,8 +1,8 @@
 {
-  "condition": "minecraft:any_of",
+  "type": "minecraft:any_of",
   "terms": [
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["nightlibra"]},
@@ -10,7 +10,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["stuffy"]},
@@ -18,7 +18,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Evtema3"]},
@@ -26,7 +26,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["YZEROgame"]},
@@ -34,7 +34,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Raster_"]},
@@ -42,7 +42,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["BlockyM_"]},
@@ -50,7 +50,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Tai_zazanek"]},
@@ -58,7 +58,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["ZeroIceBear"]},
@@ -66,7 +66,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Shirowh_"]},
@@ -74,7 +74,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Pingoda"]},
@@ -82,7 +82,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["TheOnlyMann"]},
@@ -90,7 +90,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["4953makcim"]},
@@ -98,7 +98,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "minecraft:entity_tags": {"none_of":["Yatloaf"]},

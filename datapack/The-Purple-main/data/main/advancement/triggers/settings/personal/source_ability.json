@@ -3,265 +3,217 @@
     "rc_speed": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.speed"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_speed": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.speed"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_invisible": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.invisible"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_invisible": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.invisible"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_darkness": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.darkness"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_darkness": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.darkness"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_corruption": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.corruption"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_corruption": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.corruption"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_reach": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.reach"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_reach": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.reach"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_clone": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.clone"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_clone": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.source_ability.clone"]}
             }
-          }
-        ]
+        }
       }
     }
   },

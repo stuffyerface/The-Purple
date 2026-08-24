@@ -3,45 +3,37 @@
     "right_click": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.game.double_tap"]}
             }
-          }
-        ]
+        }
       }
     },
     "left_click": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.game.double_tap"]}
             }
-          }
-        ]
+        }
       }
     }
   },

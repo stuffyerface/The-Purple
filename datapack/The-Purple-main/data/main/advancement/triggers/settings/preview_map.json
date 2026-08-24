@@ -3,151 +3,131 @@
     "map_x_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.coming_soon"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_0_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.0.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_1_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.1.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_2_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.2.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_3_lc": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.3.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_x_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.coming_soon"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_0_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.0.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_1_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.1.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_2_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.2.preview"]}
             }
-          }
-        ]
+        }
       }
     },
     "map_3_rc": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.map.3.preview"]}
             }
-          }
-        ]
+        }
       }
     }
   },

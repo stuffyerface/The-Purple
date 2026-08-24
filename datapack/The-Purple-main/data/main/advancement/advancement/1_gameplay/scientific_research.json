@@ -23,8 +23,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.frying_pan"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.frying_pan"]}
+          }
         }
       }
     },
@@ -32,8 +36,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.frying_pan"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.frying_pan"]}
+          }
         }
       }
     },
@@ -41,8 +49,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.microscope"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.microscope"]}
+          }
         }
       }
     },
@@ -50,8 +62,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.microscope"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.microscope"]}
+          }
         }
       }
     },
@@ -59,8 +75,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.ugly_fish"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.ugly_fish"]}
+          }
         }
       }
     },
@@ -68,8 +88,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.ugly_fish"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.ugly_fish"]}
+          }
         }
       }
     },
@@ -77,8 +101,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.potted_plant"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.potted_plant"]}
+          }
         }
       }
     },
@@ -86,8 +114,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.potted_plant"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.potted_plant"]}
+          }
         }
       }
     },
@@ -95,8 +127,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.rope"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.rope"]}
+          }
         }
       }
     },
@@ -104,8 +140,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.rope"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.rope"]}
+          }
         }
       }
     },
@@ -113,8 +153,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.drill"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.drill"]}
+          }
         }
       }
     },
@@ -122,8 +166,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.drill"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.drill"]}
+          }
         }
       }
     },
@@ -131,8 +179,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.gears"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.gears"]}
+          }
         }
       }
     },
@@ -140,8 +192,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.gears"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.gears"]}
+          }
         }
       }
     },
@@ -149,8 +205,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.meteorite"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.meteorite"]}
+          }
         }
       }
     },
@@ -158,8 +218,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.meteorite"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.meteorite"]}
+          }
         }
       }
     },
@@ -167,8 +231,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["artifact.lantern"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lantern"]}
+          }
         }
       }
     },
@@ -176,8 +244,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "minecraft:entity_type": "minecraft:interaction",
-          "minecraft:entity_tags": {"all_of": ["furniture.lost_artifact.lantern"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:entity_tags": {"all_of": ["artifact.lost_artifact.lantern"]}
+          }
         }
       }
     }

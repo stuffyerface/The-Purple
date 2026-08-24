@@ -4,10 +4,14 @@
       "trigger": "minecraft:tick",
       "conditions": {
         "player": {
-          "minecraft:type_specific/player": {
-            "gamemode": [
-              "spectator"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "gamemode": [
+                "spectator"
+              ]
+            }
           }
         }
       }

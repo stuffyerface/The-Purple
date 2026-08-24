@@ -1,15 +1,13 @@
-[
-  {
-    "function": "minecraft:set_count",
-    "count": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": ".item_count"
-      },
-      "score": "dummy",
-      "scale": 1
+{
+  "type": "minecraft:set_count",
+  "count": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": ".item_count"
     },
-    "add": false
-  }
-]
+    "score": "dummy",
+    "scale": 1
+  },
+  "add": false
+}

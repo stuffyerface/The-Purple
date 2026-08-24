@@ -3,705 +3,577 @@
     "rc_color_red": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.red_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_red": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.red_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_orange": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.orange_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_orange": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.orange_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_yellow": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.yellow_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_yellow": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.yellow_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_lime": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.lime_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_lime": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.lime_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_green": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.green_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_green": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.green_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_cyan": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.cyan_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_cyan": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.cyan_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_light_blue": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.light_blue_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_light_blue": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.light_blue_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_blue": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.blue_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_blue": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.blue_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_purple": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.purple_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_purple": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.purple_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_magenta": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.magenta_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_magenta": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.magenta_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_pink": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.pink_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_pink": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.pink_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_brown": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.brown_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_brown": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.brown_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_white": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.white_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_white": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.white_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_black": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.black_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_black": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.black_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_gray": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.gray_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_gray": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.gray_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "rc_color_light_gray": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.light_gray_team"]}
             }
-          }
-        ]
+        }
       }
     },
     "lc_color_light_gray": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
+        "player": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
-          }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
               "minecraft:entity_tags": {"all_of": ["setting.color.light_gray_team"]}
             }
-          }
-        ]
+        }
       }
     }
   },

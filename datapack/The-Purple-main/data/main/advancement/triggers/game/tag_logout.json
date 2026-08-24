@@ -4,11 +4,19 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
-          "minecraft:entity_tags": {"all_of": ["source"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {"all_of": ["source"]}
+          }
         },
         "entity": {
-          "minecraft:entity_type": "minecraft:mannequin",
-          "minecraft:entity_tags": {"all_of": ["disconnect.zombie","alive"]}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:mannequin",
+            "minecraft:entity_tags": {"all_of": ["disconnect.zombie","alive"]}
+          }
         }
       }
     }

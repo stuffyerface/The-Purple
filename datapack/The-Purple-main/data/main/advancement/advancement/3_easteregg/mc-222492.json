@@ -19,13 +19,17 @@
   },
   "parent": "main:advancement/3_easteregg/root",
   "criteria": {
-    "": {
+    "turtle_egg": {
       "trigger": "minecraft:tick",
       "conditions": {
         "player": {
-          "stepping_on": {
-            "block": {
-              "blocks": "minecraft:turtle_egg"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:stepping_on": {
+              "block": {
+                "blocks": "minecraft:turtle_egg"
+              }
             }
           }
         }
