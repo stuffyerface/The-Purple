@@ -6,7 +6,6 @@ execute if entity @s[advancements={main:triggers/settings/game/locator_bar={righ
 execute if entity @s[advancements={main:triggers/settings/game/locator_bar={left_click=true}}] run function main:lobby/settings/game/locator_bar/detect/left_click
 execute if entity @s[advancements={main:triggers/settings/game/locator_bar={shift_right_click=true}}] run function main:lobby/settings/game/locator_bar/detect/shift_right_click
 execute if entity @s[advancements={main:triggers/settings/game/locator_bar={shift_left_click=true}}] run function main:lobby/settings/game/locator_bar/detect/shift_left_click
-execute store result bossbar main:time max run scoreboard players get .locator_bar settings
 
 # check last updater
 tag @s add modifiedSetting

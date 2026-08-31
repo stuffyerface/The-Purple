@@ -1,9 +1,14 @@
 tellraw @s[tag=debug] ["[Console] ",{"text":"Left settings board boundries.","color":"red"}]
 
+# reset player
 tag @s remove within_setting_board_boundries
 attribute @s minecraft:entity_interaction_range modifier remove main:setting_board
 attribute @s minecraft:knockback_resistance modifier remove main:setting_board
 
+# reset setting board if no one else is around
+execute unless entity @p[tag=within_setting_board_boundries] run schedule function main:module/miscellaneous/setting/reset_board 3s replace
+
+# reset triggers
 scoreboard players reset @s setting.round_length
 scoreboard players reset @s setting.reduce_timer
 scoreboard players reset @s setting.increase_timer

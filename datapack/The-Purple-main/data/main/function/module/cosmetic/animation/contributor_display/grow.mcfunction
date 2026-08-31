@@ -10,5 +10,5 @@ execute as @e[tag=animation.grow] if score @s animation.contributor_display matc
 
 # repeat/end
 execute as @e[tag=animation.grow] unless score @s animation.contributor_display matches 100.. run schedule function main:module/cosmetic/animation/contributor_display/grow 1t
-execute as @e[tag=animation.grow,tag=stuffy] if score @s animation.contributor_display matches 100.. run function c:build/contributor_display/stuffy
-execute as @e[tag=animation.grow,tag=nightlibra] if score @s animation.contributor_display matches 100.. run function c:build/contributor_display/nightlibra
+execute as @e[tag=animation.grow,tag=stuffy] if score @s animation.contributor_display matches 100.. run function init:build/contributor_display/stuffy
+execute as @e[tag=animation.grow,tag=nightlibra] if score @s animation.contributor_display matches 100.. run function init:build/contributor_display/nightlibra

@@ -26,8 +26,10 @@ execute as @e[tag=setting_ephemeral,scores={age=1..}] run kill @s
 scoreboard players add @e[type=text_display,tag=setting_ephemeral] age 1
 
 ## slow tick
-scoreboard players add .slow_tick dummy 1
-execute if score .slow_tick dummy matches 10.. run scoreboard players set .slow_tick dummy 0
+scoreboard players add .20t dummy 1
+scoreboard players add .10t dummy 1
+execute if score .20t dummy matches 20.. run scoreboard players set .20t dummy 0
+execute if score .10t dummy matches 10.. run scoreboard players set .10t dummy 0
 
 ## miscellaneous
 
@@ -48,8 +50,8 @@ execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/fu
 execute as @a[scores={version=-2147483647..}] at @s run function main:module/miscellaneous/version
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
-execute if score .slow_tick dummy matches 0 as @a[tag=!player] unless predicate main:has_item/ready unless predicate main:has_item/not_ready unless predicate main:has_item/spectate_game run function main:module/inventory/trigger 
-execute if score .slow_tick dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
+execute if score .10t dummy matches 0 as @a[tag=!player] unless predicate main:has_item/ready unless predicate main:has_item/not_ready unless predicate main:has_item/spectate_game run function main:module/inventory/trigger 
+execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
 
 # entities
 execute as @e[type=trident,nbt={inGround:1b}] run kill @s
@@ -100,16 +102,24 @@ execute as @e[type=minecraft:lingering_potion] unless entity @s[tag=already_chec
 execute as @n[type=minecraft:area_effect_cloud] if data entity @s data{id:"REVIVAL_POTION"} run data merge entity @s {Duration:1}
 
 # lobby
-execute at @n[tag=block.beacon.source] run playsound minecraft:block.beacon.ambient block @a[distance=..15] ~ ~ ~ 1 0
+execute at @n[tag=block.beacon.source] run playsound minecraft:block.beacon.ambient block @a[distance=..32] ~ ~ ~ 2 0
 execute at @n[tag=block.beacon.source] run particle minecraft:flash{color:0xFFFFFF} ~ 256 ~ 0.5 0.5 0.5 0 1 force
 execute as @e[tag=block.beacon.source] at @s run rotate @s ~90 ~
 execute as @e[tag=block.beacon.ring_1] at @s run rotate @s ~3 ~
 execute as @e[tag=block.beacon.ring_2] at @s run rotate @s ~-6 ~
-execute at @e[tag=block.sniffer_egg] unless block ~ ~ ~ sniffer_egg[hatch=0] run setblock ~ ~ ~ minecraft:sniffer_egg[hatch=0]
-execute at @e[tag=block.decorated_pot] unless block ~ ~ ~ decorated_pot run setblock ~ ~ ~ decorated_pot{item:{count: 1, id:"minecraft:brick"}}
+
+execute if score .20t dummy matches 0 unless score .artifact_lifetime settings matches 0 if score .total_artifacts data matches 9 run scoreboard players add .artifact_lifetime data 1
+execute if score .20t dummy matches 0 unless score .artifact_lifetime settings matches 0 if score .artifact_lifetime data >= .artifact_lifetime settings run function c:reset/artifact
+execute if score .20t dummy matches 0 at @e[tag=block.sniffer_egg] unless block ~ ~ ~ sniffer_egg[hatch=0] run setblock ~ ~ ~ minecraft:sniffer_egg[hatch=0]
+execute if score .20t dummy matches 0 at @e[tag=block.decorated_pot] unless block ~ ~ ~ decorated_pot run setblock ~ ~ ~ decorated_pot{item:{count: 1, id:"minecraft:brick"}}
+execute if score .10t dummy matches 0 positioned 3 14 -22 if predicate main:block/has_blacklisted_items run function main:module/miscellaneous/tick/empty_barrel
+
+execute if score .20t dummy matches 0 as @e[type=#minecraft:boat,tag=!lobby.boat] run scoreboard players add @s age 1
+execute if score .20t dummy matches 0 as @e[type=#minecraft:boat,tag=!lobby.boat] at @s if score @s age >= .boat_lifetime settings run function main:module/miscellaneous/kill/boat
+execute if score .20t dummy matches 0 as @e[type=#minecraft:boat,tag=lobby.boat] at @s positioned ~ ~0.5 ~ unless predicate {type:"minecraft:all_of",terms:["main:flag/is_in_water",{type:"minecraft:location_check",predicate:{block:{blocks:"#minecraft:air"}}}]} run function main:module/miscellaneous/kill/boat
+execute if score .20t dummy matches 0 as @e[type=minecraft:item,predicate=main:item/bamboo_raft] run loot replace entity @s contents loot main:item/sunken_raft
+
 execute as @e[type=tropical_fish,tag=furniture.lost_artifact.ugly_fish] at @s rotated as @s on passengers run rotate @s ~-140 ~
-kill @e[type=item,nbt={Item:{id:"minecraft:bamboo_raft"}},nbt=!{Item:{components:{"minecraft:custom_data":{id:SUNKEN_RAFT}}}}]
-execute if score .slow_tick dummy matches 0 positioned 3 14 -22 if predicate main:block/has_blacklisted_items run function main:module/miscellaneous/tick/empty_barrel
 
 execute in minecraft:overworld positioned -10 0 10 as @a[distance=..200] at @s unless block ~ -40 ~ green_terracotta run function main:lobby/border/warning
 execute in minecraft:overworld positioned -10 0 10 as @a[distance=..200] at @s if block ~ -41 ~ tinted_glass run function main:lobby/border/edge
@@ -126,7 +136,7 @@ execute unless score .total_artifacts data matches 9.. as @e[tag=furniture.lost_
 execute unless score .total_artifacts data matches 9.. as @e[tag=furniture.lost_artifact,nbt={Glowing:1b}] at @s unless entity @p[gamemode=!spectator,distance=..5] run data merge entity @s {Glowing:0b}
 
 execute if score .contributor_display_cooldown dummy matches 1.. run scoreboard players remove .contributor_display_cooldown dummy 1
-execute if score .contributor_display data matches 1.. at @n[type=interaction,tag=contributor] unless entity @p[distance=..8] run function c:build/contributor_display/credit/preview
+execute if score .contributor_display data matches 1.. at @n[type=interaction,tag=contributor] unless entity @p[distance=..8] run function init:build/contributor_display/credit/preview
 
 # artifact anti-softlock
 execute if score artifact.frying_pan data matches 1 unless entity @n[tag=furniture.artifact.frying_pan] unless entity @a[tag=artifact.frying_pan] as @e[type=interaction,limit=1,sort=random,tag=lobby.artifact_display,tag=empty] at @s positioned ~ ~1 ~ run function main:lobby/furniture/artifact_display/lobby_frying_pan

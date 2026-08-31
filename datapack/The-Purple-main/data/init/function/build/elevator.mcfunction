@@ -46,7 +46,7 @@ execute at @n[tag=elevator] positioned ~-1 ~-1 ~-2 run summon marker ~ ~ ~ {Tags
 execute at @n[tag=elevator] positioned ~-2 ~-1 ~-2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 
 # walls
-execute at @n[tag=elevator] positioned ~2 ~0 ~-1 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
+execute at @n[tag=elevator] positioned ~2 ~0 ~-1 run summon marker ~ ~ ~ {Tags:["elevator","elevator.head","elevator.head.south"]}
 execute at @n[tag=elevator] positioned ~2 ~0 ~0 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~2 ~0 ~1 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~2 ~1 ~0 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
@@ -58,9 +58,9 @@ execute at @n[tag=elevator] positioned ~2 ~1 ~2 run summon marker ~ ~ ~ {Tags:["
 execute at @n[tag=elevator] positioned ~2 ~2 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~2 ~3 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~2 ~4 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
-execute at @n[tag=elevator] positioned ~1 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
-execute at @n[tag=elevator] positioned ~0 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
-execute at @n[tag=elevator] positioned ~-1 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
+execute at @n[tag=elevator] positioned ~1 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.head","elevator.head.west"]}
+execute at @n[tag=elevator] positioned ~0 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.head","elevator.head.west"]}
+execute at @n[tag=elevator] positioned ~-1 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.head","elevator.head.west"]}
 execute at @n[tag=elevator] positioned ~-2 ~0 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~-2 ~1 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}
 execute at @n[tag=elevator] positioned ~-2 ~2 ~2 run summon marker ~ ~ ~ {Tags:["elevator","elevator.barrier"]}

@@ -30,7 +30,7 @@ scoreboard players add .total_rounds data 1
 # round start
 scoreboard players operation .starting_immunity data = .starting_immunity settings
 scoreboard players operation .time data = .round_length settings
-scoreboard players set @a[scores={spectator_ability_timer=1..}] spectator_ability_timer 1
+execute as @a[scores={spectator_ability_timer=1..}] unless score @s spectator_ability matches 5 run scoreboard players set @s spectator_ability_timer 1
 scoreboard players set @a[scores={source_ability_timer=1..}] source_ability_timer 1
 scoreboard players reset * double_tap
 scoreboard players reset * double_tap_uuid.0
@@ -40,7 +40,7 @@ scoreboard players reset * tagback_uuid.0
 scoreboard players reset * tagback_uuid.1
 execute if score .reduce_timer settings matches 1.. run function main:game/tag/function/reduce_timer
 execute if score .round data >= .round_teleport settings as @a[tag=player,tag=!corrupted,gamemode=!spectator] run function c:tp/current_location
-execute if score .round data >= .locator_bar settings as @a[tag=player] run attribute @s minecraft:waypoint_receive_range modifier add purple:locator_bar 500 add_value
+execute if score .round data >= .locator_bar settings unless score .locator_bar settings matches 0 as @a[tag=player] run attribute @s minecraft:waypoint_receive_range modifier add purple:locator_bar 500 add_value
 function main:game/tag/function/select_source
 execute as @a[tag=player] run stopsound @s music
 

@@ -1,6 +1,6 @@
 # rope
 #fill 16 23 1071 16 20 1071 air
-#execute positioned 16 23 1071 run function c:build/quicksand_rope_1
+#execute positioned 16 23 1071 run function init:build/quicksand_rope_1
 #summon interaction 16 21.9 1074 {width:0.5f,height:1.1f,response:1b,Tags:["trap.quicksand.rope"]}
 #summon interaction 16 22.9 1074.2 {width:0.5f,height:1.1f,response:1b,Tags:["trap.quicksand.rope"]}
 #summon interaction 16 22.9 1074.5 {width:0.5f,height:1.1f,response:1b,Tags:["trap.quicksand.rope"]}

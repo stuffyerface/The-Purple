@@ -5,12 +5,12 @@ tellraw @a[tag=debug] ["[Console] ",{"text":"Setup complete.","color":"green"}]
 setworldspawn -23 16 -5
 time set 14000
 function init:load_items
-function init:setup/rock
+execute unless entity @n[tag=block.rock] run function init:setup/rock
 bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-1"
+data modify storage main:data version set value "v1.0.11-2"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -103,6 +103,7 @@ scoreboard objectives add stat.fish.diving_mask dummy
 scoreboard objectives add stat.fish.oxygen_tank dummy
 scoreboard objectives add stat.fish.wetsuit_pants dummy
 scoreboard objectives add stat.fish.wetsuit_fins dummy
+scoreboard objectives add stat.fish.ugly_fish dummy
 scoreboard objectives setdisplay list stat.total_wins
 
 # create triggers
@@ -152,6 +153,8 @@ scoreboard players set .elevator data 0
 scoreboard players set .map settings 1
 scoreboard players set .limit_ugly_fish settings 1
 scoreboard players set .rock_dupe settings 0
+scoreboard players set .boat_lifetime settings 3600
+scoreboard players set .artifact_lifetime settings 3600
 
 scoreboard players set .round_length settings 60
 scoreboard players set .reduce_timer settings 10
@@ -221,6 +224,9 @@ execute unless data storage main:item random.common[{components:{"minecraft:cust
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"REVIVAL_POTION"}}}] run data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
 execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"DECOY"}}}] run data modify storage main:item random.common append from storage main:item id.DECOY
 #execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
+
+# set saved defaults
+function main:lobby/settings/save_default
 
 # set gamerules
 gamerule minecraft:advance_time false

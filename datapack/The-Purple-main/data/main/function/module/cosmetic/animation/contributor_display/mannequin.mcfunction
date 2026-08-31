@@ -13,5 +13,5 @@ execute as @e[type=minecraft:mannequin,tag=animation.mannequin_] at @s run funct
 
 # repeat/end
 execute as @e[tag=animation.mannequin] unless score @s animation.contributor_display matches 200.. run schedule function main:module/cosmetic/animation/contributor_display/mannequin 1t replace
-execute as @e[tag=animation.mannequin,tag=stuffy] if score @s animation.contributor_display matches 200.. run function c:build/contributor_display/stuffy
-execute as @e[tag=animation.mannequin,tag=nightlibra] if score @s animation.contributor_display matches 200.. run function c:build/contributor_display/nightlibra
+execute as @e[tag=animation.mannequin,tag=stuffy] if score @s animation.contributor_display matches 200.. run function init:build/contributor_display/stuffy
+execute as @e[tag=animation.mannequin,tag=nightlibra] if score @s animation.contributor_display matches 200.. run function init:build/contributor_display/nightlibra

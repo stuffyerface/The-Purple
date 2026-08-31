@@ -14,6 +14,9 @@ execute as @n[tag=elevator.base] at @s positioned ~-1 ~6 ~-1 if block ~ ~ ~ iron
 execute as @n[tag=elevator.base] at @s positioned ~-1 ~7 ~-1 if block ~ ~ ~ barrier run setblock ~ ~ ~ iron_chain[axis=y]
 execute as @e[tag=elevator.barrier] at @s run fill ~ ~1 ~ ~ ~-2 ~ air replace barrier
 execute as @e[tag=elevator.barrier] at @s if block ~ ~ ~ air run setblock ~ ~ ~ barrier
+execute as @e[tag=elevator.head] at @s run fill ~ ~1 ~ ~ ~-2 ~ minecraft:air replace minecraft:player_wall_head
+execute as @e[tag=elevator.head.west] at @s if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:player_wall_head[facing=west]{profile:{texture:"minecraft:particle/empty"}}
+execute as @e[tag=elevator.head.south] at @s if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:player_wall_head[facing=south]{profile:{texture:"minecraft:particle/empty"}}
 
 # player
 execute at @n[tag=elevator.base] positioned ~-2 ~-1 ~-2 as @a[dx=3.5,dz=3.5,dy=6,gamemode=!spectator] run ride @s mount @e[limit=1,sort=random,tag=elevator.chair,predicate=!main:flag/has_passengers]
@@ -22,6 +25,5 @@ execute at @n[tag=elevator.base] positioned ~ ~10 ~ run playsound minecraft:bloc
 # repeat/end
 execute store result score .elevator_y dummy run data get entity @n[tag=elevator.base] Pos[1] 10
 execute if score .elevator_y dummy matches 935..1495 run return run schedule function main:module/elevator/loop 1t
+execute as @e[tag=elevator.chair,predicate=main:flag/has_passengers] on passengers if entity @s[type=minecraft:player] run ride @s dismount
 scoreboard players set .elevator data 0
-
-

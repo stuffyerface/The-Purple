@@ -45,8 +45,4 @@ execute as @a[tag=player] run scoreboard players set @s teleport_lock 0
 execute as @a[tag=player] run function main:game/tag/function/player_reset
 execute as @a[tag=was_in_game] run tag @s remove was_in_game
 function main:game/tag/function/check_required
-
-execute at @e[tag=block.turtle_egg.1] unless block ~ ~ ~ turtle_egg[eggs=1] run setblock ~ ~ ~ turtle_egg[eggs=1]
-execute at @e[tag=block.turtle_egg.2] unless block ~ ~ ~ turtle_egg[eggs=2] run setblock ~ ~ ~ turtle_egg[eggs=2]
-execute at @e[tag=block.turtle_egg.3] unless block ~ ~ ~ turtle_egg[eggs=3] run setblock ~ ~ ~ turtle_egg[eggs=3]
-execute at @e[tag=block.turtle_egg.4] unless block ~ ~ ~ turtle_egg[eggs=4] run setblock ~ ~ ~ turtle_egg[eggs=4]
+function c:reset/turtle_egg

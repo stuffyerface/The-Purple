@@ -11,5 +11,5 @@ execute as @e[tag=animation.firework] if score @s animation.contributor_display 
 
 # repeat/end
 execute as @e[tag=animation.firework] unless score @s animation.contributor_display matches 25.. run schedule function main:module/cosmetic/animation/contributor_display/firework 1t
-execute as @e[tag=animation.firework,tag=stuffy] if score @s animation.contributor_display matches 25.. run function c:build/contributor_display/stuffy
-execute as @e[tag=animation.firework,tag=nightlibra] if score @s animation.contributor_display matches 25.. run function c:build/contributor_display/nightlibra
+execute as @e[tag=animation.firework,tag=stuffy] if score @s animation.contributor_display matches 25.. run function init:build/contributor_display/stuffy
+execute as @e[tag=animation.firework,tag=nightlibra] if score @s animation.contributor_display matches 25.. run function init:build/contributor_display/nightlibra

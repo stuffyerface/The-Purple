@@ -7,7 +7,7 @@ summon minecraft:item_display -40 22.95 -45 {Tags:["lobby.contributor_display","
 
 # lines
 scoreboard players set .disable_contributor_cosmetics dummy 1
-execute positioned -40 23.35 -45 run function c:build/contributor_display/credit/name/raster {line:'top'}
-execute positioned -40 22.95 -45 run function c:build/contributor_display/credit/name/blockym {line:'middle'}
-execute positioned -40 22.55 -45 run function c:build/contributor_display/credit/name/evtema3 {line:'bottom'}
+execute positioned -40 23.35 -45 run function init:build/contributor_display/credit/name/raster {line:'top'}
+execute positioned -40 22.95 -45 run function init:build/contributor_display/credit/name/blockym {line:'middle'}
+execute positioned -40 22.55 -45 run function init:build/contributor_display/credit/name/evtema3 {line:'bottom'}
 scoreboard players reset .disable_contributor_cosmetics dummy

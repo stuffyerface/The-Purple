@@ -16,3 +16,4 @@ execute positioned -15 13 18 if block ~ ~ ~ minecraft:brown_stained_glass_pane r
 execute positioned -15 13 18 if block ~ ~ ~ minecraft:green_stained_glass_pane run return run setblock ~ ~ ~ minecraft:brown_stained_glass_pane
 execute positioned -15 13 18 if block ~ ~ ~ minecraft:red_stained_glass_pane run return run setblock ~ ~ ~ minecraft:green_stained_glass_pane
 execute positioned -15 13 18 if block ~ ~ ~ minecraft:black_stained_glass_pane run return run setblock ~ ~ ~ minecraft:red_stained_glass_pane
+execute positioned -15 13 18 run function c:reset/beacon

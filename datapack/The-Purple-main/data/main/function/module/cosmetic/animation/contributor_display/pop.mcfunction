@@ -10,5 +10,5 @@ execute as @e[tag=animation.pop] if score @s animation.contributor_display match
 
 # repeat/end
 execute as @e[tag=animation.pop] unless score @s animation.contributor_display matches 25.. run schedule function main:module/cosmetic/animation/contributor_display/pop 1t
-execute as @e[tag=animation.pop,tag=stuffy] if score @s animation.contributor_display matches 25.. run function c:build/contributor_display/stuffy
-execute as @e[tag=animation.pop,tag=nightlibra] if score @s animation.contributor_display matches 25.. run function c:build/contributor_display/nightlibra
+execute as @e[tag=animation.pop,tag=stuffy] if score @s animation.contributor_display matches 25.. run function init:build/contributor_display/stuffy
+execute as @e[tag=animation.pop,tag=nightlibra] if score @s animation.contributor_display matches 25.. run function init:build/contributor_display/nightlibra

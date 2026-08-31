@@ -10,6 +10,7 @@ execute if score .countdown data matches 0 run scoreboard players add .pregame d
 execute if score .countdown data matches 0 if score .pregame data matches 1 run clear @a[tag=ready]
 execute if score .countdown data matches 0 if score .pregame data matches 1 run kill @e[type=ender_pearl]
 execute if score .countdown data matches 0 if score .pregame data matches 1 run function main:game/tag/function/teleport
+execute if score .countdown data matches 0 if score .pregame data matches 1 run function c:reset/turtle_egg
 execute if score .countdown data matches 0 if score .pregame data matches 1 if score .map settings matches 0 run data merge block 3 14 -22 {lock:{components:{"minecraft:custom_data":{id:KEY}}}}
 execute if score .countdown data matches 0 if score .pregame data matches 2 run scoreboard players set .game data 1
 

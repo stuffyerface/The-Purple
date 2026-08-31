@@ -1,5 +1,6 @@
 advancement revoke @s only main:triggers/items/decoy
 playsound minecraft:entity.armor_stand.place player @s ~ ~ ~ 1 0.8
+tag @s add this_player
 
 # summon decoy mannequin
 execute at @n[tag=new_decoy] run summon minecraft:mannequin ~ ~ ~ {Tags:['new_decoy','new_decoy_mannequin','decoy','decoy_entity'], CustomName:{translate:'entity.purple.unknown_player', fallback:"Unknown Player", color:dark_purple}, CustomNameVisible:true, hide_description:true, Silent:true}
@@ -10,9 +11,10 @@ scoreboard players operation @e[tag=new_decoy] clone_id = .decoy_total clone_id
 scoreboard players operation @e[tag=new_decoy] color = @s color
 execute store result storage main:dummy ability.clone.id int 1 run scoreboard players get @s id
 function main:module/item/function/decoy/join_team_macro with storage main:dummy ability.clone
-function main:module/item/function/decoy/set_profile
-execute as @n[tag=new_decoy_mannequin] run function main:module/cosmetic/space_helmet
+execute summon minecraft:text_display run function main:module/item/function/decoy/set_profile
+item replace entity @n[tag=new_decoy_mannequin] {type:"minecraft:group",terms:[{type:"minecraft:slot_range",slots:"armor.*"},{type:"minecraft:slot_range",slots:"weapon.*"}]} from entity @s {type:"minecraft:group",terms:[{type:"minecraft:slot_range",slots:"armor.*"},{type:"minecraft:slot_range",slots:"weapon.*"}]}
 
 # clean up
+tag @s remove this_player
 tag @e[tag=new_decoy] remove new_decoy
 tag @e[tag=new_decoy_mannequin] remove new_decoy_mannequin
