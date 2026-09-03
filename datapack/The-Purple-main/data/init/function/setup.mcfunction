@@ -2,7 +2,9 @@
 
 # miscellaneous
 tellraw @a[tag=debug] ["[Console] ",{"text":"Setup complete.","color":"green"}]
-setworldspawn -23 16 -5
+execute in minecraft:overworld positioned -23 16 -5 run setworldspawn ~ ~ ~
+execute in minecraft:overworld positioned 1000000 0 1000000 run forceload add ~ ~
+execute in minecraft:overworld positioned 1000000 0 1000000 run setblock ~ ~ ~ minecraft:barrel
 time set 14000
 function init:load_items
 execute unless entity @n[tag=block.rock] run function init:setup/rock
@@ -10,7 +12,7 @@ bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-2"
+data modify storage main:data version set value "v1.0.11-3"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -107,6 +109,7 @@ scoreboard objectives add stat.fish.ugly_fish dummy
 scoreboard objectives setdisplay list stat.total_wins
 
 # create triggers
+scoreboard objectives add leave trigger
 scoreboard objectives add return trigger
 scoreboard objectives add secret trigger
 scoreboard objectives add version trigger
@@ -154,7 +157,7 @@ scoreboard players set .map settings 1
 scoreboard players set .limit_ugly_fish settings 1
 scoreboard players set .rock_dupe settings 0
 scoreboard players set .boat_lifetime settings 3600
-scoreboard players set .artifact_lifetime settings 3600
+scoreboard players set .artifact_lifetime settings 0
 
 scoreboard players set .round_length settings 60
 scoreboard players set .reduce_timer settings 10

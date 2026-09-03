@@ -29,5 +29,6 @@ execute if score .check_ready dummy = .ready data unless score .chat.check_ready
 scoreboard players reset .check_ready dummy
 
 # join late
+execute if entity @s[tag=ready] if score .pregame data matches 1.. run function main:lobby/player/inventory/save
 execute if entity @s[tag=ready] if score .pregame data matches 1.. run clear @s
 execute if entity @s[tag=ready] if score .pregame data matches 1.. run function c:tp/current_location

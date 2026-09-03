@@ -31,4 +31,4 @@ attribute @s minecraft:entity_interaction_range base reset
 attribute @s minecraft:waypoint_receive_range modifier remove purple:locator_bar
 attribute @s minecraft:waypoint_receive_range base set 0.01
 
-function main:lobby/player/inventory
+function main:lobby/player/inventory/load

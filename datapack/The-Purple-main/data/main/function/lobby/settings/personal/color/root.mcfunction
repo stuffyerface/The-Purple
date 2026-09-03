@@ -44,4 +44,4 @@ playsound minecraft:ui.button.click block @s
 advancement grant @s only main:advancement/1_gameplay/choices_choices color
 advancement revoke @s only main:triggers/settings/personal/color
 title @s actionbar {"selector":"@s"}
-scoreboard players set @s actionbar 20
+scoreboard players set @s actionbar 40

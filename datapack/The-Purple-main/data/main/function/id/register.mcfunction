@@ -29,7 +29,7 @@ execute store result score @s source_ability run random value 1..5
 execute store result score @s spectator_ability run random value 1..6
 execute store result score @s death_effect run random value 1..3
 execute store result score @s victory_dance run random value 1..3
-function main:lobby/player/inventory
+function main:lobby/player/inventory/load
 function c:tp/lobby
 function main:message/lobby/first_join
 

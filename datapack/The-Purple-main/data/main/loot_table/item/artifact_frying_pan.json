@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_strad",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "fallback": "Frying Pan",
+                  "translate": "item.purple.artifact.frying_pan.name"
+                },
+                "minecraft:lore": [
+                  {
+                    "color": "dark_gray",
+                    "fallback": "Artifact",
+                    "italic": false,
+                    "translate": "item.purple.artifact.lore"
+                  }
+                ],
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": {
+                  "id": "ARTIFACT_FRYING_PAN"
+                },
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

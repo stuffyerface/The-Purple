@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_cat",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:dried_kelp",
+                "minecraft:item_name": {"color":"green","translate":"item.purple.source_ability","fallback":"Infected Ability: %s","with":[{"color":"white","translate":"item.purple.source_ability.darkness","fallback":"Looming Darkness"}]},
+                "minecraft:lore": ["", {"color":"gray","italic":false,"translate":"item.modifiers.source.0","fallback":"When Infected:"}, [" ",{"color":"blue","italic":false,"translate":"item.modifiers.source.1","fallback":"Right-Click %s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]]}], [" ",{"color":"blue","italic":false,"translate":"item.modifiers.source.2","fallback":"to use your ability!"}], "", {"color":"gray","italic":false,"translate":"item.modifiers.cooldown.0","fallback":"Cooldown:"}, [" ",{"color":"blue","italic":false,"translate":"item.modifiers.cooldown.1","fallback":"%s seconds","with":[20]}] ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {"id": "SELECTED_SOURCE_ABILITY", "ability": "SOURCE_DARKNESS"},
+                "minecraft:consumable": {"animation": "none", "consume_seconds": 1000000.0},
+                "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

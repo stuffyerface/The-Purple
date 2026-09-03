@@ -21,7 +21,7 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"text":"its been "},{"score":{"obj
 
 # if rejoining after the game ended
 execute if score .game data matches -1 if entity @s[tag=player] run clear @s
-execute if score .game data matches -1 unless entity @s[tag=player] run function main:lobby/player/inventory
+execute if score .game data matches -1 unless entity @s[tag=player] run function main:lobby/player/inventory/load
 execute if score .game data matches -1 run function c:tp/current_location
 execute if score .game data matches -1 run gamemode adventure @s
 execute if score .game data matches -1 if entity @s[tag=was_in_game] run tag @s remove was_in_game

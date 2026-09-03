@@ -2,6 +2,7 @@ execute unless score @s spectate_confirm matches 0.. run return run function mai
 advancement revoke @s only main:triggers/items/spectate
 
 #
+#
 function main:game/tag/function/player_spectate
 
 title @s times 0 3s 1s

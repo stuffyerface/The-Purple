@@ -46,6 +46,7 @@ execute as @a[scores={cooldown.locator_bar=0}] run attribute @s minecraft:waypoi
 execute as @a[scores={actionbar=0..}] run scoreboard players remove @s actionbar 1
 execute as @a[scores={return_to_lobby_confirm=0..}] run scoreboard players remove @s return_to_lobby_confirm 1
 execute as @a[scores={spectate_confirm=0..}] run scoreboard players remove @s spectate_confirm 1
+execute as @a[scores={leave=-2147483647..}] at @s run function main:game/tag/function/player_leave
 execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/function/player_return
 execute as @a[scores={version=-2147483647..}] at @s run function main:module/miscellaneous/version
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
@@ -121,6 +122,7 @@ execute if score .20t dummy matches 0 as @e[type=minecraft:item,predicate=main:i
 
 execute as @e[type=tropical_fish,tag=furniture.lost_artifact.ugly_fish] at @s rotated as @s on passengers run rotate @s ~-140 ~
 
+execute in minecraft:overworld positioned -10 0 10 as @e[type=minecraft:skeleton,tag=block.rock,distance=..200] at @s if block ~ -40 ~ minecraft:bedrock run spreadplayers -10 10 40 40 true @s
 execute in minecraft:overworld positioned -10 0 10 as @a[distance=..200] at @s unless block ~ -40 ~ green_terracotta run function main:lobby/border/warning
 execute in minecraft:overworld positioned -10 0 10 as @a[distance=..200] at @s if block ~ -41 ~ tinted_glass run function main:lobby/border/edge
 execute as @a[scores={lobby.border=-1..}] at @s unless block ~ -40 ~ minecraft:yellow_terracotta unless block ~ -40 ~ minecraft:bedrock run function main:lobby/border/reset

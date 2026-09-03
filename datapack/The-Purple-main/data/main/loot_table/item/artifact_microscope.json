@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spyglass",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "fallback": "Microscope",
+                  "translate": "item.purple.artifact.microscope.name"
+                },
+                "minecraft:lore": [
+                  {
+                    "color": "dark_gray",
+                    "fallback": "Artifact",
+                    "italic": false,
+                    "translate": "item.purple.artifact.lore"
+                  }
+                ],
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": {
+                  "id": "ARTIFACT_MICROSCOPE"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

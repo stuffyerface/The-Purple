@@ -7,7 +7,8 @@ execute if score .countdown data matches 1.. run scoreboard players remove .coun
 execute if score .countdown data matches 0..5 run function main:message/game/pregame
 execute if score .countdown data matches 0 run scoreboard players add .pregame data 1
 
-execute if score .countdown data matches 0 if score .pregame data matches 1 run clear @a[tag=ready]
+execute if score .countdown data matches 0 if score .pregame data matches 1 as @a[tag=ready] run function main:lobby/player/inventory/save
+execute if score .countdown data matches 0 if score .pregame data matches 1 as @a[tag=ready] run clear @s
 execute if score .countdown data matches 0 if score .pregame data matches 1 run kill @e[type=ender_pearl]
 execute if score .countdown data matches 0 if score .pregame data matches 1 run function main:game/tag/function/teleport
 execute if score .countdown data matches 0 if score .pregame data matches 1 run function c:reset/turtle_egg

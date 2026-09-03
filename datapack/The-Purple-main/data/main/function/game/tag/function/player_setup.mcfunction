@@ -12,6 +12,8 @@ execute as @a[tag=ready] run function main:module/item/function/reset
 execute at @a[tag=ready] run kill @e[type=item,distance=..2]
 execute as @a[tag=ready] run clear @s
 execute as @a[tag=ready] run gamemode adventure
+execute as @a[tag=ready] run scoreboard players enable @s leave
+execute as @a[tag=ready] run scoreboard players set @s leave -2147483648
 execute as @a[tag=ready] run scoreboard players add .players data 1
 execute as @a[tag=ready] run scoreboard players add @s stat.total_games 1
 execute as @a[tag=ready] run function main:module/cosmetic/space_helmet
@@ -25,6 +27,5 @@ execute as @a[tag=ready] run tag @s remove infected
 execute as @a[tag=ready] run tag @s remove spectator
 execute as @a[tag=ready] run tag @s remove ready
 execute as @a[tag=ready] run stopsound @s music
-
 function main:module/miscellaneous/setting/reach
 function main:game/tag/function/select_source

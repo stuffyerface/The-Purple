@@ -2,6 +2,7 @@ execute unless score @s spectate_confirm matches 0.. run return run function mai
 advancement revoke @s only main:triggers/items/spectate_game
 
 function c:tp/current_location
+function main:lobby/player/inventory/save
 function main:game/tag/function/player_spectate
 
 title @s times 0 3s 1s
@@ -10,4 +11,6 @@ title @s subtitle {"translate":"message.purple.spectate.subtitle","fallback":"%s
 execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
 scoreboard players reset @s spectate_confirm
 scoreboard players set @s return -2147483648
+scoreboard players set @s leave -2147483648
 scoreboard players enable @s return
+scoreboard players enable @s leave

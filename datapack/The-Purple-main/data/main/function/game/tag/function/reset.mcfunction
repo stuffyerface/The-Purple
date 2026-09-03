@@ -26,6 +26,7 @@ scoreboard players reset .required data
 scoreboard players reset .pregame data
 scoreboard players reset .ready data
 scoreboard players reset .round data
+scoreboard players reset * leave
 scoreboard players reset * return
 scoreboard players reset * spectate_confirm
 scoreboard players reset * return_to_lobby_confirm
