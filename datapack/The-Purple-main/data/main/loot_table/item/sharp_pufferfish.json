@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "fallback": "Ouch!",
+                  "translate": "item.purple.sharp_pufferfish"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:enchantments": {
+                  "minecraft:sharpness": 100
+                },
+                "minecraft:custom_data": {
+                  "id": "SHARP_PUFFERFISH"
+                },
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

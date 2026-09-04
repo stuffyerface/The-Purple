@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:lime_dye",
+        "minecraft:item_name": {"bold": true,"color": "red","translate": "item.purple.not_ready","fallback": "Click to Cancel"}
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"mode": "NOT_READY"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {"minecraft:entity_tags": {"all_of": ["ready"]}}
+  }
+}

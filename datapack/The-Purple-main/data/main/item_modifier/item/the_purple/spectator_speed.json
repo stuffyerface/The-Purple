@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_name": {"translate":"item.purple.source.ability","fallback":"%2$s - %s","with":[{"translate":"item.purple.spectator_ability.speed","fallback":"Speed Burst","color":"green"},[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_gray"},
+        "minecraft:lore": [{"translate":"setting.purple.button.spectator_ability.speed.desc.1","fallback":"Grant a burst of speed","color":"gray","italic":false},{"translate":"setting.purple.button.spectator_ability.speed.desc.2","fallback":"to every player","color":"gray","italic":false}]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"ability": "SPECTATOR_SPEED"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"spectator_ability": 2}
+  }
+}

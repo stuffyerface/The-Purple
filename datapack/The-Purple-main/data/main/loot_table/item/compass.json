@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.compass",
+                  "fallback": "Tracking Compass"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.purple.compass",
+                  "fallback": "Tracking Compass",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "item.purple.compass.desc",
+                    "fallback": "Track the nearest player",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:use_cooldown": {
+                  "seconds": 0.5,
+                  "cooldown_group": "purple:compass"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 1000000
+                },
+                "minecraft:damage": 0,
+                "minecraft:lodestone_tracker": {
+                  "tracked": false,
+                  "target": {
+                    "pos": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "dimension": "missing:no"
+                  }
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_data": {
+                  "id": "COMPASS"
+                },
+                "minecraft:max_damage": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

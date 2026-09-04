@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16777215},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 0}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16755200},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 1}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16733695},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 2}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 5636095},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 3}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16777045},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 4}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 5635925},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 5}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16764108},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 6}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 5592405},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 7}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 11184810},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 8}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 43690},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 9}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 11141290},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 10}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 5592575},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 11}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 11823181},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 12}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 43520},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 13}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 16733525},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 14}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:dyed_color": 0},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 15}
+      }
+    }
+  ]
+}

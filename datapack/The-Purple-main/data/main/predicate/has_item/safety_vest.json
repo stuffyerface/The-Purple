@@ -8,7 +8,7 @@
         "slots": {
           "armor.chest": {
             "predicates": {
-              "minecraft:custom_data": "{id:SAFETY_VEST}"
+              "minecraft:custom_data": {"id": "SAFETY_VEST"}
             }
           }
         }

@@ -5,7 +5,9 @@
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"FISHING_ROD\"}}}]}"
+          "predicates": {
+            "minecraft:container": {"items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "FISHING_ROD"}}}]}}
+          }
         }
       }
     },
@@ -13,7 +15,11 @@
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"READY\"}}}]}"
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "LOBBY_BUTTON"}}}]}
+            }
+          }
         }
       }
     },
@@ -21,7 +27,11 @@
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"NOT_READY\"}}}]}"
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "ABILITY_PREVIEW_SOURCE"}}}]}
+            }
+          }
         }
       }
     },
@@ -29,7 +39,11 @@
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SPECTATE_GAME\"}}}]}"
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "ABILITY_PREVIEW_SPECTATOR"}}}]}
+            }
+          }
         }
       }
     },
@@ -37,23 +51,11 @@
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SOURCE_ABILITY\"}}}]}"
-        }
-      }
-    },
-    {
-      "type": "minecraft:location_check",
-      "predicate": {
-        "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"SPECTATOR_ABILITY\"}}}]}"
-        }
-      }
-    },
-    {
-      "type": "minecraft:location_check",
-      "predicate": {
-        "block": {
-          "nbt": "{Items: [{components: {\"minecraft:custom_data\": {id:\"QUICK_SELECT\"}}}]}"
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "QUICK_SELECT"}}}]}
+            }
+          }
         }
       }
     }

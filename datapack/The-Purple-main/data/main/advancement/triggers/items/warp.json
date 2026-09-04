@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "using_item": {
+    "warp_spawn": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:WARP_SPAWN}"
+            "minecraft:custom_data": {"id":"WARP_SPAWN"}
           }
         }
       }

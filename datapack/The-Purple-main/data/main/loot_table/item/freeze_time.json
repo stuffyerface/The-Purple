@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.freeze_time",
+                  "fallback": "Freeze Timer"
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "item.purple.freeze_time.desc",
+                    "fallback": "Freeze time for %ss",
+                    "with": [
+                      "5"
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:consumable": {
+                  "consume_seconds": 1000000
+                },
+                "minecraft:custom_data": {
+                  "id": "FREEZE_TIME"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

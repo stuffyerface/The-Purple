@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.smoke_bomb",
+                  "fallback": "Smoke Bomb"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.purple.smoke_bomb",
+                  "fallback": "Smoke Bomb",
+                  "italic": false
+                },
+                "minecraft:max_stack_size": 3,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "SMOKE_BOMB"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "duration": 10,
+                      "amplifier": 50,
+                      "ambient": true,
+                      "show_icon": false,
+                      "id": "minecraft:invisibility",
+                      "show_particles": false
+                    }
+                  ],
+                  "custom_color": 7829367
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

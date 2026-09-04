@@ -1,8 +1,12 @@
 advancement revoke @s only main:triggers/module/change_inventory
 
 # quick select detection
-execute if items entity @s player.cursor *[custom_data~{id:QUICK_SELECT}] run function main:module/inventory/function/quick_select
+execute if items entity @s player.cursor *[custom_data~{id:QUICK_SELECT}] run function main:module/inventory/quick_select
 
-# lost readyup detection
-execute if score .game data matches -1 unless predicate main:has_item/ready unless predicate main:has_item/not_ready unless score @s relog matches 1.. run function main:module/inventory/function/missing_ready
-execute if score .game data matches 1.. unless predicate main:has_item/spectate_game if entity @s[tag=!player,tag=!ready] unless entity @n[type=item,distance=..3,nbt={Item:{components:{"minecraft:custom_data":{id:SPECTATE_GAME}}}}] run function c:item/spectate_game
+# lost lobby_button detection
+execute if score .game data matches -1 if score @s relog matches 1.. run return fail
+execute if score .game data matches 1.. unless entity @s[tag=!player,tag=!ready] run return fail
+execute if predicate main:has_item/lobby_button run return fail
+execute if entity @n[type=item, distance=..5, predicate=main:has_item/lobby_button] run return fail
+
+function main:lobby/player/inventory/item/lobby_button

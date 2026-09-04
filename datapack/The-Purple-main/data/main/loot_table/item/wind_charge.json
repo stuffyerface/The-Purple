@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wind_charge",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "fallback": "Wind Charge",
+                  "translate": "item.purple.wind_charge"
+                },
+                "minecraft:max_stack_size": 10,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "WIND_CHARGE"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

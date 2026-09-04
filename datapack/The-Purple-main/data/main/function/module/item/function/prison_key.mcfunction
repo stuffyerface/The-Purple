@@ -3,7 +3,7 @@ execute if entity @n[tag=setting.board,distance=..10] on attacker run playsound 
 execute if entity @n[tag=setting.board,distance=..10] on attacker run scoreboard players set @s actionbar 30
 execute if entity @n[tag=setting.board,distance=..10] on attacker run return run title @s actionbar {"translate":"message.purple.item.disabled","fallback":"You can't use this here!","color":"red"}
 
-execute on attacker unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run clear @s minecraft:trial_key[minecraft:custom_data={id:"PRISON_KEY"}] 1
+execute on attacker unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run clear @s minecraft:trial_key[minecraft:custom_data~{id:"PRISON_KEY"}] 1
 execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] store result score .item_count dummy run data get entity @s SelectedItem.count
 execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run scoreboard players remove .item_count dummy 1
 execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run item replace entity @s weapon.mainhand from entity @s weapon.mainhand main:set_count

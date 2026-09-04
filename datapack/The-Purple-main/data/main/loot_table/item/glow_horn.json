@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.glow_horn",
+                  "fallback": "Glow Horn"
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "item.purple.glow_horn.desc",
+                    "fallback": "Reveal all players",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:instrument": "minecraft:sing_goat_horn",
+                "minecraft:max_stack_size": 5,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "GLOW_HORN"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:instrument"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

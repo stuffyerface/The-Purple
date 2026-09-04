@@ -11,14 +11,11 @@ execute unless score @s return matches -2147483647.. at @s run stopsound @s * pu
 execute unless score @s return matches -2147483647.. at @s run playsound purple:music.dead master @s ~ ~ ~ 0.33
 
 # items
-execute if predicate main:has_item/source run clear @s *[minecraft:custom_data={id:THE_PURPLE}]
-item replace entity @s armor.head with minecraft:calibrated_sculk_sensor[enchantments={"minecraft:binding_curse":1},enchantment_glint_override=false,tooltip_display={hide_tooltip:true},equippable={slot:"head",equip_sound:"minecraft:intentionally_empty",camera_overlay:"purple:misc/purple_corruption"}]
-function main:module/cosmetic/corrupted_armor
-function main:module/item/system/macro/give {id:"LOBBY",slot:"hotbar.8"}
-function main:module/item/system/macro/give {id:"SPECTATE",slot:"hotbar.7"}
-execute if score @s spectator_ability matches 1 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_1",slot:"hotbar.0"}
-execute if score @s spectator_ability matches 2 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_2",slot:"hotbar.0"}
-execute if score @s spectator_ability matches 3 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_3",slot:"hotbar.0"}
-execute if score @s spectator_ability matches 4 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_4",slot:"hotbar.0"}
-execute if score @s spectator_ability matches 5 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_5",slot:"hotbar.0"}
-execute if score @s spectator_ability matches 6 run function main:module/item/system/macro/give {id:"SOURCE_SPECTATOR_6",slot:"hotbar.0"}
+execute if predicate main:has_item/source run clear @s *[minecraft:custom_data~{id:THE_PURPLE}]
+loot replace entity @s armor.head loot main:item/corrupted_head
+loot replace entity @s armor.body loot main:item/corrupted_chestplate
+loot replace entity @s armor.legs loot main:item/corrupted_leggings
+loot replace entity @s armor.feet loot main:item/corrupted_boots
+loot replace entity @s hotbar.0 loot main:item/the_purple_spectator
+loot replace entity @s hotbar.8 loot main:item/lobby
+loot replace entity @s hotbar.7 loot main:item/spectate

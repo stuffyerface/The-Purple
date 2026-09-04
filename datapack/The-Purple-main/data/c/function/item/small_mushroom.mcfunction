@@ -1,1 +1,1 @@
-function main:module/item/system/macro/give {id:"SMALL_MUSHROOM",slot:"weapon.mainhand"}
+loot give @s loot main:item/small_mushroom

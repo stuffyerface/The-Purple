@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.antidote",
+                  "fallback": "Antidote"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.purple.antidote",
+                  "fallback": "Antidote",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "item.purple.antidote.desc",
+                    "fallback": "Cure yourself",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 3,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "ANTIDOTE"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 16711680
+                },
+                "!minecraft:use_remainder": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

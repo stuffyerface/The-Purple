@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.spectate",
+                  "fallback": "Click to enter Spectator Mode",
+                  "color": "dark_purple",
+                  "bold": true
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:item_model": "minecraft:ender_eye",
+                "minecraft:use_cooldown": {
+                  "seconds": 0.5,
+                  "cooldown_group": "purple:spectate"
+                },
+                "minecraft:instrument": {
+                  "use_duration": 0.05,
+                  "range": 1,
+                  "sound_event": {
+                    "sound_id": "minecraft:intentionally_empty"
+                  },
+                  "description": ""
+                },
+                "minecraft:custom_data": {"id": "SPECTATE", "game_button":true},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "instrument"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

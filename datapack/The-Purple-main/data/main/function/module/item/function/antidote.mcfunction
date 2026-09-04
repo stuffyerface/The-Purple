@@ -7,7 +7,7 @@ execute if entity @s[tag=dying] run return run title @s actionbar {"translate":"
 execute if entity @s run function main:message/item/antidote
 execute if entity @s run tag @s remove source
 execute if entity @s run tag @s remove infected
-execute if entity @s run clear @s minecraft:popped_chorus_fruit[minecraft:custom_data={id:"THE_PURPLE"}]
+execute if entity @s run clear @s minecraft:popped_chorus_fruit[minecraft:custom_data~{id:"THE_PURPLE"}]
 execute if entity @s run effect clear @s speed
 execute if entity @s run function main:id/team/set_color
 execute if entity @s run function main:module/disconnect/sync/marker

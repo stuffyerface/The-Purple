@@ -1,6 +1,6 @@
 # set ability
 scoreboard players set @s spectator_ability 3
-function main:lobby/player/inventory/item/spectator_ability
+function main:lobby/player/inventory/item/ability_preview_spectator
 title @s actionbar [{"color":"green","translate":"item.purple.spectator_ability","fallback":"Spectator Ability: %s","with":[{"translate":"item.purple.spectator_ability.teleport","fallback":"Random Teleport","color":"white"}]}]
 scoreboard players set @s actionbar 40
 

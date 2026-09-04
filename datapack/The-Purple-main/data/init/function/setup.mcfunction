@@ -12,7 +12,7 @@ bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-3"
+data modify storage main:data version set value "v1.0.11-4"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -211,22 +211,6 @@ scoreboard players set .item_WIND_CHARGE settings 1
 scoreboard players set .item_REVIVAL_POTION settings 1
 scoreboard players set .item_DECOY settings 1
 scoreboard players set .item_GAME_ROCK settings 0
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"SMALL_MUSHROOM"}}}] run data modify storage main:item random.common append from storage main:item id.SMALL_MUSHROOM
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"CHORUS_FRUIT"}}}] run data modify storage main:item random.common append from storage main:item id.CHORUS_FRUIT
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"ENDER_PEARL"}}}] run data modify storage main:item random.common append from storage main:item id.ENDER_PEARL
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}] run data modify storage main:item random.common append from storage main:item id.GLOW_HORN
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"TOTEM_OF_UNDYING"}}}] run data modify storage main:item random.common append from storage main:item id.TOTEM_OF_UNDYING
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"TRIDENT"}}}] run data modify storage main:item random.common append from storage main:item id.TRIDENT
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"SAFETY_VEST"}}}] run data modify storage main:item random.common append from storage main:item id.SAFETY_VEST
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}] run data modify storage main:item random.common append from storage main:item id.PRISON_KEY
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"COMPASS"}}}] run data modify storage main:item random.common append from storage main:item id.COMPASS
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"FREEZE_TIME"}}}] run data modify storage main:item random.common append from storage main:item id.FREEZE_TIME
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"SMOKE_BOMB"}}}] run data modify storage main:item random.common append from storage main:item id.SMOKE_BOMB
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"ANTIDOTE"}}}] run data modify storage main:item random.common append from storage main:item id.ANTIDOTE
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"WIND_CHARGE"}}}] run data modify storage main:item random.common append from storage main:item id.WIND_CHARGE
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"REVIVAL_POTION"}}}] run data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
-execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"DECOY"}}}] run data modify storage main:item random.common append from storage main:item id.DECOY
-#execute unless data storage main:item random.common[{components:{"minecraft:custom_data":{id:"GAME_ROCK"}}}] run data modify storage main:item random.common append from storage main:item id.GAME_ROCK
 
 # set saved defaults
 function main:lobby/settings/save_default

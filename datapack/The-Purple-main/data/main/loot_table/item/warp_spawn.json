@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_name": {"bold":true,"color":"green","text":"Warp to Spawn!"},
+                "minecraft:custom_data": {"id": "WARP_SPAWN"},
+                "minecraft:consumable": {"consume_seconds": 1000000}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

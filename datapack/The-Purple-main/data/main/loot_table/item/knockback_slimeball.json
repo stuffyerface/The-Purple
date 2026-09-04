@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_ball",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "fallback": "Yeet!",
+                  "translate": "item.purple.knockback_slimeball"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:enchantments": {
+                  "minecraft:knockback": 10
+                },
+                "minecraft:custom_data": {
+                  "id": "KNOCKBACK_SLIMEBALL"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

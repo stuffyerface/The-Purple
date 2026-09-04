@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "hotbar.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "inventory.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "saddle": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "LOBBY_BUTTON"}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:ender_eye",
+        "minecraft:item_name": {"translate": "item.purple.spectate_game","fallback": "Click to Spectate the Game","color": "dark_purple","bold": true}    
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"mode": "SPECTATE_GAME"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:int_value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {"type": "minecraft:fixed", "name": ".game"},
+      "score": "data"
+    },
+    "test": {
+      "min": 1,
+      "max": 3
+    }
+  }
+}

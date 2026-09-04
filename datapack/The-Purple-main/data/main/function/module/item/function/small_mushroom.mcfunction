@@ -1,5 +1,5 @@
 advancement revoke @s only main:triggers/items/small_mushroom
-clear @s *[minecraft:custom_data={id:"SMALL_MUSHROOM_ABILITY"}] 1
+clear @s *[minecraft:custom_data~{id:"SMALL_MUSHROOM_ABILITY"}] 1
 
 scoreboard players add @s stat.item.small_mushroom 1
 effect give @s speed 10 0 true

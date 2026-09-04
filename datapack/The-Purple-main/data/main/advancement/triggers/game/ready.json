@@ -1,21 +1,21 @@
 {
   "criteria": {
     "ready": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:\"READY\"}"
+            "minecraft:custom_data": "{mode:READY}"
           }
         }
       }
     },
     "cancel": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:\"NOT_READY\"}"
+            "minecraft:custom_data": "{mode:NOT_READY}"
           }
         }
       }

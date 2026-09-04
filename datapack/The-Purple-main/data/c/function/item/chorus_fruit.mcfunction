@@ -1,1 +1,1 @@
-function main:module/item/system/macro/give {id:"CHORUS_FRUIT",slot:"weapon.mainhand"}
+loot give @s loot main:item/chorus_fruit

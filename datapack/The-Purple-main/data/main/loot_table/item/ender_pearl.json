@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.ender_pearl",
+                  "fallback": "Ender Pearl"
+                },
+                "minecraft:max_stack_size": 3,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "ENDER_PEARL"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

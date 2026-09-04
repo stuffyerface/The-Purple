@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/rock",
+          "weight": 19
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/edible_rock",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

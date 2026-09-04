@@ -7,8 +7,7 @@ execute if entity @s[advancements={main:triggers/game/ready={cancel=true}}] run 
 advancement revoke @s only main:triggers/game/ready
 
 # replace item
-execute if entity @s[tag=ready] run function c:item/not_ready
-execute if entity @s[tag=!ready] run function c:item/ready
+function main:lobby/player/inventory/item/lobby_button
 
 # calculate players ready percent
 function main:game/tag/function/check_required

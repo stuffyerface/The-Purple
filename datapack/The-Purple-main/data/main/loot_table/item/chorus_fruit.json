@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.chorus_fruit",
+                  "fallback": "Instant Chorus Fruit"
+                },
+                "minecraft:max_stack_size": 9,
+                "minecraft:rarity": "common",
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "purple:chorus_fruit"
+                },
+                "minecraft:consumable": {
+                  "on_consume_effects": [
+                    {
+                      "diameter": 32,
+                      "type": "minecraft:teleport_randomly"
+                    }
+                  ],
+                  "consume_seconds": 0.05
+                },
+                "minecraft:custom_data": {
+                  "id": "CHORUS_FRUIT"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

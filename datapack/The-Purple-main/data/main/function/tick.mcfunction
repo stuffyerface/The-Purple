@@ -51,7 +51,7 @@ execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/fu
 execute as @a[scores={version=-2147483647..}] at @s run function main:module/miscellaneous/version
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
-execute if score .10t dummy matches 0 as @a[tag=!player] unless predicate main:has_item/ready unless predicate main:has_item/not_ready unless predicate main:has_item/spectate_game run function main:module/inventory/trigger 
+execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless predicate main:has_item/lobby_button run function main:module/inventory/trigger 
 execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
 
 # entities
@@ -72,7 +72,7 @@ execute as @e[type=villager,tag=decoy] at @s run function main:module/item/funct
 execute as @e[type=mannequin,tag=decoy] at @s run function main:module/item/function/decoy/tick_display
 
 # items
-execute as @e[type=item] if data entity @s Thrower run function main:module/inventory/function/return_thrown_item
+execute as @e[type=item] if data entity @s Thrower run function main:module/inventory/return_thrown_item
 execute as @e[type=item,nbt={OnGround:1b}] run scoreboard players add @s age 1
 execute as @e[type=item,scores={age=100..}] run kill @s
 
@@ -85,8 +85,8 @@ execute as @e[tag=prison_block_marker] if score @s age matches 50.. at @s run ki
 execute as @a[scores={item.compass=1..}] run scoreboard players remove @s item.compass 1
 execute as @a[scores={item.compass=..0}] run scoreboard players reset @s item.compass
 
-execute as @a[scores={item.lobby_ability_preview=1..}] run scoreboard players remove @s item.lobby_ability_preview 1
-execute as @a[scores={item.lobby_ability_preview=..0}] run scoreboard players reset @s item.lobby_ability_preview
+execute as @a[scores={item.ability_preview=1..}] run scoreboard players remove @s item.ability_preview 1
+execute as @a[scores={item.ability_preview=..0}] run scoreboard players reset @s item.ability_preview
 
 execute as @a[scores={item.small_mushroom=0..}] run scoreboard players remove @s item.small_mushroom 1
 execute as @a[scores={item.small_mushroom=..0}] at @s run function main:module/item/function/small_mushroom_reset

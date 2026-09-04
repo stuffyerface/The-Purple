@@ -1,1 +1,1 @@
-function main:module/item/system/macro/give {id:"PRISON_KEY",slot:"weapon.mainhand"}
+loot give @s loot main:item/prison_key

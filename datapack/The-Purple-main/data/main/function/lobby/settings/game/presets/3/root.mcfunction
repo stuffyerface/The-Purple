@@ -36,13 +36,5 @@ scoreboard players set .item_REVIVAL_POTION settings 1
 scoreboard players set .item_DECOY settings 1
 scoreboard players set .item_GAME_ROCK settings 1
 
-data remove storage main:item random.common
-data modify storage main:item random.common append from storage main:item id.ENDER_PEARL
-data modify storage main:item random.common append from storage main:item id.TOTEM_OF_UNDYING
-data modify storage main:item random.common append from storage main:item id.ANTIDOTE
-data modify storage main:item random.common append from storage main:item id.REVIVAL_POTION
-data modify storage main:item random.common append from storage main:item id.DECOY
-data modify storage main:item random.common append from storage main:item id.GAME_ROCK
-
 # console log
 tellraw @a[tag=debug] ["[Console] ",{"selector":"@s"}," changed settings to preset ",{"text":"#3","color":"gray"}]

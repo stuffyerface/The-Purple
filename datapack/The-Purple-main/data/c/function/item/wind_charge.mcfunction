@@ -1,1 +1,1 @@
-function main:module/item/system/macro/give {id:"WIND_CHARGE",slot:"weapon.mainhand"}
+loot give @s loot main:item/wind_charge

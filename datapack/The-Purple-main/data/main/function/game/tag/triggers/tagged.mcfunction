@@ -75,7 +75,7 @@ execute if entity @s[tag=disconnect.zombie] run data modify entity @s CustomName
 execute on attacker run tag @s remove source
 execute on attacker run tag @s remove infected
 execute on attacker run effect clear @s speed
-execute on attacker run clear @s *[minecraft:custom_data={id:"THE_PURPLE"}]
+execute on attacker run clear @s *[minecraft:custom_data~{id:"THE_PURPLE"}]
 execute on attacker run function main:id/team/set_color
 execute on attacker run function main:module/disconnect/sync/marker
 execute on attacker run function main:module/source/reset

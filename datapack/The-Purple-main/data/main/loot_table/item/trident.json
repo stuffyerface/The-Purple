@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.trident",
+                  "fallback": "Trident"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "TRIDENT"
+                },
+                "minecraft:max_damage": 2,
+                "!minecraft:attribute_modifiers": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

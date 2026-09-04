@@ -7,7 +7,7 @@ execute as @a[tag=ready] if score .map settings matches 3 run advancement grant 
 
 # setup
 bossbar set main:time players @a[tag=ready]
-execute as @a[tag=!ready] run function c:item/spectate_game
+execute as @a[tag=!ready] run function main:lobby/player/inventory/item/lobby_button
 execute as @a[tag=ready] run function main:module/item/function/reset
 execute at @a[tag=ready] run kill @e[type=item,distance=..2]
 execute as @a[tag=ready] run clear @s

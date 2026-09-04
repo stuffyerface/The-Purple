@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:barrier",
+        "minecraft:item_name": "",
+        "minecraft:max_stack_size": 1,
+        "minecraft:custom_data": {"id": "LOBBY_BUTTON"},
+        "minecraft:consumable": {
+          "animation": "none",
+          "consume_seconds": 0.05,
+          "sound": "minecraft:intentionally_empty",
+          "has_consume_particles": false
+        },
+        "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
+        "minecraft:use_cooldown": {"seconds": 0.5, "cooldown_group": "purple:lobby_button"},
+        "!minecraft:jukebox_playable": {}
+      }
+    },
+    "main:item/lobby_button/ready",
+    "main:item/lobby_button/not_ready",
+    "main:item/lobby_button/spectate_game"
+  ]
+}

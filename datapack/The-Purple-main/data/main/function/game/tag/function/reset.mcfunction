@@ -40,7 +40,7 @@ scoreboard players reset * spectator_ability_timer
 scoreboard players reset * source_ability_timer
 bossbar set main:time visible false
 bossbar set main:time players
-execute as @a[tag=!player] run function c:item/ready
+execute as @a[tag=!player] run function main:lobby/player/inventory/item/lobby_button
 execute as @a[tag=player] run gamemode adventure @s
 execute as @a[tag=player] run scoreboard players set @s teleport_lock 0
 execute as @a[tag=player] run function main:game/tag/function/player_reset

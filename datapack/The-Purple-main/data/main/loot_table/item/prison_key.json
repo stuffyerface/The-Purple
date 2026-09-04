@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.prison_key",
+                  "fallback": "Prison Key"
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "item.purple.prison_key.desc",
+                    "fallback": "Hit someone to imprison them",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                  "id": "PRISON_KEY"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.purple.translate_book",
+                  "fallback": "Translate Book"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "id": "TRANSLATE_BOOK"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

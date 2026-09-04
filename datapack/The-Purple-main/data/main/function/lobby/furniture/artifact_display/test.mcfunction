@@ -5,7 +5,7 @@ execute unless entity @p[tag=artifact.test] run tellraw @a {"translate":"message
 tag @s remove empty
 tag @s add full
 tag @s add artifact.test
-clear @p[tag=artifact.test] *[custom_data={id:"ARTIFACT_TEST"}]
+clear @p[tag=artifact.test] *[custom_data~{id:"ARTIFACT_TEST"}]
 tag @p[tag=artifact.test] remove artifact.test
 
 # furniture model

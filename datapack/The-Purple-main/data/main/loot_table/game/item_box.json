@@ -1,0 +1,234 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/small_mushroom",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_SMALL_MUSHROOM"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/chorus_fruit",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 3
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_CHORUS_FRUIT"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/ender_pearl",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_ENDER_PEARL"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/glow_horn",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_GLOW_HORN"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/totem_of_undying",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_TOTEM_OF_UNDYING"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/trident",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_TRIDENT"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/safety_vest",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_SAFETY_VEST"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/prison_key",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_PRISON_KEY"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/compass",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_COMPASS"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/freeze_time",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_FREEZE_TIME"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/smoke_bomb",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_SMOKE_BOMB"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/antidote",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_ANTIDOTE"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/wind_charge",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 5
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_WIND_CHARGE"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/revival_potion",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_REVIVAL_POTION"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/decoy",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_DECOY"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/game_rock",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 5
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_GAME_ROCK"},"score":"settings"},
+            "test": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:filtered",
+  "slot_source": {
+    "type": "minecraft:group",
+    "terms": [
+      {
+        "type": "minecraft:slot_range",
+        "source": "this",
+        "slots": "hotbar.*"
+      },
+      {
+        "type": "minecraft:slot_range",
+        "source": "this",
+        "slots": "inventory.*"
+      }
+    ]
+  },
+  "item_filter": {
+    "items": "minecraft:air"
+  }
+}

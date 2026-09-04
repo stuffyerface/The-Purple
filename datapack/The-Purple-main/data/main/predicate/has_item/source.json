@@ -6,48 +6,9 @@
       "entity": "this",
       "predicate": {
         "slots": {
-          "weapon.*": {
-            "components": {
-              "minecraft:custom_data": "{id:THE_PURPLE}"
-            }
-          }
-        }
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "slots": {
           "hotbar.*": {
-            "components": {
-              "minecraft:custom_data": "{id:THE_PURPLE}"
-            }
-          }
-        }
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "slots": {
-          "player.crafting.*": {
-            "components": {
-              "minecraft:custom_data": "{id:THE_PURPLE}"
-            }
-          }
-        }
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "slots": {
-          "player.cursor": {
-            "components": {
-              "minecraft:custom_data": "{id:THE_PURPLE}"
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
             }
           }
         }
@@ -59,8 +20,73 @@
       "predicate": {
         "slots": {
           "inventory.*": {
-            "components": {
-              "minecraft:custom_data": "{id:THE_PURPLE}"
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "saddle": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:custom_data": {"id": "THE_PURPLE"}
             }
           }
         }

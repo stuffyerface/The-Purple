@@ -10,7 +10,3 @@ $execute if entity @s[advancements={main:triggers/settings/game/item={rc_$(id)=t
 # change color
 $execute if score .item_$(id) settings matches 0 as @e[type=block_display,tag=setting.items.$(id)] run data merge entity @s {block_state:{id:"minecraft:red_concrete"}} 
 $execute if score .item_$(id) settings matches 1 as @e[type=block_display,tag=setting.items.$(id)] run data merge entity @s {block_state:{id:"minecraft:lime_concrete"}}
-
-# edit data
-$execute if score .item_$(id) settings matches 0 run function main:lobby/settings/game/item/macro {test:"$(id)",rarity:"$(rarity)"}
-$execute if score .item_$(id) settings matches 1 unless data storage main:item random.$(rarity)[{components:{"minecraft:custom_data":{id:"$(id)"}}}] run data modify storage main:item random.$(rarity) append from storage main:item id.$(id)

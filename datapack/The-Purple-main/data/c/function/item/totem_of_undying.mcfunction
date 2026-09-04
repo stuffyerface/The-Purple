@@ -1,1 +1,1 @@
-function main:module/item/system/macro/give {id:"TOTEM_OF_UNDYING",slot:"weapon.mainhand"}
+loot give @s loot main:item/totem_of_undying
