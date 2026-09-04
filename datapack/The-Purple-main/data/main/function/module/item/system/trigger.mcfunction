@@ -1,5 +1,4 @@
 advancement revoke @s only main:triggers/items/pickup_item
-scoreboard players reset .compare dummy
 
 # find correct item display
 tag @s add pickup_item
@@ -41,34 +40,14 @@ execute at @e[type=interaction,tag=modify_this_entity] unless entity @s[distance
 execute at @e[type=interaction,tag=modify_this_entity] unless entity @s[distance=..6] run return run function main:module/item/system/trigger_reset
 
 # debug stick dev tool
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack unless entity @n[tag=item.display_case,distance=..1] run summon block_display ~-0.4 ~-0.5 ~-0.4 {Tags:["item.display","item.display_case","item.display_case.new","dontkillme"],transformation:[0.8f,0f,0f,0f,0f,1.1f,0f,0f,0f,0f,0.8f,0f,0f,0f,0f,1f],block_state:{id:"minecraft:glass"}}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack run data modify entity @n[tag=item.display_case,distance=..1] block_state.id set from entity @p[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] SelectedItem.id
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack run kill @n[distance=..1,tag=item.display_case,tag=!item.display_case.new]
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack if entity @e[tag=item.display_case.new] run tag @e[tag=modify_this_entity] add dontkillme
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack unless entity @e[tag=item.display_case.new] run tag @e[tag=modify_this_entity] remove dontkillme
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s attack run tag @e[tag=item.display_case.new] remove item.display_case.new
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] as @n[type=interaction,tag=modify_this_entity] at @s if data entity @s interaction run data modify entity @n[type=item_display,tag=item.display,distance=..1] item set from entity @p[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] SelectedItem
-execute if entity @s[nbt={Inventory:[{id:"minecraft:debug_stick",Slot:-106b}]}] run return run function main:module/item/system/trigger_reset
-
-# compare items
-execute if items entity @s weapon.mainhand * run data modify storage main:item compare set from entity @s SelectedItem.components."minecraft:custom_data".id
-execute if items entity @s weapon.mainhand * store result score .compare dummy run data modify storage main:item compare set from entity @n[type=item_display,tag=modify_this_entity] item.components."minecraft:custom_data".id
-execute if score .compare dummy matches 1 run function main:module/item/system/trigger_reset
-execute if score .compare dummy matches 1 run return run function main:message/item/mismatch
-
-# count
-execute store result score .hand_count dummy run data get entity @s SelectedItem.count
-execute store result score .item_count dummy run data get entity @n[type=item_display,tag=modify_this_entity] item.count
-execute if items entity @s weapon.mainhand * store result score .max_stack_size dummy run data get entity @s SelectedItem.components."minecraft:max_stack_size"
-execute if items entity @s weapon.mainhand * if score .hand_count dummy >= .max_stack_size dummy run function main:module/item/system/trigger_reset
-execute if items entity @s weapon.mainhand * if score .hand_count dummy >= .max_stack_size dummy run return run function main:message/item/full_stack
-scoreboard players operation .item_count dummy += .hand_count dummy
+execute if items entity @s weapon.offhand minecraft:debug_stick run return run function main:module/item/system/trigger_debug
 
 # replace my item
-execute unless entity @n[type=item_display,tag=modify_this_entity,tag=dontkillme] run scoreboard players add @s stat.found_items 1
-item replace entity @s weapon.mainhand from entity @n[type=item_display,tag=modify_this_entity] contents main:set_count
+item replace entity @s saddle from entity @n[type=item_display,tag=modify_this_entity] contents main:tech/equip_to_saddle
+function main:module/item/system/pickup/root
 execute as @s at @s run playsound minecraft:entity.item.pickup player @a
 execute as @n[type=item_display,tag=modify_this_entity,tag=dontkillme] at @s run particle minecraft:happy_villager ~ ~ ~ 0.15 0.1 0.15 0 1
+execute unless entity @n[type=item_display,tag=modify_this_entity,tag=dontkillme] run scoreboard players add @s stat.found_items 1
 
 # reset or remove correct item display
 execute if entity @e[type=item_display,tag=modify_this_entity,tag=!dontkillme] run scoreboard players add .total_items data 1

@@ -6,7 +6,7 @@ execute if entity @n[tag=setting.board,distance=..10] on attacker run return run
 execute on attacker unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run clear @s minecraft:trial_key[minecraft:custom_data~{id:"PRISON_KEY"}] 1
 execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] store result score .item_count dummy run data get entity @s SelectedItem.count
 execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run scoreboard players remove .item_count dummy 1
-execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run item replace entity @s weapon.mainhand from entity @s weapon.mainhand main:set_count
+execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"PRISON_KEY"}}}}] run item replace entity @s weapon.mainhand from entity @s weapon.mainhand main:tech/set_count
 execute on attacker run scoreboard players add @s stat.item.prison_key 1
 
 function main:message/item/imprisoned

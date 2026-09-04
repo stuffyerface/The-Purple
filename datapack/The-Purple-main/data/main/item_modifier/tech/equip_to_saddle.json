@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "saddle",
+      "equip_sound": "minecraft:intentionally_empty",
+      "swappable": false
+    }
+  }
+}

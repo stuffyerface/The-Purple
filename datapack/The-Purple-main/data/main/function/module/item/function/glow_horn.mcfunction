@@ -4,7 +4,7 @@ execute if entity @s[tag=item.glow_horn] run return fail
 execute unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}}] run clear @s minecraft:goat_horn[minecraft:custom_data~{id:"GLOW_HORN"}] 1
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}}] store result score .item_count dummy run data get entity @s SelectedItem.count
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}}] run scoreboard players remove .item_count dummy 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}}] run item replace entity @s weapon.mainhand from entity @s weapon.mainhand main:set_count
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{id:"GLOW_HORN"}}}}] run item replace entity @s weapon.mainhand from entity @s weapon.mainhand main:tech/set_count
 execute if entity @s run scoreboard players add @s stat.item.glow_horn 1
 
 tag @s add item.glow_horn

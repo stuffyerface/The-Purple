@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "!minecraft:equippable": {}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "chest",
+          "equip_sound": "minecraft:item.armor.equip_leather",
+          "asset_id": "minecraft:leather"
+        }
+      },
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:slots": {
+            "saddle": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "id": "SAFETY_VEST"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

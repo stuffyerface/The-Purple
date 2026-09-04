@@ -20,13 +20,12 @@ scoreboard players operation .calc disconnect -= @s disconnect
 tellraw @a[tag=debug] [{"text":"[Console] "},{"text":"its been "},{"score":{"objective":"disconnect","name":".calc"},"color":"green"},{"text":" ticks since "},{"selector":"@s"},{"text":" was last online!"}]
 
 # if rejoining after the game ended
-execute if score .game data matches -1 if entity @s[tag=player] run clear @s
-execute if score .game data matches -1 unless entity @s[tag=player] run function main:lobby/player/inventory/load
 execute if score .game data matches -1 run function c:tp/current_location
 execute if score .game data matches -1 run gamemode adventure @s
-execute if score .game data matches -1 if entity @s[tag=was_in_game] run tag @s remove was_in_game
+execute if score .game data matches -1 unless entity @s[tag=player] run function main:lobby/player/inventory/items
 execute if score .game data matches -1 if entity @s[tag=player] run function main:message/game/disconnect_end
 execute if score .game data matches -1 if entity @s[tag=player] run function main:game/tag/function/player_reset
+execute if score .game data matches -1 if entity @s[tag=was_in_game] run tag @s remove was_in_game
 
 # if rejoining with the ready tag
 execute if score .game data matches -1.. if entity @s[tag=ready] run function c:tp/lobby
