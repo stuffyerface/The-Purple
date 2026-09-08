@@ -6,4 +6,4 @@ data merge entity @s {PickupDelay:0, Tags:["thrown_item_pick_me_up"]}
 data modify entity @s Owner set from entity @s Thrower
 
 # teleport item to thrower
-execute on origin at @s run tp @n[tag=thrown_item_pick_me_up] ~ ~ ~
+execute on origin at @s anchored eyes positioned ^ ^ ^ run tp @n[tag=thrown_item_pick_me_up] ~ ~0.2 ~

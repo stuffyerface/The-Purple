@@ -45,6 +45,7 @@ execute if items entity @s weapon.offhand minecraft:debug_stick run return run f
 # replace my item
 item replace entity @s saddle from entity @n[type=item_display,tag=modify_this_entity] contents main:tech/equip_to_saddle
 function main:module/item/system/pickup/root
+execute if score .item dummy matches 0 run return run function main:module/item/system/trigger_reset
 execute as @s at @s run playsound minecraft:entity.item.pickup player @a
 execute as @n[type=item_display,tag=modify_this_entity,tag=dontkillme] at @s run particle minecraft:happy_villager ~ ~ ~ 0.15 0.1 0.15 0 1
 execute unless entity @n[type=item_display,tag=modify_this_entity,tag=dontkillme] run scoreboard players add @s stat.found_items 1

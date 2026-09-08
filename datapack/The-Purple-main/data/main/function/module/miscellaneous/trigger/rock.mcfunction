@@ -9,6 +9,7 @@ tag @s remove pickup_rock
 # give rock
 item replace entity @s saddle from entity @n[tag=modify_this_rock] contents main:tech/equip_to_saddle
 function main:module/item/system/pickup/root
+execute if score .item dummy matches 0 as @n[tag=modify_this_rock] on vehicle run return run function main:module/miscellaneous/trigger/rock_reset
 
 # play rock
 execute at @n[tag=modify_this_rock] run playsound minecraft:block.stone.break block @a[distance=..10] ~ ~ ~ 1 2
