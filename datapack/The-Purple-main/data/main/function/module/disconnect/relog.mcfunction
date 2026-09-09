@@ -22,7 +22,7 @@ tellraw @a[tag=debug] [{"text":"[Console] "},{"text":"its been "},{"score":{"obj
 # if rejoining after the game ended
 execute if score .game data matches -1 run function c:tp/current_location
 execute if score .game data matches -1 run gamemode adventure @s
-execute if score .game data matches -1 unless entity @s[tag=player] run function main:lobby/player/inventory/items
+execute if score .game data matches -1 unless entity @s[tag=player] run function main:module/inventory/items
 execute if score .game data matches -1 if entity @s[tag=player] run function main:message/game/disconnect_end
 execute if score .game data matches -1 if entity @s[tag=player] run function main:game/tag/function/player_reset
 execute if score .game data matches -1 if entity @s[tag=was_in_game] run tag @s remove was_in_game

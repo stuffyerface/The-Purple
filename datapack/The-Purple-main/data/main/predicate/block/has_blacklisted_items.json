@@ -29,7 +29,7 @@
         "block": {
           "predicates": {
             "minecraft:container": {
-              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "ABILITY_PREVIEW_SOURCE"}}}]}
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "PREVIEW_ABILITY_SOURCE"}}}]}
             }
           }
         }
@@ -41,7 +41,7 @@
         "block": {
           "predicates": {
             "minecraft:container": {
-              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "ABILITY_PREVIEW_SPECTATOR"}}}]}
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "PREVIEW_ABILITY_SPECTATOR"}}}]}
             }
           }
         }

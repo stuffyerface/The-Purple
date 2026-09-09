@@ -12,5 +12,5 @@ execute in minecraft:overworld positioned 1000000 0 1000000 run item override en
 execute in minecraft:overworld positioned 1000000 0 1000000 run data modify block ~ ~ ~ Items set from storage main:dummy player.equipment
 execute in minecraft:overworld positioned 1000000 0 1000000 run item override entity @s {type:"minecraft:group",terms:[{type:"minecraft:slot_range",source:"this",slots:"armor.*"},{type:"minecraft:slot_range",source:"this",slots:"saddle"},{type:"minecraft:slot_range",source:"this",slots:"weapon.offhand"}]} from block ~ ~ ~ container.*
 
-function main:lobby/player/inventory/items
+function main:module/inventory/items
 execute in minecraft:overworld positioned 1000000 0 1000000 run data remove block ~ ~ ~ Items

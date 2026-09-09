@@ -1,21 +1,21 @@
 {
   "criteria": {
-    "ABILITY_PREVIEW_SPECTATOR": {
+    "PREVIEW_ABILITY_SPECTATOR": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:ABILITY_PREVIEW_SPECTATOR}"
+            "minecraft:custom_data": "{id:PREVIEW_ABILITY_SPECTATOR}"
           }
         }
       }
     },
-    "ABILITY_PREVIEW_SOURCE": {
+    "PREVIEW_ABILITY_SOURCE": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:ABILITY_PREVIEW_SOURCE}"
+            "minecraft:custom_data": "{id:PREVIEW_ABILITY_SOURCE}"
           }
         }
       }
@@ -23,8 +23,8 @@
   },
   "requirements": [
     [
-      "ABILITY_PREVIEW_SPECTATOR",
-      "ABILITY_PREVIEW_SOURCE"
+      "PREVIEW_ABILITY_SPECTATOR",
+      "PREVIEW_ABILITY_SOURCE"
     ]
   ],
   "rewards": {

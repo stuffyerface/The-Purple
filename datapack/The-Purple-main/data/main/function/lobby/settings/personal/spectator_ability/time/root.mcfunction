@@ -1,6 +1,6 @@
 # set ability
 scoreboard players set @s spectator_ability 5
-function main:lobby/player/inventory/item/ability_preview_spectator
+function main:module/inventory/item/preview_ability_spectator
 title @s actionbar [{"color":"green","translate":"item.purple.spectator_ability","fallback":"Spectator Ability: %s","with":[{"translate":"item.purple.spectator_ability.time","fallback":"Reduce Timer","color":"white"}]}]
 scoreboard players set @s actionbar 40
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:yellow_dye",
+        "minecraft:item_name": "",
+        "minecraft:lore": [""]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"selection": "YELLOW"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"color": 4}
+  }
+}

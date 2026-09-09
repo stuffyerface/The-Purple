@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:barrier",
+        "minecraft:item_name": "",
+        "minecraft:lore": [""],
+        "minecraft:max_stack_size": 1,
+        "minecraft:custom_data": {"id": "PREVIEW_ABILITY_SPECTATOR", "menu_preview": true},
+        "minecraft:consumable": {"animation": "none", "consume_seconds": 1000000.0},
+        "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
+        "!minecraft:jukebox_playable": {}
+      }
+    },
+    "main:item/preview/spectator_fireworks",
+    "main:item/preview/spectator_speed",
+    "main:item/preview/spectator_teleport",
+    "main:item/preview/spectator_slime",
+    "main:item/preview/spectator_time",
+    "main:item/preview/spectator_item"
+  ]
+}
