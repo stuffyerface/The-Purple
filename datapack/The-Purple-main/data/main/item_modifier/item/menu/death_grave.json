@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:skeleton_skull",
+        "minecraft:item_name": {"translate":"setting.purple.button.death_effect","fallback":"Death Effect: %s","color":"green","with":[{"translate":"setting.purple.button.death_effect.grave.name","fallback":"Gravestone","color":"white"}]},
+        "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"selection": "DEATH_GRAVE"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"death_effect": 3}
+  }
+}

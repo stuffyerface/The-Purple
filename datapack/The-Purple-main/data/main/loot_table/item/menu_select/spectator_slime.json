@@ -7,15 +7,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:slime_ball",
+          "name": "minecraft:music_disc_cat",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "minecraft:slime_ball",
                 "minecraft:item_name": {"color":"green","translate":"item.purple.spectator_ability","fallback":"Spectator Ability: %s","with":[{"color":"white","translate":"item.purple.spectator_ability.slime","fallback":"Slime Swarm"}]},
                 "minecraft:lore": [{"translate":"setting.purple.button.spectator_ability.slime.desc.1","fallback":"Spawn multiple slimes on top","color":"gray","italic":false},{"translate":"setting.purple.button.spectator_ability.slime.desc.2","fallback":"of the nearest player","color":"gray","italic":false},"",{"translate":"item.purple.quick_select","fallback":"Click to select!","color":"yellow","italic":false}],
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": {"id": "SELECT_ABILITY_SPECTATOR", "selection": "SPECTATOR_SLIME", "menu_item": true}
+                "minecraft:custom_data": {"id": "SELECT_ABILITY_SPECTATOR", "selection": "SPECTATOR_SLIME", "menu_item": true},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

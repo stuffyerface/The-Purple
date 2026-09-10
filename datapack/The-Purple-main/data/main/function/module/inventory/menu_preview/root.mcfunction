@@ -1,7 +1,8 @@
 playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.5 1.5
-item replace entity @s player.cursor with minecraft:air
+clear @s
 
 # load preview items
+function main:module/inventory/item/lobby_button
 function main:module/inventory/item/preview_ability_spectator
 function main:module/inventory/item/preview_ability_source
 function main:module/inventory/item/preview_cosmetic_color
@@ -9,6 +10,9 @@ function main:module/inventory/item/preview_cosmetic_victory_dance
 function main:module/inventory/item/preview_cosmetic_death_effect
 
 # blank inventory
+loot replace entity @s hotbar.1 loot main:item/menu_slot_empty
+loot replace entity @s hotbar.2 loot main:item/menu_slot_empty
+loot replace entity @s hotbar.3 loot main:item/menu_slot_empty
 loot replace entity @s inventory.0 loot main:item/menu_slot_empty
 loot replace entity @s inventory.1 loot main:item/menu_slot_empty
 loot replace entity @s inventory.2 loot main:item/menu_slot_empty

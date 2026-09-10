@@ -11,6 +11,7 @@ execute if entity @s[advancements={main:triggers/settings/personal/victory_dance
 execute if entity @s[advancements={main:triggers/settings/personal/victory_dance={lc_golden_throne=true}}] run function main:lobby/settings/personal/victory_dance/golden_throne/root
 
 # clean up
+function main:module/inventory/item/preview_cosmetic_victory_dance
 advancement grant @s only main:advancement/1_gameplay/choices_choices victory_dance
 advancement revoke @s only main:triggers/settings/personal/victory_dance
 playsound minecraft:ui.button.click block @s

@@ -16,5 +16,6 @@ execute if entity @s[advancements={main:triggers/settings/personal/spectator_abi
 execute if entity @s[advancements={main:triggers/settings/personal/spectator_ability={lc_item=true}}] run function main:lobby/settings/personal/spectator_ability/item/root
 
 # clean up
-playsound minecraft:ui.button.click block @s
+function main:module/inventory/item/preview_ability_spectator
 advancement revoke @s only main:triggers/settings/personal/spectator_ability
+playsound minecraft:ui.button.click block @s

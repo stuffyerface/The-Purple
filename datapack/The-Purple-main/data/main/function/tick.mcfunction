@@ -85,8 +85,8 @@ execute as @e[tag=prison_block_marker] if score @s age matches 50.. at @s run ki
 execute as @a[scores={item.compass=1..}] run scoreboard players remove @s item.compass 1
 execute as @a[scores={item.compass=..0}] run scoreboard players reset @s item.compass
 
-execute as @a[scores={item.ability_preview=1..}] run scoreboard players remove @s item.ability_preview 1
-execute as @a[scores={item.ability_preview=..0}] run scoreboard players reset @s item.ability_preview
+execute as @a[scores={item.menu_preview=1..}] run scoreboard players remove @s item.menu_preview 1
+execute as @a[scores={item.menu_preview=..0}] run scoreboard players reset @s item.menu_preview
 
 execute as @a[scores={item.small_mushroom=0..}] run scoreboard players remove @s item.small_mushroom 1
 execute as @a[scores={item.small_mushroom=..0}] at @s run function main:module/item/function/small_mushroom_reset

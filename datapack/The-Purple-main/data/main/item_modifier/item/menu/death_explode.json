@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:tnt",
+        "minecraft:item_name": {"translate":"setting.purple.button.death_effect","fallback":"Death Effect: %s","color":"green","with":[{"translate":"setting.purple.button.death_effect.explode.name","fallback":"Explosion","color":"white"}]},
+        "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"selection": "DEATH_EXPLODE"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"death_effect": 1}
+  }
+}

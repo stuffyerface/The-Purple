@@ -14,11 +14,11 @@
         "!minecraft:jukebox_playable": {}
       }
     },
-    "main:item/preview/source_speed",
-    "main:item/preview/source_invisible",
-    "main:item/preview/source_darkness",
-    "main:item/preview/source_corruption",
-    "main:item/preview/source_reach",
-    "main:item/preview/source_clone"
+    "main:item/menu/source_speed",
+    "main:item/menu/source_invisible",
+    "main:item/menu/source_darkness",
+    "main:item/menu/source_corruption",
+    "main:item/menu/source_reach",
+    "main:item/menu/source_clone"
   ]
 }

@@ -14,21 +14,21 @@
         "!minecraft:jukebox_playable": {}
       }
     },
-    "main:item/preview/color_white",
-    "main:item/preview/color_orange",
-    "main:item/preview/color_magenta",
-    "main:item/preview/color_light_blue",
-    "main:item/preview/color_yellow",
-    "main:item/preview/color_lime",
-    "main:item/preview/color_pink",
-    "main:item/preview/color_gray",
-    "main:item/preview/color_light_gray",
-    "main:item/preview/color_cyan",
-    "main:item/preview/color_purple",
-    "main:item/preview/color_blue",
-    "main:item/preview/color_brown",
-    "main:item/preview/color_green",
-    "main:item/preview/color_red",
-    "main:item/preview/color_black"
+    "main:item/menu/color_white",
+    "main:item/menu/color_orange",
+    "main:item/menu/color_magenta",
+    "main:item/menu/color_light_blue",
+    "main:item/menu/color_yellow",
+    "main:item/menu/color_lime",
+    "main:item/menu/color_pink",
+    "main:item/menu/color_gray",
+    "main:item/menu/color_light_gray",
+    "main:item/menu/color_cyan",
+    "main:item/menu/color_purple",
+    "main:item/menu/color_blue",
+    "main:item/menu/color_brown",
+    "main:item/menu/color_green",
+    "main:item/menu/color_red",
+    "main:item/menu/color_black"
   ]
 }

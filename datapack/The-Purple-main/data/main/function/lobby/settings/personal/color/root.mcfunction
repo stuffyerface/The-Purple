@@ -35,13 +35,14 @@ execute if entity @s[advancements={main:triggers/settings/personal/color={rc_col
 execute if entity @s[advancements={main:triggers/settings/personal/color={lc_color_black=true}}] run scoreboard players set @s color 15
 
 function main:id/team/set_color
+title @s actionbar {"selector":"@s"}
+scoreboard players set @s actionbar 40
 
 # console log
 tellraw @a[tag=debug] ["[Console] ",{"selector":"@s"}," changed color."]
 
 # clean up
-playsound minecraft:ui.button.click block @s
+function main:module/inventory/item/preview_cosmetic_color
 advancement grant @s only main:advancement/1_gameplay/choices_choices color
 advancement revoke @s only main:triggers/settings/personal/color
-title @s actionbar {"selector":"@s"}
-scoreboard players set @s actionbar 40
+playsound minecraft:ui.button.click block @s

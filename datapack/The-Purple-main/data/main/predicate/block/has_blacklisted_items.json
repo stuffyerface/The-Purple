@@ -29,7 +29,7 @@
         "block": {
           "predicates": {
             "minecraft:container": {
-              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "PREVIEW_ABILITY_SOURCE"}}}]}
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"menu_preview": true}}}]}
             }
           }
         }
@@ -41,19 +41,7 @@
         "block": {
           "predicates": {
             "minecraft:container": {
-              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "PREVIEW_ABILITY_SPECTATOR"}}}]}
-            }
-          }
-        }
-      }
-    },
-    {
-      "type": "minecraft:location_check",
-      "predicate": {
-        "block": {
-          "predicates": {
-            "minecraft:container": {
-              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"id": "QUICK_SELECT"}}}]}
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"menu_item": true}}}]}
             }
           }
         }

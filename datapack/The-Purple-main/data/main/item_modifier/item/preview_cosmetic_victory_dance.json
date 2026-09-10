@@ -13,6 +13,10 @@
         "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
         "!minecraft:jukebox_playable": {}
       }
-    }
+    },
+    "main:item/menu/victory_fireworks",
+    "main:item/menu/victory_rainbow_sheep",
+    "main:item/menu/victory_horse",
+    "main:item/menu/victory_golden_throne"
   ]
 }

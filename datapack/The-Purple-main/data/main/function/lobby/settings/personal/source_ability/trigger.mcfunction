@@ -16,5 +16,6 @@ execute if entity @s[advancements={main:triggers/settings/personal/source_abilit
 execute if entity @s[advancements={main:triggers/settings/personal/source_ability={lc_clone=true}}] run function main:lobby/settings/personal/source_ability/clone/root
 
 # clean up
-playsound minecraft:ui.button.click block @s
+function main:module/inventory/item/preview_ability_source
 advancement revoke @s only main:triggers/settings/personal/source_ability
+playsound minecraft:ui.button.click block @s

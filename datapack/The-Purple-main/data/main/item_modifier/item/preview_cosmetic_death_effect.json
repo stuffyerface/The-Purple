@@ -13,6 +13,10 @@
         "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
         "!minecraft:jukebox_playable": {}
       }
-    }
+    },
+    "main:item/menu/death_explode",
+    "main:item/menu/death_shrink",
+    "main:item/menu/death_grave",
+    "main:item/menu/death_golden_grave"
   ]
 }

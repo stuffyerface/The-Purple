@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:black_dye",
+        "minecraft:item_name": {"translate":"setting.purple.button.color","fallback":"Cosmetic Color: %s %s","color":"green","with":[{"translate":"setting.purple.button.color.black","fallback":"Black","color":"white"},{"text":"⭐","color":"#000000"}]},
+        "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"selection": "BLACK"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"color": 15}
+  }
+}

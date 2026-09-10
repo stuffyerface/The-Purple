@@ -11,6 +11,7 @@ execute if entity @s[advancements={main:triggers/settings/personal/death_effect=
 execute if entity @s[advancements={main:triggers/settings/personal/death_effect={lc_golden_grave=true}}] run function main:lobby/settings/personal/death_effect/golden_grave/root
 
 # clean up
+function main:module/inventory/item/preview_cosmetic_death_effect
 advancement grant @s only main:advancement/1_gameplay/choices_choices death_effect
 advancement revoke @s only main:triggers/settings/personal/death_effect
 playsound minecraft:ui.button.click block @s

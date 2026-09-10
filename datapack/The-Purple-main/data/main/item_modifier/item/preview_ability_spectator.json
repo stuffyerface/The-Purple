@@ -14,11 +14,11 @@
         "!minecraft:jukebox_playable": {}
       }
     },
-    "main:item/preview/spectator_fireworks",
-    "main:item/preview/spectator_speed",
-    "main:item/preview/spectator_teleport",
-    "main:item/preview/spectator_slime",
-    "main:item/preview/spectator_time",
-    "main:item/preview/spectator_item"
+    "main:item/menu/spectator_fireworks",
+    "main:item/menu/spectator_speed",
+    "main:item/menu/spectator_teleport",
+    "main:item/menu/spectator_slime",
+    "main:item/menu/spectator_time",
+    "main:item/menu/spectator_item"
   ]
 }
