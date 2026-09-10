@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:player_head"
+    },
+    {
+      "type": "minecraft:fill_player_head",
+      "entity": "this"
+    },
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:music_disc_cat"
+    }
+  ]
+}

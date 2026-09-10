@@ -1,3 +1,4 @@
+
 function main:lobby/player/inventory/load_macro with entity @s
 
 # hotbar
@@ -12,5 +13,9 @@ execute in minecraft:overworld positioned 1000000 0 1000000 run item override en
 execute in minecraft:overworld positioned 1000000 0 1000000 run data modify block ~ ~ ~ Items set from storage main:dummy player.equipment
 execute in minecraft:overworld positioned 1000000 0 1000000 run item override entity @s {type:"minecraft:group",terms:[{type:"minecraft:slot_range",source:"this",slots:"armor.*"},{type:"minecraft:slot_range",source:"this",slots:"saddle"},{type:"minecraft:slot_range",source:"this",slots:"weapon.offhand"}]} from block ~ ~ ~ container.*
 
-function main:lobby/player/inventory/items
+# special
+execute in minecraft:overworld positioned 1000000 0 1000000 run data modify block ~ ~ ~ Items set from storage main:dummy player.special
+execute in minecraft:overworld positioned 1000000 0 1000000 run item override entity @s {type:"minecraft:group",terms:[{type:"minecraft:slot_range",source:"this",slots:"player.crafting.*"},{type:"minecraft:slot_range",source:"this",slots:"player.cursor"}]} from block ~ ~ ~ container.*
+
+function main:module/inventory/items
 execute in minecraft:overworld positioned 1000000 0 1000000 run data remove block ~ ~ ~ Items

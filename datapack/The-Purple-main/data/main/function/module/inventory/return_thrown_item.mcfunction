@@ -1,5 +1,6 @@
 # dont return this item
-execute if items entity @s contents *[minecraft:custom_data~{id:COMPASS}] run return run kill @s
+execute if items entity @s contents *[minecraft:custom_data~{id:"COMPASS"}] run return run kill @s
+execute if items entity @s contents *[minecraft:custom_data~{menu_preview:true}] run return run kill @s
 
 # grant item ownership to thrower
 data merge entity @s {PickupDelay:0, Tags:["thrown_item_pick_me_up"]}

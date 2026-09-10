@@ -23,9 +23,98 @@
           "minecraft:slots": {
             "saddle": {
               "predicates": {
-                "minecraft:custom_data": {
-                  "id": "SAFETY_VEST"
-                }
+                "minecraft:custom_data": {"id": "SAFETY_VEST"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "head",
+          "equip_sound": "minecraft:item.armor.equip_netherite"
+        }
+      },
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:slots": {
+            "saddle": {
+              "predicates": {
+                "minecraft:custom_data": {"id": "DIVING_MASK"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "chest",
+          "equip_sound": "minecraft:item.armor.equip_netherite",
+          "asset_id": "minecraft:netherite"
+        }
+      },
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:slots": {
+            "saddle": {
+              "predicates": {
+                "minecraft:custom_data": {"id": "OXYGEN_TANK"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "legs",
+          "equip_sound": "minecraft:item.armor.equip_netherite",
+          "asset_id": "minecraft:netherite"
+        }
+      },
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:slots": {
+            "saddle": {
+              "predicates": {
+                "minecraft:custom_data": {"id": "WETSUIT_PANTS"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "feet",
+          "equip_sound": "minecraft:item.armor.equip_netherite",
+          "asset_id": "minecraft:leather"
+        }
+      },
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:slots": {
+            "saddle": {
+              "predicates": {
+                "minecraft:custom_data": {"id": "WETSUIT_FINS"}
               }
             }
           }

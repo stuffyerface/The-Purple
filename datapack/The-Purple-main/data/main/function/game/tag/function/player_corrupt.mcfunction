@@ -13,7 +13,7 @@ execute unless score @s return matches -2147483647.. at @s run playsound purple:
 # items
 execute if predicate main:has_item/source run clear @s *[minecraft:custom_data~{id:THE_PURPLE}]
 loot replace entity @s armor.head loot main:item/corrupted_head
-loot replace entity @s armor.body loot main:item/corrupted_chestplate
+loot replace entity @s armor.chest loot main:item/corrupted_chestplate
 loot replace entity @s armor.legs loot main:item/corrupted_leggings
 loot replace entity @s armor.feet loot main:item/corrupted_boots
 loot replace entity @s hotbar.0 loot main:item/the_purple_spectator

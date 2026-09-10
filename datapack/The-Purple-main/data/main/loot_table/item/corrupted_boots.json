@@ -20,7 +20,7 @@
                 "minecraft:equippable": {
                   "slot": "feet",
                   "equip_sound": "minecraft:intentionally_empty",
-                  "asset_id":"leather"
+                  "asset_id": "leather"
                 },
                 "minecraft:custom_data": {"id": "corrupted_head"},
                 "minecraft:unbreakable": {},

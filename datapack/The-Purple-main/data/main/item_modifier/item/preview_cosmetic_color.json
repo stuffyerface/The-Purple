@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:barrier",
+        "minecraft:item_name": "",
+        "minecraft:lore": [""],
+        "minecraft:max_stack_size": 1,
+        "minecraft:custom_data": {"id": "PREVIEW_COSMETIC_COLOR", "menu_preview": true},
+        "minecraft:consumable": {"animation": "none", "consume_seconds": 1000000.0},
+        "minecraft:use_effects": {"can_sprint": true, "speed_multiplier": 1},
+        "!minecraft:jukebox_playable": {}
+      }
+    },
+    "main:item/menu/color_white",
+    "main:item/menu/color_orange",
+    "main:item/menu/color_magenta",
+    "main:item/menu/color_light_blue",
+    "main:item/menu/color_yellow",
+    "main:item/menu/color_lime",
+    "main:item/menu/color_pink",
+    "main:item/menu/color_gray",
+    "main:item/menu/color_light_gray",
+    "main:item/menu/color_cyan",
+    "main:item/menu/color_purple",
+    "main:item/menu/color_blue",
+    "main:item/menu/color_brown",
+    "main:item/menu/color_green",
+    "main:item/menu/color_red",
+    "main:item/menu/color_black"
+  ]
+}

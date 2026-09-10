@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_cat",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:tnt",
+                "minecraft:item_name": {"translate":"setting.purple.button.death_effect","fallback":"Death Effect: %s","color":"green","with":[{"translate":"setting.purple.button.death_effect.explode.name","fallback":"Explosion","color":"white"}]},
+                "minecraft:lore": [{"translate":"setting.purple.button.death_effect.expode.desc","fallback":"You explode when you die!","color":"gray","italic":false},"",{"translate":"item.purple.quick_select","fallback":"Click to select!","color":"yellow","italic":false}],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {"id": "SELECT_COSMETIC_DEATH_EFFECT", "selection":"DEATH_EXPLODE", "menu_item": true},
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

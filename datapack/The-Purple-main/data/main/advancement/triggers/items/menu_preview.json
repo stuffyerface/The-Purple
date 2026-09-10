@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "MENU_PREVIEW": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {"menu_preview": true}
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "MENU_PREVIEW"
+    ]
+  ],
+  "rewards": {
+    "function": "main:module/item/function/menu_preview"
+  }
+}
