@@ -143,6 +143,78 @@
             }
         }
       }
+    },
+    "rc_sleep": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.victory_dance.sleep"]}
+            }
+        }
+      }
+    },
+    "lc_sleep": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.victory_dance.sleep"]}
+            }
+        }
+      }
+    },
+    "rc_chicken_dinner": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.victory_dance.chicken_dinner"]}
+            }
+        }
+      }
+    },
+    "lc_chicken_dinner": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.victory_dance.chicken_dinner"]}
+            }
+        }
+      }
     }
   },
   "requirements": [
@@ -153,6 +225,10 @@
       "lc_rainbow_sheep",
       "rc_horse",
       "lc_horse",
+      "rc_sleep",
+      "lc_sleep",
+      "rc_chicken_dinner",
+      "lc_chicken_dinner",
       "rc_golden_throne",
       "lc_golden_throne"
     ]

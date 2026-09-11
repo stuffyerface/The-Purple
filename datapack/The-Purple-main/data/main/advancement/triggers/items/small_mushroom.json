@@ -1,15 +1,13 @@
 {
   "criteria": {
-    "small_mushroom": {
-      "trigger": "minecraft:inventory_changed",
+    "use_small_mushroom": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
-        "items": [
-          {
-            "predicates": {
-              "minecraft:custom_data": "{id:SMALL_MUSHROOM_ABILITY}"
-            }
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {"id": "SMALL_MUSHROOM"}
           }
-        ]
+        }
       }
     }
   },

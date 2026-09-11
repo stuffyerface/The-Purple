@@ -20,7 +20,7 @@ scoreboard players set @s setting.locator_bar 20
 scoreboard players set @s setting.max_rounds 100
 
 scoreboard players set .item_SMALL_MUSHROOM settings 0
-scoreboard players set .item_CHORUS_FRUIT settings 0
+scoreboard players set .item_INSTANT_CHORUS_FRUIT settings 0
 scoreboard players set .item_ENDER_PEARL settings 1
 scoreboard players set .item_GLOW_HORN settings 0
 scoreboard players set .item_TOTEM_OF_UNDYING settings 1

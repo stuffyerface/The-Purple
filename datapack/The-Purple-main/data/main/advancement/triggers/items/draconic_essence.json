@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_draconic_essence": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {"id": "DRACONIC_ESSENCE"}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/draconic_essence"
+  }
+}

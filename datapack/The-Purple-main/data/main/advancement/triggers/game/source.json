@@ -1,21 +1,16 @@
 {
   "criteria": {
-    "source": {
-      "trigger": "minecraft:using_item",
+    "use_the_purple": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:\"THE_PURPLE\"}"
+            "minecraft:custom_data": {"id": "THE_PURPLE"}
           }
         }
       }
     }
   },
-  "requirements": [
-    [
-      "source"
-    ]
-  ],
   "rewards": {
     "function": "main:module/source/trigger"
   }

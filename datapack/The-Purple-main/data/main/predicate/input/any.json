@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "main:input/forward",
+    "main:input/backward",
+    "main:input/left",
+    "main:input/right"
+  ]
+}

@@ -4,7 +4,7 @@
     {
       "type": "minecraft:set_components",
       "components": {
-        "minecraft:item_model": "minecraft:magenta_dye",
+        "minecraft:item_model": "minecraft:magenta_cushion",
         "minecraft:item_name": {"translate":"setting.purple.button.color","fallback":"Cosmetic Color: %s %s","color":"green","with":[{"translate":"setting.purple.button.color.magenta","fallback":"Magenta","color":"white"},{"text":"⭐","color":"#FF55FF"}]},
         "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
       }

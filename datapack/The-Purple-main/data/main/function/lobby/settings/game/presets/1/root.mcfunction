@@ -21,7 +21,7 @@ execute store result score @s setting.total_items run data get storage main:sett
 execute store result score @s setting.winners run data get storage main:settings default.winners
 
 execute store result score .item_SMALL_MUSHROOM settings run data get storage main:settings default.item_SMALL_MUSHROOM
-execute store result score .item_CHORUS_FRUIT settings run data get storage main:settings default.item_CHORUS_FRUIT
+execute store result score .item_INSTANT_CHORUS_FRUIT settings run data get storage main:settings default.item_INSTANT_CHORUS_FRUIT
 execute store result score .item_ENDER_PEARL settings run data get storage main:settings default.item_ENDER_PEARL
 execute store result score .item_GLOW_HORN settings run data get storage main:settings default.item_GLOW_HORN
 execute store result score .item_TOTEM_OF_UNDYING settings run data get storage main:settings default.item_TOTEM_OF_UNDYING

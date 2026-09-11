@@ -6,42 +6,33 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:music_disc_cat",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "translate": "item.purple.antidote",
-                  "fallback": "Antidote"
-                },
-                "minecraft:custom_name": {
-                  "translate": "item.purple.antidote",
-                  "fallback": "Antidote",
-                  "italic": false
-                },
+                "minecraft:item_model": "minecraft:potion",
+                "minecraft:item_name": {"translate":"item.purple.antidote","fallback":"Antidote"},
                 "minecraft:lore": [
-                  {
-                    "translate": "item.purple.antidote.desc",
-                    "fallback": "Cure yourself",
-                    "color": "gray",
-                    "italic": false
-                  }
+                  {"translate":"item.purple.antidote.desc","fallback":"Cure yourself","color":"gray","italic":false}
                 ],
                 "minecraft:max_stack_size": 3,
                 "minecraft:rarity": "common",
-                "minecraft:custom_data": {
-                  "id": "ANTIDOTE"
+                "minecraft:custom_data": {"id": "ANTIDOTE", "game_item": true},
+                "minecraft:use_cooldown": {"seconds":1.0,"cooldown_group":"purple:antidote"},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.6,
+                  "animation": "drink",
+                  "sound": "minecraft:entity.generic.drink",
+                  "has_consume_particles": false
                 },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
+                "minecraft:use_effects": {
+                  "can_sprint": false,
+                  "speed_multiplier": 0.2
                 },
-                "minecraft:potion_contents": {
-                  "custom_color": 16711680
-                },
-                "!minecraft:use_remainder": {}
+                "minecraft:potion_contents": {"custom_color":16711680},
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:potion_contents"]},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

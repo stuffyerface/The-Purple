@@ -3,27 +3,27 @@
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:popped_chorus_fruit",
+          "name": "minecraft:music_disc_cat",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
-                "item_name": [{"fallback":"Purple Shellfish","translate":"item.purple.fish.purple_shellfish"}," ",{"color":"dark_aqua","fallback":"🐟","translate":"icon.purple.fish"}],
+                "minecraft:item_model": "minecraft:popped_chorus_fruit",
+                "minecraft:item_name": [{"fallback":"Purple Shellfish","translate":"item.purple.fish.purple_shellfish"}," ",{"color":"dark_aqua","fallback":"🐟","translate":"icon.purple.fish"}],
                 "minecraft:lore": [
-                  [" ",{"color":"gray","fallback":"Very sturdy shell.","italic":false,"translate":"item.purple.fish.purple_shellfish.1"}],
-                  [" ",{"color":"gray","fallback":"I wonder what it could","italic":false,"translate":"item.purple.fish.purple_shellfish.2"}],
-                  [" ",{"color":"gray","fallback":"be protecting against?","italic":false,"translate":"item.purple.fish.purple_shellfish.3"}]
+                  [" ",{"translate":"item.purple.fish.purple_shellfish.1","fallback":"Very sturdy shell.","color":"gray","italic":false}],
+                  [" ",{"translate":"item.purple.fish.purple_shellfish.2","fallback":"I wonder what it could","color":"gray","italic":false}],
+                  [" ",{"translate":"item.purple.fish.purple_shellfish.3","fallback":"be protecting against?","color":"gray","italic":false}]
                 ],
                 "minecraft:max_stack_size": 99,
-                "minecraft:custom_data": "{id:PURPLE_SHELLFISH}",
                 "minecraft:rarity": "common",
+                "minecraft:custom_data": {"id": "PURPLE_SHELLFISH", "fishing": true},
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
-                "!minecraft:consumable": {}
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

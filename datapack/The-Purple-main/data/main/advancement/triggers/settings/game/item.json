@@ -36,7 +36,7 @@
         }
       }
     },
-    "rc_CHORUS_FRUIT": {
+    "rc_INSTANT_CHORUS_FRUIT": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
@@ -49,12 +49,12 @@
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["setting.items.CHORUS_FRUIT"]}
+              "minecraft:entity_tags": {"all_of": ["setting.items.INSTANT_CHORUS_FRUIT"]}
             }
         }
       }
     },
-    "lc_CHORUS_FRUIT": {
+    "lc_INSTANT_CHORUS_FRUIT": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
@@ -67,7 +67,7 @@
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["setting.items.CHORUS_FRUIT"]}
+              "minecraft:entity_tags": {"all_of": ["setting.items.INSTANT_CHORUS_FRUIT"]}
             }
         }
       }
@@ -504,6 +504,42 @@
         }
       }
     },
+    "rc_DECOY": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.DECOY"]}
+            }
+        }
+      }
+    },
+    "lc_DECOY": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.DECOY"]}
+            }
+        }
+      }
+    },
     "rc_GAME_ROCK": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
@@ -540,7 +576,7 @@
         }
       }
     },
-    "rc_DECOY": {
+    "rc_KNOCKBACK_SLIMEBALL": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
@@ -553,12 +589,12 @@
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["setting.items.DECOY"]}
+              "minecraft:entity_tags": {"all_of": ["setting.items.KNOCKBACK_SLIMEBALL"]}
             }
         }
       }
     },
-    "lc_DECOY": {
+    "lc_KNOCKBACK_SLIMEBALL": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
@@ -571,7 +607,43 @@
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:interaction",
-              "minecraft:entity_tags": {"all_of": ["setting.items.DECOY"]}
+              "minecraft:entity_tags": {"all_of": ["setting.items.KNOCKBACK_SLIMEBALL"]}
+            }
+        }
+      }
+    },
+    "rc_DRACONIC_ESSENCE": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.DRACONIC_ESSENCE"]}
+            }
+        }
+      }
+    },
+    "lc_DRACONIC_ESSENCE": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.DRACONIC_ESSENCE"]}
             }
         }
       }
@@ -581,8 +653,8 @@
     [
       "rc_SMALL_MUSHROOM",
       "lc_SMALL_MUSHROOM",
-      "rc_CHORUS_FRUIT",
-      "lc_CHORUS_FRUIT",
+      "rc_INSTANT_CHORUS_FRUIT",
+      "lc_INSTANT_CHORUS_FRUIT",
       "rc_ENDER_PEARL",
       "lc_ENDER_PEARL",
       "rc_GLOW_HORN",
@@ -607,10 +679,14 @@
       "lc_WIND_CHARGE",
       "rc_REVIVAL_POTION",
       "lc_REVIVAL_POTION",
+      "rc_DECOY",
+      "lc_DECOY",
       "rc_GAME_ROCK",
       "lc_GAME_ROCK",
-      "rc_DECOY",
-      "lc_DECOY"
+      "rc_KNOCKBACK_SLIMEBALL",
+      "lc_KNOCKBACK_SLIMEBALL",
+      "rc_DRACONIC_ESSENCE",
+      "lc_DRACONIC_ESSENCE"
     ]
   ],
   "rewards": {

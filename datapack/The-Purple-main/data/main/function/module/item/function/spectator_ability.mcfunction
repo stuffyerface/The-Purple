@@ -1,5 +1,4 @@
 # called by main:module/source/trigger
-advancement revoke @s only main:triggers/items/spectator_ability
 execute if score .game data matches 2.. run return fail
 execute unless entity @s[tag=corrupted] run return fail
 execute if entity @s[scores={item.source=..0}] run return fail

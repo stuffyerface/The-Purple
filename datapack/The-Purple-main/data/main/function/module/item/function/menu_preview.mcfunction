@@ -1,9 +1,5 @@
 advancement revoke @s only main:triggers/items/menu_preview
-
-# usage cooldown
-execute if entity @s[scores={item.menu_preview=0..}] run return fail
-scoreboard objectives add item.menu_preview dummy
-scoreboard players add @s item.menu_preview 20
+function main:module/miscellaneous/no_consume
 
 # function
 playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~ 1 2

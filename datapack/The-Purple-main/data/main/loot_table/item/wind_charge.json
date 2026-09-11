@@ -11,15 +11,13 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "fallback": "Wind Charge",
-                  "translate": "item.purple.wind_charge"
-                },
-                "minecraft:max_stack_size": 10,
+                "minecraft:item_model": "minecraft:wind_charge",
+                "minecraft:item_name": {"translate":"item.purple.wind_charge","fallback":"Wind Charge"},
+                "minecraft:max_stack_size": 9,
                 "minecraft:rarity": "common",
-                "minecraft:custom_data": {
-                  "id": "WIND_CHARGE"
-                }
+                "minecraft:custom_data": {"id": "WIND_CHARGE", "game_item": true},
+                "minecraft:use_cooldown": {"seconds":0.5,"cooldown_group":"purple:wind_charge"},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

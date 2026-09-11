@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_head",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:dragon_head",
+                "minecraft:item_name": {"translate":"item.purple.draconic_mask","fallback":"Draconic Mask","color":"aqua"},
+                "minecraft:lore": [],
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {"id": "DRACONIC_MASK", "game_item": true},
+                "minecraft:enchantments": {"minecraft:binding_curse": 1},
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:entity.ender_dragon.growl",
+                  "swappable": false
+                },
+                "minecraft:tooltip_display": {"hide_tooltip": true},
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

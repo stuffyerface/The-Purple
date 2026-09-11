@@ -6,49 +6,39 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:player_head",
+          "name": "minecraft:music_disc_cat",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
-                "!minecraft:attribute_modifiers": {},
-                "minecraft:item_name": {
-                  "fallback": "Horse",
-                  "translate": "entity.minecraft.horse"
-                },
+                "minecraft:item_model": "minecraft:player_head",
+                "minecraft:item_name": {"fallback":"Horse","translate":"entity.minecraft.horse"},
                 "minecraft:lore": [
-                  {
-                    "color": "gray",
-                    "fallback": "How hungry?",
-                    "italic": false,
-                    "translate": "item.purple.edible_horse"
-                  }
+                  {"translate":"item.purple.edible_horse","fallback":"How hungry?","color":"gray","italic":false}
                 ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {"id": "EDIBLE_HORSE"},
+                "minecraft:profile": {"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzNWUzMTk2MTcxMzM1M2E3NjQwMWUwMGMzNDU0YjdjYTg4NWI3Nzg0ZDUyODhkMzIyNzIyMmQ5YjQ4ZDM5MyJ9fX0="}]},
+                "minecraft:damage_resistant": {"types": "#minecraft:is_fire"},
+                "minecraft:use_cooldown": {"seconds":0.5,"cooldown_group":"purple:edible_horse"},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.6,
+                  "animation": "eat",
+                  "sound": "minecraft:entity.generic.eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [{"type":"minecraft:play_sound","sound":"minecraft:entity.horse.death"}]
+                },
+                "minecraft:use_effects": {
+                  "can_sprint": false,
+                  "speed_multiplier": 0.2
+                },
                 "minecraft:food": {
                   "saturation": 20,
                   "nutrition": 20,
                   "can_always_eat": true
                 },
-                "minecraft:consumable": {
-                  "on_consume_effects": [
-                    {
-                      "type": "minecraft:play_sound",
-                      "sound": "minecraft:entity.horse.death"
-                    }
-                  ],
-                  "consume_seconds": 1
-                },
-                "minecraft:profile": {
-                  "properties": [
-                    {
-                      "name": "textures",
-                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzNWUzMTk2MTcxMzM1M2E3NjQwMWUwMGMzNDU0YjdjYTg4NWI3Nzg0ZDUyODhkMzIyNzIyMmQ5YjQ4ZDM5MyJ9fX0="
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {
-                  "id": "EDIBLE_HORSE"
-                }
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

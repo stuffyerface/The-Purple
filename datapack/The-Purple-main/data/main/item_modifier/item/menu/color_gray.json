@@ -4,7 +4,7 @@
     {
       "type": "minecraft:set_components",
       "components": {
-        "minecraft:item_model": "minecraft:gray_dye",
+        "minecraft:item_model": "minecraft:gray_cushion",
         "minecraft:item_name": {"translate":"setting.purple.button.color","fallback":"Cosmetic Color: %s %s","color":"green","with":[{"translate":"setting.purple.button.color.gray","fallback":"Gray","color":"white"},{"text":"⭐","color":"#555555"}]},
         "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
       }

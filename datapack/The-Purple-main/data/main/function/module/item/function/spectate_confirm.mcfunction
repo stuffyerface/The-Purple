@@ -1,5 +1,6 @@
 advancement revoke @s only main:triggers/items/spectate
 advancement revoke @s only main:triggers/items/spectate_game
+function main:module/miscellaneous/no_consume
 
 # 
 title @s times 0 5s 0

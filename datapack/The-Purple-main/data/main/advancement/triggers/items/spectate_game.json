@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "using_item": {
+    "use_spectate_game": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{mode:SPECTATE_GAME}"
+            "minecraft:custom_data": {"mode": "SPECTATE_GAME"}
           }
         }
       }

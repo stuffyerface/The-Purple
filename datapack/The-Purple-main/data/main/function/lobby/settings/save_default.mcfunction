@@ -42,7 +42,7 @@ execute store result storage main:settings default.ability_item int 1 run scoreb
 
 # item settings
 execute store result storage main:settings default.item_SMALL_MUSHROOM int 1 run scoreboard players get .item_SMALL_MUSHROOM settings
-execute store result storage main:settings default.item_CHORUS_FRUIT int 1 run scoreboard players get .item_CHORUS_FRUIT settings
+execute store result storage main:settings default.item_INSTANT_CHORUS_FRUIT int 1 run scoreboard players get .item_INSTANT_CHORUS_FRUIT settings
 execute store result storage main:settings default.item_ENDER_PEARL int 1 run scoreboard players get .item_ENDER_PEARL settings
 execute store result storage main:settings default.item_GLOW_HORN int 1 run scoreboard players get .item_GLOW_HORN settings
 execute store result storage main:settings default.item_TOTEM_OF_UNDYING int 1 run scoreboard players get .item_TOTEM_OF_UNDYING settings

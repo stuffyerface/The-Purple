@@ -1,21 +1,21 @@
 {
   "criteria": {
-    "ROCK": {
+    "use_rock": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:ROCK}"
+            "minecraft:custom_data": {"id": "ROCK"}
           }
         }
       }
     },
-    "GAME_ROCK": {
+    "use_game_rock": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:GAME_ROCK}"
+            "minecraft:custom_data": {"id": "GAME_ROCK"}
           }
         }
       }
@@ -23,8 +23,8 @@
   },
   "requirements": [
     [
-      "ROCK",
-      "GAME_ROCK"
+      "use_rock",
+      "use_game_rock"
     ]
   ],
   "rewards": {

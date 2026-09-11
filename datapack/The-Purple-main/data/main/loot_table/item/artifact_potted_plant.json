@@ -3,32 +3,21 @@
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:flower_pot",
+          "name": "minecraft:music_disc_cat",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "fallback": "Potted Specimen",
-                  "translate": "item.purple.artifact.potted_plant.name"
-                },
-                "minecraft:lore": [
-                  {
-                    "color": "dark_gray",
-                    "fallback": "Artifact",
-                    "italic": false,
-                    "translate": "item.purple.artifact.lore"
-                  }
-                ],
+                "minecraft:item_model": "minecraft:flower_pot",
+                "minecraft:item_name": {"translate":"item.purple.artifact.potted_plant.name","fallback":"Potted Specimen"},
+                "minecraft:lore": [{"translate":"item.purple.artifact.lore","fallback":"Artifact","color":"dark_gray","italic":false}],
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "uncommon",
-                "minecraft:custom_data": {
-                  "id": "ARTIFACT_POTTED_PLANT"
-                }
+                "minecraft:custom_data": {"id": "ARTIFACT_POTTED_PLANT", "artifact": true},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

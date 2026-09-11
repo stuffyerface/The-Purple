@@ -1,4 +1,5 @@
 advancement revoke @s only main:triggers/items/lobby
+function main:module/miscellaneous/no_consume
 
 # 
 title @s times 0 5s 0

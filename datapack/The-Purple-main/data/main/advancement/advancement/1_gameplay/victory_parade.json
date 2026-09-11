@@ -27,6 +27,12 @@
     },
     "victory_dance_3": {
       "trigger": "minecraft:impossible"
+    },
+    "victory_dance_4": {
+      "trigger": "minecraft:impossible"
+    },
+    "victory_dance_5": {
+      "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
@@ -38,6 +44,12 @@
     ],
     [
       "victory_dance_3"
+    ],
+    [
+      "victory_dance_4"
+    ],
+    [
+      "victory_dance_5"
     ]
   ]
 }

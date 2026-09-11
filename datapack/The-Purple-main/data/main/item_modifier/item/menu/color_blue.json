@@ -4,7 +4,7 @@
     {
       "type": "minecraft:set_components",
       "components": {
-        "minecraft:item_model": "minecraft:blue_dye",
+        "minecraft:item_model": "minecraft:blue_cushion",
         "minecraft:item_name": {"translate":"setting.purple.button.color","fallback":"Cosmetic Color: %s %s","color":"green","with":[{"translate":"setting.purple.button.color.blue","fallback":"Blue","color":"white"},{"text":"⭐","color":"#5555FF"}]},
         "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
       }

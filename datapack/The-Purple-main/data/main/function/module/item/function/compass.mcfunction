@@ -1,9 +1,6 @@
 advancement revoke @s only main:triggers/items/compass
-
-execute if entity @s[scores={item.compass=0..}] run return fail
-scoreboard objectives add item.compass dummy
-scoreboard players add @s item.compass 10
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:damage":4}}}] run return run function main:message/item/compass
+function main:module/miscellaneous/no_consume
+execute if items entity @s weapon.mainhand *[minecraft:damage=4] run return run function main:message/item/compass
 
 tag @s add item.compass_tracker
 scoreboard players add @s stat.item.compass 1

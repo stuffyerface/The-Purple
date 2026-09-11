@@ -8,6 +8,7 @@ execute if score .countdown data matches 0..5 run function main:message/game/pre
 execute if score .countdown data matches 0 run scoreboard players add .pregame data 1
 
 execute if score .countdown data matches 0 if score .pregame data matches 1 as @a[tag=ready] run function main:lobby/player/inventory/save
+execute if score .countdown data matches 0 if score .pregame data matches 1 as @a[tag=ready] run tag @s remove in_selection_menu
 execute if score .countdown data matches 0 if score .pregame data matches 1 as @a[tag=ready] run clear @s
 execute if score .countdown data matches 0 if score .pregame data matches 1 run kill @e[type=ender_pearl]
 execute if score .countdown data matches 0 if score .pregame data matches 1 run function main:game/tag/function/teleport

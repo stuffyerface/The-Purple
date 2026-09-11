@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "requirement": {
+    "use_antidote": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:ANTIDOTE}"
+            "minecraft:custom_data": {"id": "ANTIDOTE"}
           }
         }
       }

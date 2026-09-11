@@ -35,8 +35,8 @@ loot replace entity @s inventory.18 loot main:item/menu_slot_empty
 loot replace entity @s inventory.19 loot main:item/menu_slot_empty
 loot replace entity @s inventory.20 loot main:item/menu_slot_empty
 loot replace entity @s inventory.21 loot main:item/menu_slot_empty
-loot replace entity @s inventory.22 loot main:item/menu_slot_empty
-loot replace entity @s inventory.23 loot main:item/menu_slot_empty
-loot replace entity @s inventory.24 loot main:item/menu_slot_empty
-loot replace entity @s inventory.25 loot main:item/menu_slot_empty
-loot replace entity @s inventory.26 loot main:item/menu_slot_empty
+loot replace entity @s inventory.22 loot main:item/menu_unselected_slot
+loot replace entity @s inventory.23 loot main:item/menu_unselected_slot
+loot replace entity @s inventory.24 loot main:item/menu_unselected_slot
+loot replace entity @s inventory.25 loot main:item/menu_unselected_slot
+loot replace entity @s inventory.26 loot main:item/menu_unselected_slot

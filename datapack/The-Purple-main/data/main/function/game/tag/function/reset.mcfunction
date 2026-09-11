@@ -4,6 +4,7 @@ schedule clear main:game/tag/start
 execute as @a[tag=player] run ride @s dismount
 execute at @a[tag=player] run kill @e[type=item,distance=..1]
 execute as @e[tag=victory_dance] run data remove entity @s CustomName
+execute at @e[tag=victory_dance.sleep] run fill ~ ~ ~ ~ ~ ~ minecraft:air replace #minecraft:beds strict
 tp @e[tag=victory_dance] ~ -64 ~
 execute as @e[tag=victory_dance] run function main:module/miscellaneous/kill
 execute as @e[tag=disconnect.zombie] run function main:module/miscellaneous/kill

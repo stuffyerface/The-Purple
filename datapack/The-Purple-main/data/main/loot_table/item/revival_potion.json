@@ -11,41 +11,19 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "fallback": "Revival Elixer",
-                  "translate": "item.purple.revival_potion"
-                },
-                "minecraft:custom_name": {
-                  "fallback": "Revival Elixer",
-                  "translate": "item.purple.revival_potion",
-                  "italic": false
-                },
+                "minecraft:item_model": "minecraft:splash_potion",
+                "minecraft:item_name": {"translate":"item.purple.revival_potion","fallback":"Revival Elixer"},
+                "minecraft:custom_name": {"translate":"item.purple.revival_potion","fallback":"Revival Elixer","italic":false},
                 "minecraft:lore": [
-                  {
-                    "translate": "item.purple.revival_potion.desc.1",
-                    "fallback": "Splash a dead player",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "translate": "item.purple.revival_potion.desc.2",
-                    "fallback": "to revive them",
-                    "color": "gray",
-                    "italic": false
-                  }
+                  {"translate":"item.purple.revival_potion.desc.1","fallback":"Splash a dead player","color":"gray","italic":false},
+                  {"translate":"item.purple.revival_potion.desc.2","fallback":"to revive them","color":"gray","italic":false}
                 ],
                 "minecraft:max_stack_size": 3,
                 "minecraft:rarity": "common",
-                "minecraft:item_model": "minecraft:splash_potion",
-                "minecraft:custom_data": {
-                  "id": "REVIVAL_POTION"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
-                },
+                "minecraft:custom_data": {"id": "REVIVAL_POTION", "game_item": true},
+                "minecraft:use_cooldown": {"seconds":1.0,"cooldown_group":"purple:revival_potion"},
                 "minecraft:potion_contents": {
+                  "custom_color": 16768256,
                   "custom_effects": [
                     {
                       "duration": 10000,
@@ -54,9 +32,10 @@
                       "id": "minecraft:regeneration",
                       "show_particles": false
                     }
-                  ],
-                  "custom_color": 16768256
-                }
+                  ]
+                },
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:potion_contents"]},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

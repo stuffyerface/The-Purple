@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_cat",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:cooked_chicken",
+                "minecraft:item_name": {"translate":"setting.purple.button.victory_dance.chicken_dinner.name","fallback":"Chicken Dinner"},
+                "minecraft:lore": [{"translate":"setting.purple.button.victory_dance.chicken_dinner.desc","fallback":"Winner Winner Chicken Dinner!","color":"gray","italic":false}],
+                "minecraft:max_stack_size": 99,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {"id": "CHICKEN_DINNER", "game_item": true},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.6,
+                  "animation": "eat",
+                  "sound": "minecraft:entity.generic.eat",
+                  "has_consume_particles": true
+                },
+                "minecraft:use_effects": {
+                  "can_sprint": false,
+                  "speed_multiplier": 0.2
+                },
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

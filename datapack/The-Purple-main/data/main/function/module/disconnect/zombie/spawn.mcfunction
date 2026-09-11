@@ -1,3 +1,9 @@
+# confirm really offline...
+summon minecraft:interaction ~ ~ ~ {Tags:["id.marker.confirm_offline"],interaction:{player:[I;0,0,0,0],timestamp:0L}}
+data modify entity @n[tag=id.marker.confirm_offline] interaction.player set from entity @s CustomName.hover_event.uuid
+execute as @n[tag=id.marker.confirm_offline] at @s on target if entity @s[type=minecraft:player] run return run kill @n[tag=id.marker.confirm_offline]
+kill @n[tag=id.marker.confirm_offline]
+
 tag @s add id.marker.offline
 execute unless score .game data matches 0.. run return fail
 

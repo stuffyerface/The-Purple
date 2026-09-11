@@ -12,7 +12,7 @@ bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-5"
+data modify storage main:data version set value "v1.0.11-6"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -84,14 +84,17 @@ scoreboard objectives add stat.item.compass dummy
 scoreboard objectives add stat.item.antidote dummy
 scoreboard objectives add stat.item.smoke_bomb dummy
 scoreboard objectives add stat.item.revival_potion dummy
-scoreboard objectives add stat.item.instant_chorus_fruit minecraft.used:minecraft.chorus_fruit
-scoreboard objectives add stat.item.totem_of_undying minecraft.used:minecraft.totem_of_undying
+scoreboard objectives add stat.item.instant_chorus_fruit dummy
+scoreboard objectives add stat.item.totem_of_undying dummy
 scoreboard objectives add stat.item.ender_pearl minecraft.used:minecraft.ender_pearl
 scoreboard objectives add stat.item.trident minecraft.used:minecraft.trident
 scoreboard objectives add stat.item.wind_charge minecraft.used:minecraft.wind_charge
 scoreboard objectives add stat.item.decoy minecraft.used:minecraft.villager_spawn_egg
 scoreboard objectives add stat.item.rock dummy
 scoreboard objectives add stat.item.edible_rock dummy
+scoreboard objectives add stat.item.draconic_essence dummy
+scoreboard objectives add stat.item.draconic_essence.survived_egg dummy
+scoreboard objectives add stat.item.draconic_essence.players_eaten dummy
 scoreboard objectives add stat.fish.glowing_minnow dummy
 scoreboard objectives add stat.fish.squishscale dummy
 scoreboard objectives add stat.fish.crimson_drifter dummy
@@ -196,7 +199,7 @@ scoreboard players set .ability_item settings 10
 
 # set default items
 scoreboard players set .item_SMALL_MUSHROOM settings 1
-scoreboard players set .item_CHORUS_FRUIT settings 1
+scoreboard players set .item_INSTANT_CHORUS_FRUIT settings 1
 scoreboard players set .item_ENDER_PEARL settings 1
 scoreboard players set .item_GLOW_HORN settings 1
 scoreboard players set .item_TOTEM_OF_UNDYING settings 1
@@ -211,6 +214,8 @@ scoreboard players set .item_WIND_CHARGE settings 1
 scoreboard players set .item_REVIVAL_POTION settings 1
 scoreboard players set .item_DECOY settings 1
 scoreboard players set .item_GAME_ROCK settings 0
+scoreboard players set .item_KNOCKBACK_SLIMEBALL settings 0
+scoreboard players set .item_DRACONIC_ESSENCE settings 0
 
 # set saved defaults
 function main:lobby/settings/save_default

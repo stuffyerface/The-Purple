@@ -11,26 +11,15 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "translate": "item.purple.smoke_bomb",
-                  "fallback": "Smoke Bomb"
-                },
-                "minecraft:custom_name": {
-                  "translate": "item.purple.smoke_bomb",
-                  "fallback": "Smoke Bomb",
-                  "italic": false
-                },
+                "minecraft:item_model": "minecraft:lingering_potion",
+                "minecraft:item_name": {"translate":"item.purple.smoke_bomb","fallback":"Smoke Bomb"},
+                "minecraft:custom_name": {"translate":"item.purple.smoke_bomb","fallback":"Smoke Bomb","italic":false},
                 "minecraft:max_stack_size": 3,
                 "minecraft:rarity": "common",
-                "minecraft:custom_data": {
-                  "id": "SMOKE_BOMB"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
-                },
+                "minecraft:custom_data": {"id": "SMOKE_BOMB", "game_item": true},
+                "minecraft:use_cooldown": {"seconds":1.0,"cooldown_group":"purple:smoke_bomb"},
                 "minecraft:potion_contents": {
+                  "custom_color": 7829367,
                   "custom_effects": [
                     {
                       "duration": 10,
@@ -40,9 +29,10 @@
                       "id": "minecraft:invisibility",
                       "show_particles": false
                     }
-                  ],
-                  "custom_color": 7829367
-                }
+                  ]
+                },
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:potion_contents"]},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

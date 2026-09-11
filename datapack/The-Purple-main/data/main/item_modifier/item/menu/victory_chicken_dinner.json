@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:cooked_chicken",
+        "minecraft:item_name": {"translate":"setting.purple.button.victory_dance","fallback":"Victory Dance: %s","color":"green","with":[{"translate":"setting.purple.button.victory_dance.chicken_dinner.name","fallback":"Chicken Dinner","color":"white"}]},
+        "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"selection": "VICTORY_CHICKEN_DINNER"}
+    }
+  ],
+  "condition": {
+    "type": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {"victory_dance": 5}
+  }
+}

@@ -13,11 +13,11 @@ execute positioned ~-0.75 ~3.3 ~ run function main:lobby/settings/game/item/elem
 #execute positioned ~-0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 #execute positioned ~-0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 
-#execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
+execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"KNOCKBACK_SLIMEBALL",texture:'"minecraft:slime_ball"'}
 #execute positioned ~0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 #execute positioned ~0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 
-#execute positioned ~2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
+execute positioned ~2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"DRACONIC_ESSENCE",texture:'"minecraft:dragon_breath"'}
 #execute positioned ~2.25 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 #execute positioned ~2.25 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 

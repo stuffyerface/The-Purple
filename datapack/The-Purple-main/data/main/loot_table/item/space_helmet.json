@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_cat",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:glass",
+                "minecraft:item_name": {"translate":"item.purple.space_helmet","fallback":"Space Helmet"},
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {"id": "space_helmet"},
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "item.armor.equip_netherite"
+                },
+                "minecraft:enchantments": {"minecraft:binding_curse": 1},
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {"hide_tooltip": true},
+                "!minecraft:jukebox_playable": {}
+              }
+            },
+            "main:item/space_helmet"
+          ]
+        }
+      ]
+    }
+  ]
+}

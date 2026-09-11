@@ -51,7 +51,8 @@ execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/fu
 execute as @a[scores={version=-2147483647..}] at @s run function main:module/miscellaneous/version
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
-execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless predicate main:has_item/lobby_button run function main:module/inventory/trigger 
+execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless predicate main:has_item/lobby_button run function main:module/inventory/trigger
+execute if score .20t dummy matches 0 as @a[tag=in_selection_menu] at @s if predicate main:input/any run function main:module/inventory/menu_close
 execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
 
 # entities
@@ -81,12 +82,6 @@ execute as @e[tag=prison_block_marker,limit=1] if score @s age matches 50.. at @
 execute as @e[tag=prison_block_marker] if score @s age matches 50.. at @s run setblock ~ ~ ~ air strict
 execute as @e[tag=prison_block_marker.water] if score @s age matches 50.. at @s run setblock ~ ~ ~ water strict
 execute as @e[tag=prison_block_marker] if score @s age matches 50.. at @s run kill @s
-
-execute as @a[scores={item.compass=1..}] run scoreboard players remove @s item.compass 1
-execute as @a[scores={item.compass=..0}] run scoreboard players reset @s item.compass
-
-execute as @a[scores={item.menu_preview=1..}] run scoreboard players remove @s item.menu_preview 1
-execute as @a[scores={item.menu_preview=..0}] run scoreboard players reset @s item.menu_preview
 
 execute as @a[scores={item.small_mushroom=0..}] run scoreboard players remove @s item.small_mushroom 1
 execute as @a[scores={item.small_mushroom=..0}] at @s run function main:module/item/function/small_mushroom_reset

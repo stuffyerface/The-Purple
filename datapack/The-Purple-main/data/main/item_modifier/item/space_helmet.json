@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:white_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 0}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:orange_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 1}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:magenta_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 2}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:light_blue_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 3}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:yellow_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 4}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:lime_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 5}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:pink_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 6}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:gray_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 7}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:light_gray_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 8}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:cyan_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 9}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:purple_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 10}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:blue_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 11}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:brown_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 12}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:green_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 13}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:red_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 14}
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {"minecraft:item_model": "minecraft:black_stained_glass"},
+      "condition": {
+        "type": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"color": 15}
+      }
+    }
+  ]
+}

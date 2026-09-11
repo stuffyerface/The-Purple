@@ -1,14 +1,13 @@
 {
   "criteria": {
-    "placed_decoy": {
+    "use_decoy": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
         "location": {
           "type": "minecraft:match_tool",
           "predicate": {
-              "items": "minecraft:villager_spawn_egg",
               "predicates": {
-                "minecraft:custom_data": "{id:'DECOY'}"
+                "minecraft:custom_data": {"id": "DECOY"}
               }
             }
         }

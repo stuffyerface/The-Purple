@@ -1,3 +1,4 @@
+function main:module/miscellaneous/no_consume
 execute if entity @s[tag=corrupted] run function main:module/item/function/spectator_ability
 advancement revoke @s only main:triggers/game/source
 

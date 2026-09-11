@@ -11,14 +11,17 @@
             {
               "type": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "minecraft:bat_spawn_egg",
                 "minecraft:item_name": "Item Spawn Point",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
                 "minecraft:custom_data": {"id":"ITEM_SPAWN_POINT"},
+                "minecraft:use_cooldown": {"seconds":0.5,"cooldown_group":"purple:item_spawn_point"},
                 "minecraft:entity_data": {
                   "id":"minecraft:marker",
-                  "Tags":["item_spawner.new", "item_spawner", "dontkillme"]
-                }
+                  "Tags":["item_spawner.new","item_spawner","dontkillme"]
+                },
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

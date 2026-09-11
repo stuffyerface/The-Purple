@@ -16,7 +16,7 @@ function main:id/team/set_color
 function main:module/disconnect/sync/marker
 function main:module/item/function/reset
 function main:message/game/revive
-function main:module/cosmetic/space_helmet
+loot replace entity @s armor.head loot main:item/space_helmet
 attribute @s minecraft:scale modifier remove purple:corrupted
 attribute @s minecraft:waypoint_receive_range base set 0.01
 gamemode adventure

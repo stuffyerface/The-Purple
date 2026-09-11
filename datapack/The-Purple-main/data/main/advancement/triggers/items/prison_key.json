@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "hit_by_source": {
+    "use_prison_key": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
@@ -9,7 +9,7 @@
             "slots": {
               "weapon.mainhand": {
                 "predicates": {
-                  "minecraft:custom_data": "{id:\"PRISON_KEY\"}"
+                  "minecraft:custom_data": {"id": "PRISON_KEY"}
                 }
               }
             }

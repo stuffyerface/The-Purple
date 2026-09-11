@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "using_item": {
-      "trigger": "minecraft:using_item",
+    "use_lobby": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{id:LOBBY}"
+            "minecraft:custom_data": {"id": "LOBBY"}
           }
         }
       }

@@ -6,46 +6,30 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:armor_stand",
+          "name": "minecraft:villager_spawn_egg",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "translate": "item.purple.decoy",
-                  "fallback": "Decoy"
-                },
+                "minecraft:item_model": "minecraft:armor_stand",
+                "minecraft:item_name": {"translate":"item.purple.decoy","fallback":"Decoy"},
                 "minecraft:lore": [
-                  {
-                    "translate": "item.purple.decoy.desc",
-                    "fallback": "Create a decoy of yourself",
-                    "color": "gray",
-                    "italic": false
-                  }
+                  {"translate":"item.purple.decoy.desc","fallback":"Create a decoy of yourself","color":"gray","italic":false}
                 ],
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "common",
-                "minecraft:can_place_on": {},
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:can_place_on"
-                  ]
-                },
-                "minecraft:custom_data": {
-                  "id": "DECOY"
-                },
-                "minecraft:item_model": "minecraft:armor_stand",
+                "minecraft:custom_data": {"id": "DECOY", "game_item": true},
+                "minecraft:use_cooldown": {"seconds":0.5,"cooldown_group":"purple:decoy"},
                 "minecraft:entity_data": {
                   "id": "minecraft:villager",
                   "Silent": true,
                   "CanPickUpLoot": false,
                   "AbsorptionAmount": 1024,
                   "Health": 1024,
-                  "Tags": [
-                    "new_decoy",
-                    "decoy",
-                    "decoy_entity"
-                  ],
+                  "Offers": {},
+                  "team": "no_collision",
+                  "Tags": ["new_decoy","decoy","decoy_entity"],
+                  "VillagerData": {"profession":"minecraft:nitwit","type":"minecraft:plains"},
                   "active_effects": [
                     {
                       "id": "minecraft:invisibility",
@@ -55,30 +39,15 @@
                     }
                   ],
                   "attributes": [
-                    {
-                      "id": "minecraft:max_absorption",
-                      "base": 1024
-                    },
-                    {
-                      "id": "minecraft:max_health",
-                      "base": 1024
-                    },
-                    {
-                      "id": "minecraft:scale",
-                      "base": 0.75
-                    },
-                    {
-                      "id": "minecraft:name_tag_distance",
-                      "base": 0
-                    }
-                  ],
-                  "team": "no_collision",
-                  "VillagerData": {
-                    "profession": "minecraft:nitwit",
-                    "type": "minecraft:plains"
-                  },
-                  "Offers": {}
-                }
+                    {"id":"minecraft:max_absorption","base":1024},
+                    {"id":"minecraft:max_health","base":1024},
+                    {"id":"minecraft:scale","base":0.75},
+                    {"id":"minecraft:name_tag_distance","base":0}
+                  ]
+                },
+                "minecraft:can_place_on": {},
+                "minecraft:tooltip_display": {"hidden_components": ["minecraft:can_place_on"]},
+                "!minecraft:jukebox_playable": {}
               }
             }
           ]

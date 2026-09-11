@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_instant_chorus_fruit": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {"id": "INSTANT_CHORUS_FRUIT"}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/instant_chorus_fruit"
+  }
+}

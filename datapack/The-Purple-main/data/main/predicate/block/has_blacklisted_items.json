@@ -46,6 +46,30 @@
           }
         }
       }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"artifact": true}}}]}
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "predicates": {
+            "minecraft:container": {
+              "items": {"contains": [{"predicates": {"minecraft:custom_data": {"game_item": true}}}]}
+            }
+          }
+        }
+      }
     }
   ]
 }

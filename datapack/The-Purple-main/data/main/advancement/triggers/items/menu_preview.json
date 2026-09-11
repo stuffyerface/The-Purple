@@ -1,7 +1,7 @@
 {
   "criteria": {
-    "MENU_PREVIEW": {
-      "trigger": "minecraft:using_item",
+    "use_menu_preview": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
@@ -11,11 +11,6 @@
       }
     }
   },
-  "requirements": [
-    [
-      "MENU_PREVIEW"
-    ]
-  ],
   "rewards": {
     "function": "main:module/item/function/menu_preview"
   }

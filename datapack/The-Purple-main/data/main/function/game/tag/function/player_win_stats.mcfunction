@@ -16,3 +16,5 @@ execute if score .map settings matches 3 run advancement grant @s only main:adva
 execute if score @s victory_dance matches 1 run advancement grant @s only main:advancement/1_gameplay/victory_parade victory_dance_1
 execute if score @s victory_dance matches 2 run advancement grant @s only main:advancement/1_gameplay/victory_parade victory_dance_2
 execute if score @s victory_dance matches 3 run advancement grant @s only main:advancement/1_gameplay/victory_parade victory_dance_3
+execute if score @s victory_dance matches 4 run advancement grant @s only main:advancement/1_gameplay/victory_parade victory_dance_4
+execute if score @s victory_dance matches 5 run advancement grant @s only main:advancement/1_gameplay/victory_parade victory_dance_5

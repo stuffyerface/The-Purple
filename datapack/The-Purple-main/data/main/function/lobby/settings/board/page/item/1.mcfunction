@@ -6,7 +6,7 @@ execute as @n[type=text_display,tag=setting.title] run data merge entity @s {tex
 
 # elements
 execute positioned ~-2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"SMALL_MUSHROOM",texture:'"minecraft:player_head",components:{"minecraft:profile": {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY5NmI4ZDAxZjU4MzVlZDM4YWZkNDUzMDIyOGQwYjVhYmI3ZDQ1YTM1NTUxOWVhNjgwYzQwZmZjYTMyZWRmMiJ9fX0="}]}}'}
-execute positioned ~-2.25 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"CHORUS_FRUIT",texture:'"minecraft:chorus_fruit"'}
+execute positioned ~-2.25 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"INSTANT_CHORUS_FRUIT",texture:'"minecraft:chorus_fruit"'}
 execute positioned ~-2.25 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"ENDER_PEARL",texture:'"minecraft:ender_pearl"'}
 
 execute positioned ~-0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"GLOW_HORN",texture:'"minecraft:goat_horn"'}
