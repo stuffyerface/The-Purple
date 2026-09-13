@@ -10,14 +10,14 @@ execute positioned ~-2.25 ~2.3 ~ run function main:lobby/settings/game/item/elem
 execute positioned ~-2.25 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"DECOY",texture:'"minecraft:armor_stand"'}
 
 execute positioned ~-0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"GAME_ROCK",texture:'"minecraft:player_head",components:{"minecraft:profile":{properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQxZjhiYTViNDZiZDY4MjVkYWNlNzA0MjgzZjFhMTZjZGY5OTI0ZTlkZTVjYmNlNzM1NDQ1YWZjNzZhNTZlIn19fQ=="}]}}'}
-#execute positioned ~-0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
-#execute positioned ~-0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
+execute positioned ~-0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"KNOCKBACK_SLIMEBALL",texture:'"minecraft:slime_ball"'}
+execute positioned ~-0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"GAME_FISHING_ROD",texture:'"minecraft:fishing_rod"'}
 
-execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"KNOCKBACK_SLIMEBALL",texture:'"minecraft:slime_ball"'}
-#execute positioned ~0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
+execute positioned ~0.75 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"COBWEB",texture:'"minecraft:cobweb"'}
+#execute positioned ~0.75 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"DRACONIC_ESSENCE",texture:'"minecraft:dragon_breath"'}
 #execute positioned ~0.75 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 
-execute positioned ~2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"DRACONIC_ESSENCE",texture:'"minecraft:dragon_breath"'}
+#execute positioned ~2.25 ~3.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 #execute positioned ~2.25 ~2.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 #execute positioned ~2.25 ~1.3 ~ run function main:lobby/settings/game/item/element {id:"",texture:'"minecraft:"'}
 

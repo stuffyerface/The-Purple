@@ -612,6 +612,78 @@
         }
       }
     },
+    "rc_GAME_FISHING_ROD": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.GAME_FISHING_ROD"]}
+            }
+        }
+      }
+    },
+    "lc_GAME_FISHING_ROD": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.GAME_FISHING_ROD"]}
+            }
+        }
+      }
+    },
+    "rc_COBWEB": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.COBWEB"]}
+            }
+        }
+      }
+    },
+    "lc_COBWEB": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {"all_of": ["setting.items.COBWEB"]}
+            }
+        }
+      }
+    },
     "rc_DRACONIC_ESSENCE": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
@@ -685,6 +757,10 @@
       "lc_GAME_ROCK",
       "rc_KNOCKBACK_SLIMEBALL",
       "lc_KNOCKBACK_SLIMEBALL",
+      "rc_GAME_FISHING_ROD",
+      "lc_GAME_FISHING_ROD",
+      "rc_COBWEB",
+      "lc_COBWEB",
       "rc_DRACONIC_ESSENCE",
       "lc_DRACONIC_ESSENCE"
     ]

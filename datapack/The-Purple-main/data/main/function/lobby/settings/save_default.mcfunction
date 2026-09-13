@@ -57,3 +57,7 @@ execute store result storage main:settings default.item_WIND_CHARGE int 1 run sc
 execute store result storage main:settings default.item_REVIVAL_POTION int 1 run scoreboard players get .item_REVIVAL_POTION settings
 execute store result storage main:settings default.item_DECOY int 1 run scoreboard players get .item_DECOY settings
 execute store result storage main:settings default.item_GAME_ROCK int 1 run scoreboard players get .item_GAME_ROCK settings
+execute store result storage main:settings default.item_KNOCKBACK_SLIMEBALL int 1 run scoreboard players get .item_KNOCKBACK_SLIMEBALL settings
+execute store result storage main:settings default.item_GAME_FISHING_ROD int 1 run scoreboard players get .item_GAME_FISHING_ROD settings
+execute store result storage main:settings default.item_COBWEB int 1 run scoreboard players get .item_COBWEB settings
+execute store result storage main:settings default.item_DRACONIC_ESSENCE int 1 run scoreboard players get .item_DRACONIC_ESSENCE settings

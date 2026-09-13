@@ -244,6 +244,34 @@
         },
         {
           "type": "minecraft:loot_table",
+          "value": "main:item/game_fishing_rod",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_GAME_FISHING_ROD"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:item/cobweb",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 3
+          },
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {"type":"minecraft:score","target":{"type":"minecraft:fixed","name":".item_COBWEB"},"score":"settings"},
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
           "value": "main:item/draconic_essence",
           "weight": 1,
           "modifier": {

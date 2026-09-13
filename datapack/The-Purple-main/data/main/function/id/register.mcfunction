@@ -69,6 +69,9 @@ scoreboard players add @s stat.item.revival_potion 0
 scoreboard players add @s stat.item.decoy 0
 scoreboard players add @s stat.item.rock 0
 scoreboard players add @s stat.item.edible_rock 0
+scoreboard players add @s stat.item.knockback_slimeball 0
+scoreboard players add @s stat.item.game_fishing_rod 0
+scoreboard players add @s stat.item.cobweb 0
 scoreboard players add @s stat.item.draconic_essence 0
 scoreboard players add @s stat.item.draconic_essence.survived_egg 0
 scoreboard players add @s stat.item.draconic_essence.players_eaten 0

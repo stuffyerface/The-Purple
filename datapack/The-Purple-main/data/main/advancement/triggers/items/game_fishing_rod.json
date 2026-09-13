@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "use_game_fishing_rod": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player"
+          }
+        },
+        "rod": {
+          "predicates": {
+            "minecraft:custom_data": {"id": "GAME_FISHING_ROD"}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/game_fishing_rod"
+  }
+}

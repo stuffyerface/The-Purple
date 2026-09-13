@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_decoy": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+              "predicates": {
+                "minecraft:custom_data": {"id": "COBWEB"}
+              }
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/cobweb"
+  }
+}

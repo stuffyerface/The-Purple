@@ -3,7 +3,13 @@
   "pools": [
     {
       "rolls": 1,
-      "entries": []
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "main:game/item_box/common",
+          "weight": 1
+        }
+      ]
     }
   ]
 }

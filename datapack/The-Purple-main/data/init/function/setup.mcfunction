@@ -12,7 +12,7 @@ bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-7"
+data modify storage main:data version set value "v1.0.11-8"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -93,6 +93,9 @@ scoreboard objectives add stat.item.wind_charge minecraft.used:minecraft.wind_ch
 scoreboard objectives add stat.item.decoy minecraft.used:minecraft.villager_spawn_egg
 scoreboard objectives add stat.item.rock dummy
 scoreboard objectives add stat.item.edible_rock dummy
+scoreboard objectives add stat.item.knockback_slimeball dummy
+scoreboard objectives add stat.item.game_fishing_rod dummy
+scoreboard objectives add stat.item.cobweb dummy
 scoreboard objectives add stat.item.draconic_essence dummy
 scoreboard objectives add stat.item.draconic_essence.survived_egg dummy
 scoreboard objectives add stat.item.draconic_essence.players_consumed dummy
@@ -216,6 +219,8 @@ scoreboard players set .item_REVIVAL_POTION settings 1
 scoreboard players set .item_DECOY settings 1
 scoreboard players set .item_GAME_ROCK settings 0
 scoreboard players set .item_KNOCKBACK_SLIMEBALL settings 0
+scoreboard players set .item_GAME_FISHING_ROD settings 0
+scoreboard players set .item_COBWEB settings 0
 scoreboard players set .item_DRACONIC_ESSENCE settings 0
 
 # set saved defaults

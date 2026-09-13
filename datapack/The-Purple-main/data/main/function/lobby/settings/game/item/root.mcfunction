@@ -36,6 +36,10 @@ execute if entity @s[advancements={main:triggers/settings/game/item={rc_GAME_ROC
 execute if entity @s[advancements={main:triggers/settings/game/item={lc_GAME_ROCK=true}}] run function main:lobby/settings/game/item/detect {id:"GAME_ROCK"}
 execute if entity @s[advancements={main:triggers/settings/game/item={rc_KNOCKBACK_SLIMEBALL=true}}] run function main:lobby/settings/game/item/detect {id:"KNOCKBACK_SLIMEBALL"}
 execute if entity @s[advancements={main:triggers/settings/game/item={lc_KNOCKBACK_SLIMEBALL=true}}] run function main:lobby/settings/game/item/detect {id:"KNOCKBACK_SLIMEBALL"}
+execute if entity @s[advancements={main:triggers/settings/game/item={rc_GAME_FISHING_ROD=true}}] run function main:lobby/settings/game/item/detect {id:"GAME_FISHING_ROD"}
+execute if entity @s[advancements={main:triggers/settings/game/item={lc_GAME_FISHING_ROD=true}}] run function main:lobby/settings/game/item/detect {id:"GAME_FISHING_ROD"}
+execute if entity @s[advancements={main:triggers/settings/game/item={rc_COBWEB=true}}] run function main:lobby/settings/game/item/detect {id:"COBWEB"}
+execute if entity @s[advancements={main:triggers/settings/game/item={lc_COBWEB=true}}] run function main:lobby/settings/game/item/detect {id:"COBWEB"}
 execute if entity @s[advancements={main:triggers/settings/game/item={rc_DRACONIC_ESSENCE=true}}] run function main:lobby/settings/game/item/detect {id:"DRACONIC_ESSENCE"}
 execute if entity @s[advancements={main:triggers/settings/game/item={lc_DRACONIC_ESSENCE=true}}] run function main:lobby/settings/game/item/detect {id:"DRACONIC_ESSENCE"}
 

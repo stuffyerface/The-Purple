@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "use_knockback_slimeball": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {"id": "KNOCKBACK_SLIMEBALL"}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:module/item/function/knockback_slimeball"
+  }
+}
