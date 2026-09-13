@@ -13,6 +13,7 @@ execute unless score .between_rounds data matches 1.. as @a[tag=alive,tag=last_s
 execute unless score .between_rounds data matches 1.. as @a[tag=alive,tag=last_second] run tag @s remove last_second
 execute unless score .between_rounds data matches 1.. if score .alive data <= .winners settings run return run function main:game/tag/end_game
 execute unless score .between_rounds data matches 1.. if score .round data >= .max_rounds settings unless score .max_rounds settings matches ..0 run return run function main:game/tag/end_game
+execute unless score .between_rounds data matches 1.. as @a[tag=draconic_stage_3] at @s run function main:game/tag/function/kill_draconic
 execute unless score .between_rounds data matches 1.. run scoreboard players set .between_rounds data 1
 
 execute if score .between_rounds data matches 1 unless score .countdown data matches 1.. run scoreboard players set .countdown data 6
@@ -42,6 +43,7 @@ execute if score .reduce_timer settings matches 1.. run function main:game/tag/f
 execute if score .round data >= .round_teleport settings as @a[tag=player,tag=!corrupted,gamemode=!spectator] run function c:tp/current_location
 execute if score .round data >= .locator_bar settings unless score .locator_bar settings matches 0 as @a[tag=player] run attribute @s minecraft:waypoint_receive_range modifier add purple:locator_bar 500 add_value
 function main:game/tag/function/select_source
+execute if entity @a[tag=draconic_stage_3] run scoreboard players operation .time data += .time data
 execute as @a[tag=player] run stopsound @s music
 
 ## end round

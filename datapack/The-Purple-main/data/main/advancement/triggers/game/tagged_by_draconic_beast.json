@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "hit_by_draconic_beast": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:entity_tags": {"all_of": ["draconic_stage_3"]}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:game/tag/triggers/tagged_by_draconic_beast"
+  }
+}

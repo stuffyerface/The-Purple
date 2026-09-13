@@ -34,8 +34,8 @@ execute if score .10t dummy matches 10.. run scoreboard players set .10t dummy 0
 ## miscellaneous
 
 # player
-execute as @a[nbt=!{foodSaturationLevel:20.0f}] run effect give @s minecraft:saturation 1 100 true
-execute as @a[nbt=!{Health:20.0f}] run effect give @s minecraft:instant_health 1 100 true
+execute as @a unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{food:{saturation:20}}}} run effect give @s minecraft:saturation 1 100 true
+execute as @a[nbt=!{Health:20.0f}] run effect give @s minecraft:instant_health 1 10 true
 execute as @a at @s if entity @s[y=-70,dy=-100] run function c:tp/current_location
 
 execute as @a[scores={cooldown.furniture.contributor_display.stuffy=0..}] run scoreboard players remove @s cooldown.furniture.contributor_display.stuffy 1
@@ -53,7 +53,7 @@ execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmeti
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
 execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless predicate main:has_item/lobby_button run function main:module/inventory/trigger
 execute if score .20t dummy matches 0 as @a[tag=in_selection_menu] at @s if predicate main:input/any run function main:module/inventory/menu_close
-execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
+execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,tag=!draconic_stage_3,gamemode=!spectator]
 
 # entities
 execute as @e[type=trident,nbt={inGround:1b}] run kill @s

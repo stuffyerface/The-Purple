@@ -12,6 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:leather_leggings",
+                "minecraft:item_name": "",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "common",
                 "minecraft:custom_data": {"id": "corrupted_leggings"},

@@ -1,13 +1,16 @@
 {
     "providers": [
         {
-            "type": "bitmap",
-            "file": "purple:font/emoji.png",
-            "height": 9,
-            "ascent": 8,
-            "chars": [
-                "🏆⌛⚔⚡🛡🧊\u0000\u0000\u0000\u0000"
-            ]
+            "type": "reference",
+            "id": "purple:include/icon"
+        },
+        {
+            "type": "reference",
+            "id": "purple:include/head"
+        },
+        {
+            "type": "reference",
+            "id": "purple:include/emoji"
         }
     ]
 }

@@ -1,7 +1,7 @@
 advancement revoke @s only main:triggers/game/tagged_by_clone
 
 # if dead, find new target
-execute if function main:module/miscellaneous/if/infected_or_corrupted if entity @a[tag=player,tag=!infected,tag=!corrupted,gamemode=!spectator] on attacker run return run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,gamemode=!spectator]
+execute if function main:module/miscellaneous/if/infected_or_corrupted run return run execute if entity @a[tag=player,tag=!corrupted,tag=!source,tag=!draconic_stage_3,gamemode=!spectator] on attacker run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,tag=!draconic_stage_3,gamemode=!spectator]
 
 # find origin
 execute on attacker run scoreboard players operation .check id = @s id

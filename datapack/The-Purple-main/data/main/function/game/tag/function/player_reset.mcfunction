@@ -14,13 +14,13 @@ tag @s remove has_been_revived
 tag @s remove has_been_infected
 tag @s remove has_used_healing_items
 tag @s remove return_to_lobby_confirm
-tag @s remove return_item.mainhand.LOBBY
-tag @s remove return_item.offhand.LOBBY
-tag @s remove return_item.mainhand.SPECTATE
-tag @s remove return_item.offhand.SPECTATE
-tag @s remove return_item.mainhand.SPECTATE_GAME
-tag @s remove return_item.offhand.SPECTATE_GAME
+tag @s remove draconic_stage_1
+tag @s remove draconic_stage_2
+tag @s remove draconic_stage_3
 stopsound @s
+gamemode adventure @s
+scoreboard players reset @s leave
+scoreboard players reset @s return
 function main:id/team/set_color
 function main:module/disconnect/sync/marker
 function main:module/item/function/reset
@@ -30,5 +30,6 @@ attribute @s minecraft:entity_interaction_range modifier remove purple:reach
 attribute @s minecraft:entity_interaction_range base reset
 attribute @s minecraft:waypoint_receive_range modifier remove purple:locator_bar
 attribute @s minecraft:waypoint_receive_range base set 0.01
+attribute @s minecraft:attack_damage base set 0
 
 function main:lobby/player/inventory/load

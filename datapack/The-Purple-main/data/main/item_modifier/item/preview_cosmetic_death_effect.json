@@ -5,8 +5,8 @@
       "type": "minecraft:set_components",
       "components": {
         "minecraft:item_model": "minecraft:barrier",
-        "minecraft:item_name": "",
-        "minecraft:lore": [""],
+        "minecraft:item_name": {"translate":"setting.purple.button.death_effect","fallback":"Death Effect: %s","color":"green","with":[{"text":"-","color":"white"}]},
+        "minecraft:lore": [{"translate":"item.purple.menu_preview","fallback":"Click to change!","color":"yellow","italic":false}],
         "minecraft:max_stack_size": 1,
         "minecraft:custom_data": {"id": "PREVIEW_COSMETIC_DEATH_EFFECT", "menu_preview": true, "no_consume": true},
         "minecraft:use_cooldown": {"seconds":0.5,"cooldown_group":"purple:preview_cosmetic_death_effect"},

@@ -25,5 +25,4 @@ scoreboard players add @s stat.total_revives 1
 execute if block ~ ~-1 ~ #minecraft:air if block ~ ~-2 ~ #minecraft:air if block ~ ~-3 ~ #minecraft:air run function c:tp/current_location
 execute unless block ~ ~ ~ #minecraft:air unless block ~ ~1 ~ #minecraft:air run function c:tp/current_location
 
-scoreboard players set .spectating data 0
-execute as @a[tag=spectator] run scoreboard players add .spectating data 1
+execute store result score .spectating data if entity @a[tag=spectator]

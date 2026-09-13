@@ -6,7 +6,7 @@
             "ascent": 35,
             "height": 60,
             "chars": [
-                "0"
+                "\uE000"
             ]
         }
     ]

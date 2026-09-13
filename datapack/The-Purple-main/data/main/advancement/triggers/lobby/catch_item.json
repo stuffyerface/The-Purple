@@ -4,8 +4,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:GLOWING_MINNOW}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"GLOWING_MINNOW"}
           }
         }
       }
@@ -14,8 +14,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:SQUISHSCALE}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"SQUISHSCALE"}
           }
         }
       }
@@ -24,8 +24,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:CRIMSON_DRIFTER}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"CRIMSON_DRIFTER"}
           }
         }
       }
@@ -34,8 +34,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:PURPLE_SHELLFISH}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"PURPLE_SHELLFISH"}
           }
         }
       }
@@ -44,8 +44,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:BROKEN_FISHING_ROD}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"BROKEN_FISHING_ROD"}
           }
         }
       }
@@ -54,8 +54,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:SUNKEN_RAFT}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"SUNKEN_RAFT"}
           }
         }
       }
@@ -64,8 +64,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:DISCARDED_FUEL_ROD}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"DISCARDED_FUEL_ROD"}
           }
         }
       }
@@ -74,8 +74,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:LOST_SOIL_SAMPLE}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"LOST_SOIL_SAMPLE"}
           }
         }
       }
@@ -84,8 +84,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:OLD_BRUSH}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"OLD_BRUSH"}
           }
         }
       }
@@ -94,8 +94,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:DIVING_MASK}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"DIVING_MASK"}
           }
         }
       }
@@ -104,8 +104,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:OXYGEN_TANK}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"OXYGEN_TANK"}
           }
         }
       }
@@ -114,8 +114,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:WETSUIT_PANTS}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"WETSUIT_PANTS"}
           }
         }
       }
@@ -124,8 +124,8 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_data": "{id:WETSUIT_FINS}"
+          "predicates": {
+            "minecraft:custom_data": {"id":"WETSUIT_FINS"}
           }
         }
       }

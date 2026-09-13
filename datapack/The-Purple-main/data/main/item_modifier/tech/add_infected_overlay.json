@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:intentionally_empty",
+      "camera_overlay": "purple:misc/purple_infected"
+    }
+  },
+  "condition": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "minecraft:equipment": {
+        "head": {
+          "predicates": {
+            "minecraft:custom_data": {"allow_infected_overlay": true}
+          }
+        }
+      }
+    }
+  }
+}

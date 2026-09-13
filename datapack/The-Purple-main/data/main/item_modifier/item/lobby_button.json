@@ -7,7 +7,7 @@
         "minecraft:item_model": "minecraft:barrier",
         "minecraft:item_name": "",
         "minecraft:max_stack_size": 1,
-        "minecraft:custom_data": {"id": "LOBBY_BUTTON", "menu_item": true},
+        "minecraft:custom_data": {"id": "LOBBY_BUTTON", "menu_item": true, "no_consume": true},
         "minecraft:consumable": {
           "animation": "none",
           "consume_seconds": 0.05,

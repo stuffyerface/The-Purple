@@ -11,7 +11,7 @@ execute unless score @s return matches -2147483647.. at @s run stopsound @s * pu
 execute unless score @s return matches -2147483647.. at @s run playsound purple:music.dead master @s ~ ~ ~ 0.33
 
 # items
-execute if predicate main:has_item/source run clear @s *[minecraft:custom_data~{id:THE_PURPLE}]
+clear @s *[minecraft:custom_data~{id:"THE_PURPLE"}]
 loot replace entity @s armor.head loot main:item/corrupted_head
 loot replace entity @s armor.chest loot main:item/corrupted_chestplate
 loot replace entity @s armor.legs loot main:item/corrupted_leggings

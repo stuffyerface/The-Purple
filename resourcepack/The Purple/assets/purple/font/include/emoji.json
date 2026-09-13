@@ -2,11 +2,11 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "purple:font/head.png",
+            "file": "purple:font/emoji.png",
             "height": 9,
             "ascent": 8,
             "chars": [
-                "sn\u0000"
+                "🏆⌛⚔⚡🛡🧊\u0000\u0000\u0000\u0000"
             ]
         }
     ]

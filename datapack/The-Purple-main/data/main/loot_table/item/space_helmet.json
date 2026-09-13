@@ -15,7 +15,7 @@
                 "minecraft:item_name": {"translate":"item.purple.space_helmet","fallback":"Space Helmet"},
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "common",
-                "minecraft:custom_data": {"id": "space_helmet"},
+                "minecraft:custom_data": {"id": "SPACE_HELMET", "allow_infected_overlay": true},
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "item.armor.equip_netherite"

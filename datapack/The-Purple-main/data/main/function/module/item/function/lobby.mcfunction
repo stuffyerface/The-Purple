@@ -10,5 +10,3 @@ title @s clear
 #
 execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
 scoreboard players reset @s return_to_lobby_confirm
-tag @s add return_to_lobby_confirm
-schedule function main:module/miscellaneous/schedule/give_lobby_inventory 1t replace

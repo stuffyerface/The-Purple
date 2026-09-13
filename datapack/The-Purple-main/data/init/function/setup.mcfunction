@@ -12,7 +12,7 @@ bossbar add main:time ""
 bossbar set main:time color purple
 team add no_collision
 team modify no_collision collisionRule never
-data modify storage main:data version set value "v1.0.11-6"
+data modify storage main:data version set value "v1.0.11-7"
 
 # create scoreboards
 scoreboard objectives add title dummy {"translate":"setting.purple.title.main","fallback":"%s","with":[[{"color":"#AA00AA","text":"T"},{"color":"#B317AE","text":"h"},{"color":"#BD2DB2","text":"e "},{"color":"#C644B5","text":"P"},{"color":"#D05BB9","text":"u"},{"color":"#D971BD","text":"r"},{"color":"#E388C1","text":"p"},{"color":"#EC9FC4","text":"l"},{"color":"#FFCCCC","text":"e"}]],"color":"dark_purple","bold":true}
@@ -70,6 +70,7 @@ scoreboard objectives add stat.total_rounds dummy
 scoreboard objectives add stat.total_deaths dummy
 scoreboard objectives add stat.total_deaths_by_round dummy
 scoreboard objectives add stat.total_deaths_by_quicksand dummy
+scoreboard objectives add stat.total_deaths_by_consumption dummy
 scoreboard objectives add stat.total_revives dummy
 scoreboard objectives add stat.infection_received dummy
 scoreboard objectives add stat.infection_passed dummy
@@ -94,7 +95,7 @@ scoreboard objectives add stat.item.rock dummy
 scoreboard objectives add stat.item.edible_rock dummy
 scoreboard objectives add stat.item.draconic_essence dummy
 scoreboard objectives add stat.item.draconic_essence.survived_egg dummy
-scoreboard objectives add stat.item.draconic_essence.players_eaten dummy
+scoreboard objectives add stat.item.draconic_essence.players_consumed dummy
 scoreboard objectives add stat.fish.glowing_minnow dummy
 scoreboard objectives add stat.fish.squishscale dummy
 scoreboard objectives add stat.fish.crimson_drifter dummy
@@ -230,6 +231,7 @@ gamerule minecraft:spawn_wandering_traders false
 gamerule minecraft:spawn_patrols false
 gamerule minecraft:spawn_wardens false
 gamerule minecraft:spawn_mobs false
+gamerule minecraft:spawn_monsters false
 gamerule minecraft:mob_griefing false
 gamerule minecraft:drowning_damage false
 gamerule minecraft:freeze_damage false
@@ -237,6 +239,7 @@ gamerule minecraft:fire_damage false
 gamerule minecraft:fall_damage false
 gamerule minecraft:projectiles_can_break_blocks false
 gamerule minecraft:allow_entering_nether_using_portals false
+gamerule minecraft:raids false
 
 gamerule minecraft:immediate_respawn true
 gamerule minecraft:ender_pearls_vanish_on_death true

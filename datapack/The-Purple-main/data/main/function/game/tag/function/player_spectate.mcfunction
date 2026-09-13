@@ -8,6 +8,6 @@ tag @s add spectator
 tag @s add player
 tag @s add was_in_game
 bossbar set main:time players @a[tag=player]
+clear @s
 
-scoreboard players set .spectating data 0
-execute as @a[tag=spectator] run scoreboard players add .spectating data 1
+execute store result score .spectating data if entity @a[tag=spectator]

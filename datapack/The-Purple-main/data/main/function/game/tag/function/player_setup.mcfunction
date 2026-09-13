@@ -17,6 +17,7 @@ execute as @a[tag=ready] run scoreboard players set @s leave -2147483648
 execute as @a[tag=ready] run scoreboard players add .players data 1
 execute as @a[tag=ready] run scoreboard players add @s stat.total_games 1
 execute as @a[tag=ready] run loot replace entity @s armor.head loot main:item/space_helmet
+execute as @a[tag=ready] run attribute @s minecraft:attack_damage base set 0.00001
 execute as @a[tag=ready] run tag @s add alive
 execute as @a[tag=ready] run tag @s add player
 execute as @a[tag=ready] run tag @s add was_in_game

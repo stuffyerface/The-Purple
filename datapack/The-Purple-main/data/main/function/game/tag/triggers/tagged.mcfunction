@@ -13,12 +13,9 @@ execute if entity @s[tag=source] at @s on attacker run return run function main:
 execute if entity @s[tag=corrupted] at @s on attacker run return run function main:message/tagged/already_dead
 execute on attacker if entity @s[tag=dying] run return fail
 
-# [safety vest item] if the hit gets cancelled, return
-execute if predicate main:has_item/safety_vest at @s run scoreboard players add @s stat.item.safety_vest 1
-execute if predicate main:has_item/safety_vest at @s run function main:message/tagged/safety_vest
-execute if predicate main:has_item/safety_vest at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
-execute if predicate main:has_item/safety_vest at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
-execute if predicate main:has_item/safety_vest at @s run return run item replace entity @s armor.chest with air
+# if draconic, return
+execute if entity @s[tag=draconic_stage_3] at @s on attacker run playsound minecraft:entity.ender_dragon.hurt player @s ~ ~ ~ 1 1.3
+execute if entity @s[tag=draconic_stage_3] at @s on attacker run return run function main:message/tagged/invalid_target
 
 # [starting immunity setting] if immune, return
 execute if score .starting_immunity data matches 1.. run playsound minecraft:item.shield.block player @a[distance=..10]
@@ -41,6 +38,13 @@ execute on attacker store result score @s double_tap_uuid.0 run scoreboard playe
 execute on attacker store result score @s double_tap_uuid.1 run scoreboard players get .me double_tap_uuid.1
 execute at @s on attacker unless score @s double_tap matches ..0 run return run function main:message/tagged/double_tap
 
+# [safety vest item] if the hit gets cancelled, return
+execute if predicate main:has_item/safety_vest at @s run scoreboard players add @s stat.item.safety_vest 1
+execute if predicate main:has_item/safety_vest at @s run function main:message/tagged/safety_vest
+execute if predicate main:has_item/safety_vest at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
+execute if predicate main:has_item/safety_vest at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
+execute if predicate main:has_item/safety_vest at @s run return run item replace entity @s armor.chest with air
+
 ## success
 # apply settings
 scoreboard players operation @s tagback_timer = .tagback settings
@@ -58,27 +62,13 @@ execute unless score .alive data matches ..2 unless score .tagback settings matc
 # as victim
 function main:module/cosmetic/explosion
 function main:message/tagged/infected_by_source
-effect give @s speed infinite 1 true
-tag @s add source
-tag @s add infected
-tag @s add has_been_infected
-execute unless predicate main:has_item/source run function c:item/source
-function main:id/team/set_color
-function main:module/disconnect/sync/marker
-playsound purple:infected player @s ~ ~ ~ 0.9 2
-execute on vehicle if entity @s[tag=elevator.chair] on passengers run ride @s dismount
+function main:game/tag/function/player_infect
 scoreboard players add @s stat.infection_received 1
 advancement grant @s only main:advancement/1_gameplay/infectious_disease
 execute if entity @s[tag=disconnect.zombie] run data modify entity @s CustomName.color set value "dark_purple"
+execute on vehicle if entity @s[tag=elevator.chair] on passengers run ride @s dismount
 
 # as attacker
-execute on attacker run tag @s remove source
-execute on attacker run tag @s remove infected
-execute on attacker run effect clear @s speed
-execute on attacker run clear @s *[minecraft:custom_data~{id:"THE_PURPLE"}]
-execute on attacker run function main:id/team/set_color
-execute on attacker run function main:module/disconnect/sync/marker
-execute on attacker run function main:module/source/reset
+execute on attacker run function main:game/tag/function/player_disinfect
 execute on attacker run scoreboard players add @s stat.infection_passed 1
 execute at @s on attacker if entity @s[distance=30..] run advancement grant @s only main:advancement/2_challenge/long_distance
-

@@ -47,6 +47,7 @@ execute if entity @s[tag=relogged_midgame] run tag @s remove relogged_midgame
 execute if score @s preview matches 0.. run function main:lobby/settings/preview/stop
 
 ## clean up
+execute if slots entity @s {type:"minecraft:filtered",slot_source:"main:player",item_filter:{predicates:{"minecraft:custom_data":{id:"LOBBY_BUTTON"}}}} run item modify entity @s {type:"minecraft:filtered",slot_source:"main:player",item_filter:{predicates:{"minecraft:custom_data":{id:"LOBBY_BUTTON"}}}} main:item/lobby_button
 function main:game/tag/function/check_required
 tag @e[tag=this_marker] remove this_marker
 scoreboard players reset .relog id

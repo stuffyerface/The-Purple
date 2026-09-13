@@ -21,14 +21,15 @@ function main:id/team/create_new with storage main:id recent
 gamemode adventure @s
 advancement grant @s only main:advancement/1_gameplay/root
 attribute @s minecraft:waypoint_receive_range base set 0.01
+attribute @s minecraft:attack_damage base set 0
 scoreboard players enable @s secret
 scoreboard players enable @s version
 scoreboard players set @s version -2147483648
 scoreboard players set @s color 10
-execute store result score @s source_ability run random value 1..5
+execute store result score @s source_ability run random value 1..6
 execute store result score @s spectator_ability run random value 1..6
 execute store result score @s death_effect run random value 1..3
-execute store result score @s victory_dance run random value 1..3
+execute store result score @s victory_dance run random value 1..5
 function main:lobby/player/inventory/load
 function c:tp/lobby
 function main:message/lobby/first_join

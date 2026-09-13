@@ -14,6 +14,9 @@ tag @s remove dying
 tag @s remove alive
 tag @s remove infected
 tag @s remove source
+tag @s remove draconic_stage_1
+tag @s remove draconic_stage_2
+tag @s remove draconic_stage_3
 stopsound @s * purple:music.main
 execute if score .game data matches 1 at @s run playsound purple:music.dead master @s ~ ~ ~ 0.33
 execute if score .player_corruption disable matches 1 run tag @s add spectator
@@ -28,9 +31,4 @@ function main:module/item/function/reset
 # stats
 scoreboard players add @s stat.total_deaths 1
 scoreboard players add .total_deaths data 1
-scoreboard players set .corrupted data 0
-execute as @a[tag=source] run scoreboard players add .corrupted data 1
-scoreboard players set .spectating data 0
-execute as @a[tag=spectator] run scoreboard players add .spectating data 1
-scoreboard players set .alive data 0
-execute as @a[tag=alive] run scoreboard players add .alive data 1
+function main:game/tag/function/check_playercount

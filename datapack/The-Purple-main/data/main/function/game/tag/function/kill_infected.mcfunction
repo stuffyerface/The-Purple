@@ -1,7 +1,6 @@
 execute unless entity @e[type=#main:player,tag=infected] run tellraw @a[tag=debug] ["[Console] ",{"text":"No infected found!","color":"red"}]
 
 # check for totem
-execute as @a[tag=infected] if predicate main:has_item/totem_of_undying run function main:message/tagged/totem
 execute as @a[tag=infected] if function main:module/miscellaneous/if/has_totem run function main:game/tag/function/player_disinfect
 
 # kill infected players without totem
