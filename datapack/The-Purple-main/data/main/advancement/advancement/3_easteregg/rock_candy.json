@@ -34,7 +34,7 @@
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_data": "{id:EDIBLE_ROCK}"
+            "minecraft:custom_data": {"id": "EDIBLE_ROCK"}
           }
         }
       }

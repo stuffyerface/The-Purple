@@ -24,7 +24,7 @@
       "conditions": {
         "rod": {
           "components": {
-            "minecraft:custom_data": "{id:SUPER_FISHING_ROD}"
+            "minecraft:custom_data": {"id": "SUPER_FISHING_ROD"}
           }
         },
         "item": {}
