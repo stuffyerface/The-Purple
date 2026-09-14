@@ -665,8 +665,9 @@
   "contributor.purple.lang.ru_ru": "Russian Translator",
   "contributor.purple.lang.zh_cn": "Chinese Simplified Translator",
 
-  "purple.name": "The Purple",
+  "purple.name": "%s",
   "purple.version": "v1.0.11",
+  "purple.version.date": "September 14th, 2026",
 
   "enchantment.level.50": "L",
   "enchantment.level.100": "C",
