@@ -5,7 +5,7 @@ execute store result storage main:settings default.boat_lifetime int 1 run score
 execute store result storage main:settings default.artifact_lifetime int 1 run scoreboard players get .artifact_lifetime settings
 
 # game settings
-execute store result storage main:settings default.cobweb_despawn_time run scoreboard players get .cobweb_despawn_time settings
+execute store result storage main:settings default.cobweb_despawn_time int 1 run scoreboard players get .cobweb_despawn_time settings
 execute store result storage main:settings default.corruption_despawn_time int 1 run scoreboard players get .corruption_despawn_time settings
 execute store result storage main:settings default.double_tap int 1 run scoreboard players get .double_tap settings
 execute store result storage main:settings default.increase_timer int 1 run scoreboard players get .increase_timer settings
