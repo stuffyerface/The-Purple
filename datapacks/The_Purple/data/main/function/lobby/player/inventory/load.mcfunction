@@ -1,4 +1,4 @@
-
+data remove storage main:dummy player
 function main:lobby/player/inventory/load_macro with entity @s
 
 # hotbar

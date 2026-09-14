@@ -39,11 +39,11 @@ execute on attacker store result score @s double_tap_uuid.1 run scoreboard playe
 execute at @s on attacker unless score @s double_tap matches ..0 run return run function main:message/tagged/double_tap
 
 # [safety vest item] if the hit gets cancelled, return
-execute if predicate main:has_item/safety_vest at @s run scoreboard players add @s stat.item.safety_vest 1
-execute if predicate main:has_item/safety_vest at @s run function main:message/tagged/safety_vest
-execute if predicate main:has_item/safety_vest at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
-execute if predicate main:has_item/safety_vest at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
-execute if predicate main:has_item/safety_vest at @s run return run item replace entity @s armor.chest with air
+execute if predicate main:equipped/safety_vest at @s run scoreboard players add @s stat.item.safety_vest 1
+execute if predicate main:equipped/safety_vest at @s run function main:message/tagged/safety_vest
+execute if predicate main:equipped/safety_vest at @s run playsound minecraft:entity.item.break player @a[distance=..20] ~ ~ ~ 1 1 
+execute if predicate main:equipped/safety_vest at @s run particle item{item:"leather_chestplate"} ^ ^1.4 ^0.5 0 0.1 0 0.05 5 force
+execute if predicate main:equipped/safety_vest at @s run return run item replace entity @s armor.chest with air
 
 ## success
 # apply settings

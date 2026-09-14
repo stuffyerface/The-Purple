@@ -1,4 +1,4 @@
-execute unless predicate main:has_item/totem_of_undying run return 0
+execute unless predicate main:equipped/totem_of_undying run return 0
 
 damage @s 1000000
 effect give @s minecraft:instant_health 1 10 true

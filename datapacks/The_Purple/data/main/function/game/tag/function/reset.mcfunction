@@ -8,6 +8,8 @@ execute at @e[tag=victory_dance.sleep] run fill ~ ~ ~ ~ ~ ~ minecraft:air replac
 tp @e[tag=victory_dance] ~ -64 ~
 execute as @e[tag=victory_dance] run function main:module/miscellaneous/kill
 execute as @e[tag=disconnect.zombie] run function main:module/miscellaneous/kill
+execute as @e[tag=cobweb] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb strict
+execute as @e[tag=cobweb] run kill @s
 kill @e[tag=footstep]
 kill @e[tag=kill_meteor]
 kill @e[tag=corrupt_block,tag=!dontkillme]

@@ -8,15 +8,15 @@ execute if score .elevator data matches 1 as @e[tag=elevator] at @s run tp @s ~ 
 execute if score .elevator data matches -1 if score .elevator_y dummy matches 940.. as @e[tag=elevator] at @s run tp @s ~ ~-1 ~
 
 # blocks
-execute as @n[tag=elevator.base] at @s positioned ~1 ~6 ~1 if block ~ ~ ~ iron_chain run setblock ~ ~ ~ air
-execute as @n[tag=elevator.base] at @s positioned ~1 ~7 ~1 if block ~ ~ ~ barrier run setblock ~ ~ ~ iron_chain[axis=y]
-execute as @n[tag=elevator.base] at @s positioned ~-1 ~6 ~-1 if block ~ ~ ~ iron_chain run setblock ~ ~ ~ air
-execute as @n[tag=elevator.base] at @s positioned ~-1 ~7 ~-1 if block ~ ~ ~ barrier run setblock ~ ~ ~ iron_chain[axis=y]
-execute as @e[tag=elevator.barrier] at @s run fill ~ ~1 ~ ~ ~-2 ~ air replace barrier
-execute as @e[tag=elevator.barrier] at @s if block ~ ~ ~ air run setblock ~ ~ ~ barrier
-execute as @e[tag=elevator.head] at @s run fill ~ ~1 ~ ~ ~-2 ~ minecraft:air replace minecraft:player_wall_head
-execute as @e[tag=elevator.head.west] at @s if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:player_wall_head[facing=west]{profile:{texture:"minecraft:particle/empty"}}
-execute as @e[tag=elevator.head.south] at @s if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:player_wall_head[facing=south]{profile:{texture:"minecraft:particle/empty"}}
+execute as @n[tag=elevator.base] at @s positioned ~1 ~6 ~1 if block ~ ~ ~ minecraft:iron_chain run setblock ~ ~ ~ minecraft:air strict
+execute as @n[tag=elevator.base] at @s positioned ~1 ~7 ~1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:iron_chain[axis=y] strict
+execute as @n[tag=elevator.base] at @s positioned ~-1 ~6 ~-1 if block ~ ~ ~ minecraft:iron_chain run setblock ~ ~ ~ minecraft:air strict
+execute as @n[tag=elevator.base] at @s positioned ~-1 ~7 ~-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:iron_chain[axis=y] strict
+execute as @e[tag=elevator.barrier] at @s run fill ~ ~1 ~ ~ ~-2 ~ minecraft:air replace minecraft:barrier strict
+execute as @e[tag=elevator.barrier] at @s if block ~ ~ ~ #main:elevator_replaceable run setblock ~ ~ ~ minecraft:barrier strict
+execute as @e[tag=elevator.head] at @s run fill ~ ~1 ~ ~ ~-2 ~ minecraft:air replace minecraft:player_wall_head strict
+execute as @e[tag=elevator.head.west] at @s if block ~ ~ ~ #main:elevator_replaceable run setblock ~ ~ ~ minecraft:player_wall_head[facing=west]{profile:{texture:"minecraft:particle/empty"}} strict
+execute as @e[tag=elevator.head.south] at @s if block ~ ~ ~ #main:elevator_replaceable run setblock ~ ~ ~ minecraft:player_wall_head[facing=south]{profile:{texture:"minecraft:particle/empty"}} strict
 
 # player
 execute at @n[tag=elevator.base] positioned ~-2 ~-1 ~-2 as @a[dx=3.5,dz=3.5,dy=6,gamemode=!spectator] run ride @s mount @e[limit=1,sort=random,tag=elevator.chair,predicate=!main:flag/has_passengers]

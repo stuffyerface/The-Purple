@@ -7,7 +7,7 @@
           "type": {
             "direct_entity": {
               "minecraft:entity_type": "minecraft:spectral_arrow",
-              "minecraft:entity_tags": {"all_of": ["rock.arrow"]}
+              "minecraft:entity_tags": {"all_of": ["rock.rock"]}
             }
           }
         }

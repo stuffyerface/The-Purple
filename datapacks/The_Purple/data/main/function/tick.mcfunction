@@ -48,18 +48,20 @@ execute as @a[scores={return_to_lobby_confirm=0..}] run scoreboard players remov
 execute as @a[scores={spectate_confirm=0..}] run scoreboard players remove @s spectate_confirm 1
 execute as @a[scores={leave=-2147483647..}] at @s run function main:game/tag/function/player_leave
 execute as @a[scores={return=-2147483647..}] at @s run function main:game/tag/function/player_return
-execute as @a[scores={version=-2147483647..}] at @s run function main:module/miscellaneous/version
+execute as @a[scores={version=-2147483647..}] at @s run function init:version
 execute as @a[scores={teleport_lock=0..}] at @s run function main:module/cosmetic/teleport
 execute if entity @a[scores={preview=0..},gamemode=spectator] run function main:lobby/settings/preview/root
-execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless predicate main:has_item/lobby_button run function main:module/inventory/trigger
+execute if score .20t dummy matches 0 as @a[tag=!player] at @s unless items entity @s main:inventory *[minecraft:custom_data~{id:"LOBBY_BUTTON"}] run function main:module/inventory/trigger
 execute if score .20t dummy matches 0 as @a[tag=in_selection_menu] at @s if predicate main:input/any run function main:module/inventory/menu_close
 execute if score .10t dummy matches 0 as @e[tag=clone] at @s on target if function main:module/miscellaneous/if/infected_or_corrupted as @n[tag=clone] run damage @s 0 minecraft:generic_kill by @p[tag=player,tag=!corrupted,tag=!source,tag=!draconic_stage_3,gamemode=!spectator]
 
 # entities
 execute as @e[type=trident,nbt={inGround:1b}] run kill @s
-execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run function main:module/miscellaneous/tick/summon_rock_item
+execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run function main:module/item/function/rock/summon
 execute as @e[tag=rock.thrown.display] unless predicate main:flag/is_riding run kill @s
 execute as @e[tag=item.display.gravity,nbt={OnGround:1b}] run kill @s
+
+execute as @e[type=minecraft:marker,tag=cobweb] at @s run function main:module/item/function/cobweb/tick
 
 execute if entity @e[tag=infected] run function main:module/cosmetic/infected_particle
 execute as @e[tag=corrupt_block] unless score .corruption_despawn_time settings matches -1 run scoreboard players add @s age 1

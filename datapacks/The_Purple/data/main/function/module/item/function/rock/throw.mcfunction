@@ -1,7 +1,3 @@
-advancement revoke @s only main:triggers/items/rock
-scoreboard players add @s stat.item.rock 1
-swing
-
 # find motion
 execute positioned ~ ~1.5 ~ run summon marker ^ ^ ^0.0 {Tags:["rock.find_motion","rock.origin"]}
 execute positioned ~ ~1.5 ~ run summon marker ^ ^ ^0.1 {Tags:["rock.find_motion","rock.motion"]}
@@ -19,6 +15,3 @@ data modify storage main:dummy rock.Owner set from entity @s UUID
 execute store result storage main:dummy rock.Motion[0] double 0.015 run scoreboard players operation .motion_x dummy -= .origin_x dummy
 execute store result storage main:dummy rock.Motion[1] double 0.015 run scoreboard players operation .motion_y dummy -= .origin_y dummy
 execute store result storage main:dummy rock.Motion[2] double 0.015 run scoreboard players operation .motion_z dummy -= .origin_z dummy
-
-# throw!
-execute positioned ~ ~1.6 ~ run function main:module/item/function/rock/throw_macro with storage main:dummy rock

@@ -1,0 +1,26 @@
+# set gamerules
+gamerule minecraft:advance_time false
+gamerule minecraft:advance_weather false
+gamerule minecraft:fire_spread_radius_around_player 0
+gamerule minecraft:spread_vines false
+gamerule minecraft:spawn_phantoms false
+gamerule minecraft:spawn_wandering_traders false
+gamerule minecraft:spawn_patrols false
+gamerule minecraft:spawn_wardens false
+gamerule minecraft:spawn_mobs false
+gamerule minecraft:spawn_monsters false
+gamerule minecraft:mob_griefing false
+gamerule minecraft:drowning_damage false
+gamerule minecraft:freeze_damage false
+gamerule minecraft:fire_damage false
+gamerule minecraft:fall_damage false
+gamerule minecraft:projectiles_can_break_blocks false
+gamerule minecraft:allow_entering_nether_using_portals false
+gamerule minecraft:raids false
+
+gamerule minecraft:immediate_respawn true
+gamerule minecraft:ender_pearls_vanish_on_death true
+gamerule minecraft:keep_inventory true
+
+gamerule minecraft:respawn_radius 0
+gamerule minecraft:random_tick_speed 0

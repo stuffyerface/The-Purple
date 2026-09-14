@@ -5,6 +5,7 @@ execute store result score .boat_lifetime settings run data get storage main:set
 execute store result score .artifact_lifetime settings run data get storage main:settings default.artifact_lifetime
 
 # game settings
+execute store result score .cobweb_despawn_time settings run data get storage main:settings default.cobweb_despawn_time
 execute store result score .corruption_despawn_time settings run data get storage main:settings default.corruption_despawn_time
 execute store result score .double_tap settings run data get storage main:settings default.double_tap
 execute store result score .increase_timer settings run data get storage main:settings default.increase_timer
@@ -56,8 +57,8 @@ execute store result score .item_ANTIDOTE settings run data get storage main:set
 execute store result score .item_WIND_CHARGE settings run data get storage main:settings default.item_WIND_CHARGE
 execute store result score .item_REVIVAL_POTION settings run data get storage main:settings default.item_REVIVAL_POTION
 execute store result score .item_DECOY settings run data get storage main:settings default.item_DECOY
-execute store result score .item_GAME_ROCK settings run data get storage main:settings default.item_GAME_ROCK
 execute store result score .item_KNOCKBACK_SLIMEBALL settings run data get storage main:settings default.item_KNOCKBACK_SLIMEBALL
 execute store result score .item_GAME_FISHING_ROD settings run data get storage main:settings default.item_GAME_FISHING_ROD
 execute store result score .item_COBWEB settings run data get storage main:settings default.item_COBWEB
+execute store result score .item_GAME_ROCK settings run data get storage main:settings default.item_GAME_ROCK
 execute store result score .item_DRACONIC_ESSENCE settings run data get storage main:settings default.item_DRACONIC_ESSENCE

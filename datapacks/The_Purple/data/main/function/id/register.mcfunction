@@ -67,7 +67,9 @@ scoreboard players add @s stat.item.wind_charge 0
 scoreboard players add @s stat.item.smoke_bomb 0
 scoreboard players add @s stat.item.revival_potion 0
 scoreboard players add @s stat.item.decoy 0
+scoreboard players add @s stat.item.rocks 0
 scoreboard players add @s stat.item.rock 0
+scoreboard players add @s stat.item.game_rock 0
 scoreboard players add @s stat.item.edible_rock 0
 scoreboard players add @s stat.item.knockback_slimeball 0
 scoreboard players add @s stat.item.game_fishing_rod 0

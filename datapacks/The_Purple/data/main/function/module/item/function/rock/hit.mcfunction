@@ -4,4 +4,4 @@ advancement revoke @s only main:triggers/items/rock_hit
 loot give @s loot main:item/rock
 
 # clean
-kill @n[tag=rock.arrow]
+kill @n[tag=rock.rock]
