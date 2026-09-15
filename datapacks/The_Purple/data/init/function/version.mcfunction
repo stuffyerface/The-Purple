@@ -1,9 +1,9 @@
 # version
 data remove storage nlib:dummy version
 data modify storage nlib:dummy version_old set from storage main:data version
-data modify storage nlib:dummy version merge value {id: "v1.0.11-9"}
+data modify storage nlib:dummy version merge value {id: "v1.0.11"}
 data modify storage nlib:dummy version merge value {data: 1}
-data modify storage nlib:dummy version merge value {date: "September 14th, 2026"}
+data modify storage nlib:dummy version merge value {date: "September 15th, 2026"}
 data modify storage nlib:dummy version merge value {name: {translate:'purple.name', fallback:'%s', with:[[{color:'#AA00AA',text:'T'},{color:'#B317AE',text:'h'},{color:'#BD2DB2',text:'e'},' ',{color:'#C644B5',text:'P'},{color:'#D05BB9',text:'u'},{color:'#D971BD',text:'r'},{color:'#E388C1',text:'p'},{color:'#EC9FC4',text:'l'},{color:'#FFCCCC',text:'e'}]]} }
 data modify storage nlib:dummy version merge value {desc: "The Purple, by Stuffy and nightlibra"}
 data modify storage nlib:dummy version merge value {series: "beta"}
